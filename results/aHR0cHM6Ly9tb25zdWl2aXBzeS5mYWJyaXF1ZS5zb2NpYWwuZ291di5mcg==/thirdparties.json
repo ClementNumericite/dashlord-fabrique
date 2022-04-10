@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "monsuivipsy.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1648949735,
+      "expires": 1649554539,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.33.4a6e",
-      "value": "998d819bded4e5c1.1648947936.",
+      "value": "501c7f5b6820ddf0.1649552740.",
       "domain": "monsuivipsy.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1682903136,
+      "expires": 1683507940,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,13 +33,17 @@
     }
   ],
   "headers": {
-    "date": "Sun, 03 Apr 2022 01:05:34 GMT",
+    "date": "Sun, 10 Apr 2022 01:05:38 GMT",
     "content-type": "text/html; charset=utf-8",
     "x-powered-by": "Next.js",
-    "etag": "\"4229-h/HVyxUIKgIeUb74zJQ8zT/mzvY\"",
+    "etag": "\"4229-A7kROtZkjDybYl1CJaBJ+KTrHdk\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
-    "strict-transport-security": "max-age=15724800; includeSubDomains"
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
+    "x-frame-options": "deny",
+    "x-xss-protection": "1; mode=block",
+    "x-content-type-options": "nosniff"
   },
   "endpoints": [
     {
