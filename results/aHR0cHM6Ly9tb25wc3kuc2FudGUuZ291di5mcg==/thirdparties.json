@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "monpsy.sante.gouv.fr",
       "path": "/",
-      "expires": 1648951730,
+      "expires": 1649556609,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.59.202d",
-      "value": "a66c80892d35f571.1648949930.",
+      "value": "a5fe24d7b6d3ec60.1649554809.",
       "domain": "monpsy.sante.gouv.fr",
       "path": "/",
-      "expires": 1682905130,
+      "expires": 1683510009,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,11 +33,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 03 Apr 2022 01:38:48 GMT",
+    "date": "Sun, 10 Apr 2022 01:40:07 GMT",
     "content-type": "text/html; charset=utf-8",
-    "content-security-policy": "default-src 'self';connect-src 'self' https://*.gouv.fr https://services.sarbacane.com;font-src 'self' data:;img-src 'self' data: https://forms.sbc08.com https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr https://*.sbc08.com;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'",
+    "content-security-policy": "default-src 'self';connect-src 'self' https://*.gouv.fr;font-src 'self' data:;img-src 'self' data: https://*.tile.openstreetmap.org/;prefetch-src 'self' https://*.gouv.fr;script-src 'self' https://*.gouv.fr;frame-src 'self' https://*.gouv.fr;style-src 'self' 'unsafe-inline'",
     "x-powered-by": "Next.js",
-    "etag": "\"32ee-bauWOlWNMqIa2Tod0jcd3TFARAQ\"",
+    "etag": "\"32b8-1X33aX8eJdTwOWnLt9Ex1sM7bKQ\"",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
     "strict-transport-security": "max-age=15724800; includeSubDomains"
