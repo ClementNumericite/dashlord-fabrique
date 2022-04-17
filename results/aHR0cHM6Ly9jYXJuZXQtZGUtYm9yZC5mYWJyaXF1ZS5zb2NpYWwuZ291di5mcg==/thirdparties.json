@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "carnet-de-bord.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649555979,
+      "expires": 1650161615,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.51.b6b8",
-      "value": "227b3874affa7d8d.1649554180.",
+      "value": "724fad191785cab1.1650159816.",
       "domain": "carnet-de-bord.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683509380,
+      "expires": 1684115016,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,10 +33,10 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 01:29:38 GMT",
+    "date": "Sun, 17 Apr 2022 01:43:33 GMT",
     "content-type": "text/html",
-    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-B0Ep6JBYb1iEajD5GgiXCA=='",
-    "etag": "\"1o7g7oi\"",
+    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-t4dmH6D8l4sLKN5ynv3c/Q=='",
+    "etag": "\"1gnezh0\"",
     "permissions-policy": "interest-cohort=()",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
@@ -93,7 +93,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
