@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1649555391,
+      "expires": 1650160566,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "9232c257a9eecb79.1649553591.",
+      "value": "d427f6093f90af5e.1650158766.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1683508791,
+      "expires": 1684113966,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -33,11 +33,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 01:19:49 GMT",
+    "date": "Sun, 17 Apr 2022 01:26:04 GMT",
     "content-type": "text/html; charset=utf-8",
     "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
     "x-robots-tag": "all",
-    "etag": "\"324e8-hcMMDWaZO3jRX9YWD+j8PFBZgQk\"",
+    "etag": "\"324e8-7iUV0X41jaD15oHOVV/e/d/em8c\"",
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "vary": "Accept-Encoding",
     "content-encoding": "gzip",
@@ -91,7 +91,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
