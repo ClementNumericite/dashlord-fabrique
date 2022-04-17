@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "mano-app.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1649556522,
+      "expires": 1650162174,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.44.f1b8",
-      "value": "1703760d8c794088.1649554723.",
+      "value": "2c655cdc113917a6.1650160374.",
       "domain": "mano-app.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1683509923,
+      "expires": 1684115574,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,11 +33,11 @@
     }
   ],
   "headers": {
-    "date": "Sun, 10 Apr 2022 01:38:41 GMT",
+    "date": "Sun, 17 Apr 2022 01:52:53 GMT",
     "content-type": "text/html",
-    "last-modified": "Sat, 09 Apr 2022 18:38:53 GMT",
+    "last-modified": "Thu, 14 Apr 2022 13:54:00 GMT",
     "vary": "Accept-Encoding",
-    "etag": "W/\"6251d2bd-5fde\"",
+    "etag": "W/\"62582778-5fde\"",
     "x-frame-options": "deny",
     "x-xss-protection": "1; mode=block",
     "x-content-type-options": "nosniff",
@@ -92,7 +92,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
+          "accuracy_radius": 20,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
