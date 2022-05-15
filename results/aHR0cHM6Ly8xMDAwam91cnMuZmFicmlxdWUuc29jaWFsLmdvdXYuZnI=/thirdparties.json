@@ -3,22 +3,6 @@
     {
       "type": "unknown",
       "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/array.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/e/?ip=1&_=1651974158122"
-    },
-    {
-      "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/decide/?v=2&ip=1&_=1651974158128"
-    },
-    {
-      "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/static/recorder.js?v=1.16.7"
-    },
-    {
-      "type": "unknown",
-      "url": "https://lafabriquenumerique-posthog.cloud-ed.fr/s/?compression=gzip-js&ip=1&_=1651974163055"
     }
   ],
   "cookies": [
@@ -27,7 +11,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1651975959,
+      "expires": 1652581660,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -39,10 +23,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "45341311f9140394.1651974159.",
+      "value": "5cd9cd527b3cfc83.1652579860.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1685929359,
+      "expires": 1686535060,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -54,7 +38,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 08 May 2022 01:42:37 GMT",
+    "date": "Sun, 15 May 2022 01:57:39 GMT",
     "content-type": "text/html",
     "last-modified": "Mon, 02 May 2022 14:42:13 GMT",
     "vary": "Accept-Encoding",
