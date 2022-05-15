@@ -346,7 +346,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "170 >= 60 days"
+              "finding"      : "163 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -673,7 +673,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://censys.io/ipv4?q=62E57F421EDB716D8B316667FF21CA69FE6EA6180408C473832A0658B9FE63AA"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=62E57F421EDB716D8B316667FF21CA69FE6EA6180408C473832A0658B9FE63AA"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1063,6 +1063,6 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "129"
+              "finding"      : "133"
           }
 ]
