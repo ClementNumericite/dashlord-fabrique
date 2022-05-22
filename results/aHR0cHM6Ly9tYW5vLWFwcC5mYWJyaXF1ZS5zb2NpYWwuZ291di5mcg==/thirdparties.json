@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "mano-app.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1652582274,
+      "expires": 1653186210,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.44.f1b8",
-      "value": "821f9f1f4789d52a.1652580475.",
+      "value": "8752b84d5459b2a0.1653184410.",
       "domain": "mano-app.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1686535675,
+      "expires": 1687139610,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     }
   ],
   "headers": {
-    "date": "Sun, 15 May 2022 02:07:53 GMT",
+    "date": "Sun, 22 May 2022 01:53:28 GMT",
     "content-type": "text/html",
     "last-modified": "Thu, 12 May 2022 09:16:53 GMT",
     "vary": "Accept-Encoding",
