@@ -346,7 +346,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "156 >= 60 days"
+              "finding"      : "149 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -493,21 +493,42 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "302 Moved Temporarily ('/')"
+              "finding"      : "200 OK ('/')"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Got no HTTP time, maybe try different URL?"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
-              "id"           : "HSTS",
+              "id"           : "HTTP_headerTime",
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "not offered"
+              "severity"     : "INFO",
+              "finding"      : "1653786760"
+          }
+,         {
+              "id"           : "HSTS_time",
+              "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "365 days (=31536000 seconds) > 15552000 seconds"
+          }
+,         {
+              "id"           : "HSTS_subdomains",
+              "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "includes subdomains"
+          }
+,         {
+              "id"           : "HSTS_preload",
+              "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "domain is NOT marked for preloading"
           }
 ,         {
               "id"           : "HPKP",
@@ -521,7 +542,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "BigIP"
+              "finding"      : "No Server banner line in header, interesting!"
           }
 ,         {
               "id"           : "banner_application",
@@ -535,7 +556,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 at '/' (30x detected, better try target URL of 30x)"
+              "finding"      : "0 at '/'"
           }
 ,         {
               "id"           : "security_headers",
@@ -618,10 +639,10 @@
               "id"           : "BREACH",
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1049,20 +1070,13 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "A"
-          }
-,         {
-              "id"           : "grade_cap_reason_1",
-              "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to A. HSTS is not offered"
+              "finding"      : "A+"
           }
 ,         {
               "id"           : "scanTime",
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "129"
+              "finding"      : "87"
           }
 ]

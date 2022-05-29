@@ -16,26 +16,7 @@
         "href": "https://medle.fabrique.social.gouv.fr/"
       },
       "link": "https://medle.fabrique.social.gouv.fr/",
-      "line": "--2022-05-22 01:08:04--  https://medle.fabrique.social.gouv.fr/",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "medle.sante.gouv.fr",
-        "port": null,
-        "hostname": "medle.sante.gouv.fr",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/",
-        "path": "/",
-        "href": "https://medle.sante.gouv.fr/"
-      },
-      "link": "https://medle.sante.gouv.fr/",
-      "line": "--2022-05-22 01:08:04--  https://medle.sante.gouv.fr/",
+      "line": "--2022-05-29 01:10:40--  https://medle.fabrique.social.gouv.fr/",
       "broken": false
     }
   ],
