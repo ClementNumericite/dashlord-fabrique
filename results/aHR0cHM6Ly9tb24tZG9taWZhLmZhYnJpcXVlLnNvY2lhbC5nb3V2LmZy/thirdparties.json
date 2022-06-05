@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "mon-domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1653791587,
+      "expires": 1654396677,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.66.ff82",
-      "value": "bfa76821747f6561.1653789788.",
+      "value": "0f694409f42d0bfc.1654394877.",
       "domain": "mon-domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1687744988,
+      "expires": 1688350077,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,16 +33,16 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 02:03:05 GMT",
-    "content-type": "text/html",
-    "last-modified": "Wed, 25 May 2022 20:34:49 GMT",
-    "vary": "Accept-Encoding",
-    "etag": "W/\"628e92e9-1518\"",
-    "x-frame-options": "deny",
-    "x-xss-protection": "1; mode=block",
-    "x-content-type-options": "nosniff",
     "content-encoding": "gzip",
-    "strict-transport-security": "max-age=15724800; includeSubDomains"
+    "content-type": "text/html",
+    "date": "Sun, 05 Jun 2022 02:07:55 GMT",
+    "etag": "W/\"62994c07-1518\"",
+    "last-modified": "Thu, 02 Jun 2022 23:47:19 GMT",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
