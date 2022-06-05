@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "index-egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 1653787582,
+      "expires": 1654392498,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.11.78e9",
-      "value": "d1d8d77395e71255.1653785782.",
+      "value": "1cccb9dd75ccd591.1654390698.",
       "domain": "index-egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 1687740982,
+      "expires": 1688345898,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,12 +33,12 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 00:56:20 GMT",
-    "content-type": "text/html; charset=utf-8",
-    "content-length": "46394",
-    "last-modified": "Thu, 10 Mar 2022 14:15:35 GMT",
-    "etag": "\"622a0807-b53a\"",
     "accept-ranges": "bytes",
+    "content-length": "46394",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 05 Jun 2022 00:58:17 GMT",
+    "etag": "\"622a0807-b53a\"",
+    "last-modified": "Thu, 10 Mar 2022 14:15:35 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains"
   },
   "endpoints": [
