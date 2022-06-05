@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "metropole-tumeplay.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1653789833,
+      "expires": 1654394678,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.21.2b29",
-      "value": "c1d64d8927781553.1653788034.",
+      "value": "25dc2fc7eeeec487.1654392879.",
       "domain": "metropole-tumeplay.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1687743234,
+      "expires": 1688348079,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,16 +33,16 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 01:33:52 GMT",
-    "content-type": "text/html",
-    "last-modified": "Tue, 24 May 2022 20:49:09 GMT",
-    "vary": "Accept-Encoding",
-    "etag": "W/\"628d44c5-d17\"",
-    "x-frame-options": "deny",
-    "x-xss-protection": "1; mode=block",
-    "x-content-type-options": "nosniff",
     "content-encoding": "gzip",
-    "strict-transport-security": "max-age=15724800; includeSubDomains"
+    "content-type": "text/html",
+    "date": "Sun, 05 Jun 2022 01:34:37 GMT",
+    "etag": "W/\"6295d5b7-d17\"",
+    "last-modified": "Tue, 31 May 2022 08:45:43 GMT",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
