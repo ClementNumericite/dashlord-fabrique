@@ -111,14 +111,6 @@
     {
       "type": "unknown",
       "url": "https://ozensemble.fr/presentation.mp4"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/img/home-demo-background.jpg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/home-background.mp4"
     }
   ],
   "cookies": [
@@ -127,7 +119,7 @@
       "value": "1",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1653789404,
+      "expires": 1654394254,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -139,10 +131,10 @@
     },
     {
       "name": "_pk_id.34.6677",
-      "value": "1467fee57bb205cd.1653787605.",
+      "value": "a433a17205401841.1654392454.",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1687742805,
+      "expires": 1688347654,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -154,16 +146,16 @@
     }
   ],
   "headers": {
-    "date": "Sun, 29 May 2022 01:26:43 GMT",
-    "content-type": "text/html",
-    "last-modified": "Tue, 10 May 2022 14:38:48 GMT",
-    "vary": "Accept-Encoding",
-    "etag": "W/\"627a78f8-3e79\"",
-    "x-frame-options": "deny",
-    "x-xss-protection": "1; mode=block",
-    "x-content-type-options": "nosniff",
     "content-encoding": "gzip",
-    "strict-transport-security": "max-age=15724800; includeSubDomains"
+    "content-type": "text/html",
+    "date": "Sun, 05 Jun 2022 01:27:33 GMT",
+    "etag": "W/\"627a78f8-3e79\"",
+    "last-modified": "Tue, 10 May 2022 14:38:48 GMT",
+    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
