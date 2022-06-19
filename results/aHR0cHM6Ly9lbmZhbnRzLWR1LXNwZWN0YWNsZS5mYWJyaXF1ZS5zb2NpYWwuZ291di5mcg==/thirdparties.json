@@ -4,8 +4,8 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 12 Jun 2022 01:50:25 GMT",
-    "etag": "\"80fa-LCyH3kMl9stiH0iQbYbLR5E3Sik\"",
+    "date": "Sun, 19 Jun 2022 01:46:43 GMT",
+    "etag": "\"80fa-lSCvUyFC41YIAFBzzx1pg8M+xjU\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
