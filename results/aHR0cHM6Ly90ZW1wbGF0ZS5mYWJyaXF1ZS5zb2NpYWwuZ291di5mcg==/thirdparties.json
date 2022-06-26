@@ -27,7 +27,7 @@
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1655606422,
+      "expires": 1656211730,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -39,10 +39,10 @@
     },
     {
       "name": "_pk_id.63.f7e2",
-      "value": "3ffbd3465bb89d10.1655604623.",
+      "value": "1ffcd2a8da8c44ff.1656209931.",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1689559823,
+      "expires": 1690165131,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -69,7 +69,7 @@
     },
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "654344c70cb4eccd402edbc55aa607cca3d3d5dfe603496ef56a05180d515ef8%7C345668d7651075af736888cf2ad38bcdde98a80649c96c9ed9c6ea3af15ba205",
+      "value": "2c77b229fe5e93c68368672bc23c1970e28e21da08cc44a5496242a905e59a05%7C16628550361b6172febbe9b15e7b5f7e7a94bae3acb188631b9f9a577040c6f3",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -87,8 +87,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr  false;   img-src 'self' data: *.fabrique.social.gouv.fr https://dummyimage.com/;   script-src 'self' *.fabrique.social.gouv.fr false;   frame-src 'self' *.fabrique.social.gouv.fr  false;   style-src 'self' 'unsafe-inline';   font-src 'self' data: blob:;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 19 Jun 2022 02:10:20 GMT",
-    "etag": "\"41d7-Xbk1HZlLbZgr4UbUbuAvy5/MVwI\"",
+    "date": "Sun, 26 Jun 2022 02:18:49 GMT",
+    "etag": "\"41d7-bagJ2Sf8xGV6O3H8+cFXtPiYNWg\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js",
@@ -191,8 +191,57 @@
     },
     {
       "hostname": "dummyimage.com",
-      "ip": "104.21.78.230",
-      "geoip": null
+      "ip": "172.67.137.245",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
     }
   ]
 }
