@@ -1,43 +1,12 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.51.b6b8",
-      "value": "1",
-      "domain": "carnet-de-bord.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1658024871,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.51.b6b8",
-      "value": "b23a4e7f897045dc.1658023071.",
-      "domain": "carnet-de-bord.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1691978271,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "content-encoding": "gzip",
-    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-+QIWrf4576ymHTcX4BiRog=='",
+    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-FxyCGSdmJjELc8Iki1wbQQ=='",
     "content-type": "text/html",
-    "date": "Sun, 17 Jul 2022 01:57:50 GMT",
-    "etag": "\"1m7rac\"",
+    "date": "Sun, 24 Jul 2022 01:57:56 GMT",
+    "etag": "\"uvrzcn\"",
     "permissions-policy": "interest-cohort=()",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
