@@ -3,10 +3,10 @@
   "cookies": [],
   "headers": {
     "content-encoding": "gzip",
-    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-hBEEuBWfD446dtRiWDvBmA=='",
+    "content-security-policy": "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; style-src 'self' *.crisp.chat 'unsafe-inline'; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-N+p4/r4txwQWpV2C/cgcTQ=='",
     "content-type": "text/html",
-    "date": "Sun, 14 Aug 2022 01:56:57 GMT",
-    "etag": "\"1pgoz9f\"",
+    "date": "Sun, 21 Aug 2022 01:54:51 GMT",
+    "etag": "\"xo1wg8\"",
     "permissions-policy": "interest-cohort=()",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
