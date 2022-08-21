@@ -21,533 +21,7 @@
       "TLS13"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:45:55.109622222Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.778974158Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.779063758Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-headers",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.78321675Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-embedder-policy",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.783528549Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.783806349Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.784072948Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.784333848Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.784593047Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.784848747Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-max-age",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.785101746Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.785376146Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.785631245Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.785887445Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
-    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:03 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:03.786145945Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "exposed-panels/jupyter-notebook.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/jupyter-notebook.yaml",
-    "template-id": "jupyter-notebook",
-    "info": {
-      "name": "Jupyter Notebook",
-      "author": [
-        "hakimkt",
-        "arafatansari"
-      ],
-      "tags": [
-        "panel",
-        "jupyter",
-        "notebook",
-        "exposure"
-      ],
-      "description": "JupyterHub is an open source tool that lets you host a distributed Jupyter Notebook environment.\n",
-      "reference": [
-        "https://www.exploit-db.com/ghdb/7970"
-      ],
-      "severity": "info",
-      "metadata": {
-        "shodan-query": "http.html:\"JupyterHub\""
-      }
-    },
-    "type": "http",
-    "host": "https://tumeplay.fabrique.social.gouv.fr",
-    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/jupyter/login",
-    "request": "GET /jupyter/login HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:33 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:33.962838503Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr/jupyter/login' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/jupyter/login'",
+    "timestamp": "2022-08-21T01:47:27.656337102Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -583,9 +57,9 @@
     "host": "https://tumeplay.fabrique.social.gouv.fr",
     "matched-at": "https://tumeplay.fabrique.social.gouv.fr/",
     "request": "POST / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 14 Aug 2022 01:46:40 GMT\r\nLocation: https://metropole-tumeplay.fabrique.social.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+    "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:47:41 GMT\r\nLocation: https://metropole-tumeplay.fabrique.social.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
     "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:40.559703714Z",
+    "timestamp": "2022-08-21T01:47:41.376897417Z",
     "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://tumeplay.fabrique.social.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
@@ -612,7 +86,497 @@
       "tumeplay.fabrique.social.gouv.fr"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-08-14T01:46:42.120112603Z",
+    "timestamp": "2022-08-21T01:47:58.388712212Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.354804867Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.354924069Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.35496027Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.35499847Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.355032171Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.355063671Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-headers",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.355096872Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.355131672Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.355160872Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.355197673Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.357384604Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.363701994Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.363750695Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://tumeplay.fabrique.social.gouv.fr",
+    "matched-at": "https://metropole-tumeplay.fabrique.social.gouv.fr/",
+    "request": "GET / HTTP/1.1\r\nHost: tumeplay.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 21 Aug 2022 01:48:07 GMT\r\nEtag: W/\"62ecd616-d17\"\r\nLast-Modified: Fri, 05 Aug 2022 08:34:30 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"theme-color\" content=\"#000000\"/><link rel=\"manifest\" href=\"/manifest.json\"/><title>Tumeplay</title><style>body,html{background-color:#11070b}body{display:flex}#root{display:flex;background-color:#11070b;max-width:800px;width:100%;margin:0 auto}#root,.top-menu-portal>div,.web-quizz-button>div{width:100%}.web-quizz-button>div{margin-left:0!important;left:0!important}@media (min-width:768px){#root,.top-menu-portal>div{width:75%}}@media (min-width:1024px){#root,.top-menu-portal>div,.web-quizz-button>div{width:50%}.web-quizz-button>div{margin-left:-25%!important;left:50%!important}}.top-menu-portal>div{max-width:800px;right:0;left:0;margin-right:auto;margin-left:auto}@font-face{font-family:CarterOne-Regular;src:url(assets/fonts/CarterOne-Regular.ttf)}@font-face{font-family:Abel-Regular;src:url(assets/fonts/Abel-Regular.ttf)}@font-face{font-family:Chivo-Regular;src:url(assets/fonts/Chivo-Regular.ttf)}@font-face{font-family:Chivo-Bold;src:url(assets/fonts/Chivo-Bold.ttf)}.web-quizz-button>div{position:fixed}</style><script type=\"text/javascript\">var _paq=window._paq||[];_paq.push([\"trackPageView\"]),_paq.push([\"enableLinkTracking\"]),function(){var e=\"https://matomo.fabrique.social.gouv.fr/\";_paq.push([\"setTrackerUrl\",e+\"piwik.php\"]),_paq.push([\"setSiteId\",\"21\"]);var a=document,t=a.createElement(\"script\"),p=a.getElementsByTagName(\"script\")[0];t.type=\"text/javascript\",t.async=!0,t.defer=!0,t.src=e+\"piwik.js\",p.parentNode.insertBefore(t,p)}()</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><script>!function(p){function e(e){for(var t,r,n=e[0],o=e[1],u=e[2],l=0,a=[];l<n.length;l++)r=n[l],Object.prototype.hasOwnProperty.call(i,r)&&i[r]&&a.push(i[r][0]),i[r]=0;for(t in o)Object.prototype.hasOwnProperty.call(o,t)&&(p[t]=o[t]);for(s&&s(e);a.length;)a.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,t=0;t<c.length;t++){for(var r=c[t],n=!0,o=1;o<r.length;o++){var u=r[o];0!==i[u]&&(n=!1)}n&&(c.splice(t--,1),e=l(l.s=r[0]))}return e}var r={},i={1:0},c=[];function l(e){if(r[e])return r[e].exports;var t=r[e]={i:e,l:!1,exports:{}};return p[e].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=p,l.c=r,l.d=function(e,t,r){l.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},l.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},l.t=function(t,e){if(1&e&&(t=l(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(l.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:t}),2&e&&\"string\"!=typeof t)for(var n in t)l.d(r,n,function(e){return t[e]}.bind(null,n));return r},l.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(t,\"a\",t),t},l.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},l.p=\"/\";var t=this.webpackJsonptumeplay=this.webpackJsonptumeplay||[],n=t.push.bind(t);t.push=e,t=t.slice();for(var o=0;o<t.length;o++)e(t[o]);var s=n;f()}([])</script><script src=\"/static/js/2.5f83e60a.chunk.js\"></script><script src=\"/static/js/main.12baec77.chunk.js\"></script></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-08-21T01:48:07.368874268Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Referer: https://tumeplay.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://metropole-tumeplay.fabrique.social.gouv.fr/'",
     "matcher-status": true,
     "matched-line": null
   }
