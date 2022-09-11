@@ -1,36 +1,31 @@
 [
   {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
+    "template": "miscellaneous/options-method.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
+    "template-id": "options-method",
     "info": {
-      "name": "HTTP Missing Security Headers",
+      "name": "Allowed Options Method",
       "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
+        "pdteam"
       ],
       "tags": [
-        "misconfig",
+        "misc",
         "generic"
       ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-allow-credentials",
     "type": "http",
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "extracted-results": [
+      "HEAD,GET,POST,OPTIONS"
+    ],
+    "request": "OPTIONS / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: HEAD,GET,POST,OPTIONS\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:45 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nContent-Length: 0\r\n\r\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.643933446Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "timestamp": "2022-09-11T01:29:45.948758388Z",
+    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -57,224 +52,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "access-control-max-age",
+    "matcher-name": "x-content-type-options",
     "type": "http",
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.645541063Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-headers",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.645862166Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.646126869Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.646398272Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.646655574Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.646925377Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-resource-policy",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.64718518Z",
+    "timestamp": "2022-09-11T01:29:51.557306094Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -307,44 +92,9 @@
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.647441882Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.647683485Z",
+    "timestamp": "2022-09-11T01:29:51.557374495Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -377,114 +127,9 @@
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.647926487Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.648155089Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.648380292Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-methods",
-    "type": "http",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.648616094Z",
+    "timestamp": "2022-09-11T01:29:51.557402495Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -517,9 +162,9 @@
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.648842696Z",
+    "timestamp": "2022-09-11T01:29:51.558319909Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -547,98 +192,400 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "x-content-type-options",
+    "matcher-name": "cross-origin-opener-policy",
     "type": "http",
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:23:43 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:43.649071899Z",
+    "timestamp": "2022-09-11T01:29:51.55841841Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "ssl/ssl-dns-names.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
-    "template-id": "ssl-dns-names",
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
     "info": {
-      "name": "SSL DNS Names",
+      "name": "HTTP Missing Security Headers",
       "author": [
-        "pdteam"
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
       ],
       "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "extracted-results": [
-      "medle.fabrique.social.gouv.fr",
-      "medle.sante.gouv.fr"
-    ],
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:23:57.537878786Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
-    "info": {
-      "name": "TLS Version",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "ssl"
-      ],
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "ssl",
-    "host": "https://medle.fabrique.social.gouv.fr",
-    "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "extracted-results": [
-      "TLS12"
-    ],
-    "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:27:30.321736427Z",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "miscellaneous/options-method.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/options-method.yaml",
-    "template-id": "options-method",
-    "info": {
-      "name": "Allowed Options Method",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "misc",
+        "misconfig",
         "generic"
       ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
       "reference": null,
       "severity": "info"
     },
+    "matcher-name": "access-control-allow-methods",
     "type": "http",
     "host": "https://medle.fabrique.social.gouv.fr",
     "matched-at": "https://medle.fabrique.social.gouv.fr",
-    "extracted-results": [
-      "OPTIONS,HEAD,GET,POST"
-    ],
-    "request": "OPTIONS / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAllow: OPTIONS,HEAD,GET,POST\r\nContent-Type: text/html\r\nDate: Sun, 04 Sep 2022 01:28:01 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nContent-Length: 0\r\n\r\n",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
     "ip": "185.194.82.223",
-    "timestamp": "2022-09-04T01:28:01.909750625Z",
-    "curl-command": "curl -X 'OPTIONS' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "timestamp": "2022-09-11T01:29:51.558735915Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-headers",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.559021419Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.559311323Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.559597727Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.559882531Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.560163235Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.560447839Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.560728643Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.561013147Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.561292351Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: medle.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nAccept-Ranges: bytes\r\nContent-Type: text/html\r\nDate: Sun, 11 Sep 2022 01:29:51 GMT\r\nLast-Modified: Wed, 25 May 2022 14:19:09 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\n\r\n<!DOCTYPE html>\n\n<html>\n\n<head>\n\n<meta charset=\"utf-8\"/>\n\n<style>\n\nspan, a {\n\n    color: #383838;\n\n    font-size: 2rem;\n\n    line-height: 3rem;\n\n    display: block;\n\n}\n\n</style>\n\n<title>Changement d'url</title>\n\n</head>\n\n<body>\n\n    <span>L'adresse pour accéder à MedLé a changé. <br/><br/> Vous devez désormais vous rendre sur </span>\n\n\t<a href=\"https://medle.sante.gouv.fr\">https://medle.sante.gouv.fr</a>\n\n  </body>\n\n</html>\n",
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:29:51.561579255Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://medle.fabrique.social.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -674,9 +621,62 @@
     "extracted-results": [
       "medle.sante.gouv.fr."
     ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 9457\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;medle.fabrique.social.gouv.fr.\tIN\t CNAME\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 9457\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;medle.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nmedle.fabrique.social.gouv.fr.\t60\tIN\tCNAME\tmedle.sante.gouv.fr.\n",
-    "timestamp": "2022-09-04T01:28:13.436199224Z",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 29264\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;medle.fabrique.social.gouv.fr.\tIN\t CNAME\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 29264\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 512\n\n;; QUESTION SECTION:\n;medle.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nmedle.fabrique.social.gouv.fr.\t60\tIN\tCNAME\tmedle.sante.gouv.fr.\n",
+    "timestamp": "2022-09-11T01:31:06.449480048Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "extracted-results": [
+      "TLS12"
+    ],
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:31:06.690989864Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://medle.fabrique.social.gouv.fr",
+    "matched-at": "https://medle.fabrique.social.gouv.fr",
+    "extracted-results": [
+      "medle.fabrique.social.gouv.fr",
+      "medle.sante.gouv.fr"
+    ],
+    "ip": "185.194.82.223",
+    "timestamp": "2022-09-11T01:31:36.631891914Z",
     "matcher-status": true,
     "matched-line": null
   }
