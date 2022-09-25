@@ -4,7 +4,7 @@
     "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/xss-deprecated-header.yaml",
     "template-id": "xss-deprecated-header-detect",
     "info": {
-      "name": "Detect Deprecated XSS Protection Header",
+      "name": "XSS-Protection Header - Cross-Site Scripting",
       "author": [
         "joshlarsen"
       ],
@@ -13,12 +13,20 @@
         "misconfig",
         "generic"
       ],
-      "description": "Setting the XSS-Protection header is deprecated by most browsers. Setting the header to anything other than `0` can actually introduce an XSS vulnerability.",
+      "description": "XSS-Protection header in Explorer, Chrome, and Safari contains a cross-site scripting vulnerability if set to any value other than `0`.",
       "reference": [
         "https://developer.mozilla.org/en-us/docs/web/http/headers/x-xss-protection",
         "https://owasp.org/www-project-secure-headers/#x-xss-protection"
       ],
-      "severity": "info"
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-79"
+        ],
+        "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+        "cvss-score": 7.2
+      }
     },
     "type": "http",
     "host": "https://index-egapro.travail.gouv.fr",
@@ -27,324 +35,9 @@
       "1; mode=block"
     ],
     "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:29 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:16 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:29.831303828Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "referrer-policy",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.082601709Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "content-security-policy",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.08510671Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-credentials",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.08516691Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-expose-headers",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.089821311Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "permission-policy",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.089881011Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "clear-site-data",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.089913111Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "cross-origin-opener-policy",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.089949311Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-headers",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.089976011Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "x-permitted-cross-domain-policies",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.090000811Z",
+    "timestamp": "2022-09-25T01:10:16.118289121Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -377,9 +70,9 @@
     "host": "https://index-egapro.travail.gouv.fr",
     "matched-at": "https://index-egapro.travail.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.090028811Z",
+    "timestamp": "2022-09-25T01:10:26.686419901Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -407,49 +100,14 @@
       "reference": null,
       "severity": "info"
     },
-    "matcher-name": "cross-origin-resource-policy",
+    "matcher-name": "access-control-allow-headers",
     "type": "http",
     "host": "https://index-egapro.travail.gouv.fr",
     "matched-at": "https://index-egapro.travail.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.090053111Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "misconfiguration/http-missing-security-headers.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
-    "template-id": "http-missing-security-headers",
-    "info": {
-      "name": "HTTP Missing Security Headers",
-      "author": [
-        "socketz",
-        "geeknik",
-        "g4l1t0",
-        "convisoappsec",
-        "kurohost",
-        "dawid-czarnecki",
-        "forgedhallpass"
-      ],
-      "tags": [
-        "misconfig",
-        "generic"
-      ],
-      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-      "reference": null,
-      "severity": "info"
-    },
-    "matcher-name": "access-control-allow-origin",
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.090076111Z",
+    "timestamp": "2022-09-25T01:10:26.686592302Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -482,9 +140,359 @@
     "host": "https://index-egapro.travail.gouv.fr",
     "matched-at": "https://index-egapro.travail.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.090099611Z",
+    "timestamp": "2022-09-25T01:10:26.686640503Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686666303Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686690603Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686711203Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686741004Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686765404Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686788404Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686812004Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686831604Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686855104Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:26.686877705Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
     "matcher-status": true,
     "matched-line": null
@@ -517,98 +525,10 @@
     "host": "https://index-egapro.travail.gouv.fr",
     "matched-at": "https://index-egapro.travail.gouv.fr",
     "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:42 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:26 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:42.090128211Z",
+    "timestamp": "2022-09-25T01:10:26.686924805Z",
     "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "miscellaneous/robots-txt-endpoint.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml",
-    "template-id": "robots-txt-endpoint",
-    "info": {
-      "name": "robots.txt endpoint prober",
-      "author": [
-        "caspergn",
-        "pdteam"
-      ],
-      "tags": null,
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr/robots.txt",
-    "request": "GET /robots.txt HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 45\r\nAccept-Ranges: bytes\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:44 GMT\r\nEtag: \"62ed3714-2d\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\nUser-agent: *\nAllow: /\nDisallow: /simulateur/",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:44.115499969Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/robots.txt'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "miscellaneous/robots-txt-endpoint.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml",
-    "template-id": "robots-txt-endpoint",
-    "info": {
-      "name": "robots.txt endpoint prober",
-      "author": [
-        "caspergn",
-        "pdteam"
-      ],
-      "tags": null,
-      "reference": null,
-      "severity": "info"
-    },
-    "type": "http",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr/simulateur/",
-    "request": "GET /simulateur/ HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:13:44 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
-    "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:13:44.473762567Z",
-    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/simulateur/'",
-    "matcher-status": true,
-    "matched-line": null
-  },
-  {
-    "template": "dns/nameserver-fingerprint.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml",
-    "template-id": "nameserver-fingerprint",
-    "info": {
-      "name": "NS Record Detection",
-      "author": [
-        "pdteam"
-      ],
-      "tags": [
-        "dns",
-        "ns"
-      ],
-      "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-      "reference": null,
-      "severity": "info",
-      "classification": {
-        "cve-id": null,
-        "cwe-id": [
-          "cwe-200"
-        ]
-      }
-    },
-    "type": "dns",
-    "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "extracted-results": [
-      "ns1-04.azure-dns.com.",
-      "ns2-04.azure-dns.net.",
-      "ns3-04.azure-dns.org.",
-      "ns4-04.azure-dns.info."
-    ],
-    "request": ";; opcode: QUERY, status: NOERROR, id: 11556\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
-    "response": ";; opcode: QUERY, status: NOERROR, id: 11556\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
-    "timestamp": "2022-09-18T01:14:02.934304662Z",
     "matcher-status": true,
     "matched-line": null
   },
@@ -634,33 +554,57 @@
       "index-egapro.travail.gouv.fr"
     ],
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:14:05.280622984Z",
+    "timestamp": "2022-09-25T01:10:41.400818546Z",
     "matcher-status": true,
     "matched-line": null
   },
   {
-    "template": "ssl/tls-version.yaml",
-    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
-    "template-id": "tls-version",
+    "template": "miscellaneous/robots-txt-endpoint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml",
+    "template-id": "robots-txt-endpoint",
     "info": {
-      "name": "TLS Version",
+      "name": "robots.txt endpoint prober",
       "author": [
+        "caspergn",
         "pdteam"
       ],
-      "tags": [
-        "ssl"
-      ],
+      "tags": null,
       "reference": null,
       "severity": "info"
     },
-    "type": "ssl",
+    "type": "http",
     "host": "https://index-egapro.travail.gouv.fr",
-    "matched-at": "https://index-egapro.travail.gouv.fr",
-    "extracted-results": [
-      "TLS13"
-    ],
+    "matched-at": "https://index-egapro.travail.gouv.fr/robots.txt",
+    "request": "GET /robots.txt HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 45\r\nAccept-Ranges: bytes\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:53 GMT\r\nEtag: \"62ed3714-2d\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\nUser-agent: *\nAllow: /\nDisallow: /simulateur/",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:14:38.997149436Z",
+    "timestamp": "2022-09-25T01:10:53.865062031Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/robots.txt'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "miscellaneous/robots-txt-endpoint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/miscellaneous/robots-txt-endpoint.yaml",
+    "template-id": "robots-txt-endpoint",
+    "info": {
+      "name": "robots.txt endpoint prober",
+      "author": [
+        "caspergn",
+        "pdteam"
+      ],
+      "tags": null,
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "http",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr/simulateur/",
+    "request": "GET /simulateur/ HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:10:54 GMT\r\nEtag: W/\"62ed3714-4c4\"\r\nLast-Modified: Fri, 05 Aug 2022 15:28:20 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"fr\"><head><meta charset=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"/><meta name=\"theme-color\" content=\"#000000\"/><meta property=\"og:title\" content=\"Index Egapro\"/><meta property=\"og:description\" content=\"Index égalité professionnelle femmes-hommes au sein des entreprises\"/><meta property=\"og:image\" content=\"https://index-egapro.travail.gouv.fr/LogoIndexLinkedinPost.png\"/><meta property=\"og:url\" content=\"https://index-egapro.travail.gouv.fr/consulter-index\"/><title>Index Egapro</title><script type=\"text/javascript\" src=\"/js/tarteaucitron/tarteaucitron.js\"></script><script type=\"text/javascript\" src=\"/js/initTarteAuCitron.js\"></script><script defer=\"defer\" src=\"/static/js/main.7e4c5380.js\"></script><link href=\"/static/css/main.5de18a93.css\" rel=\"stylesheet\"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id=\"root\"></div><noscript><img src=\"https://ad.doubleclick.net/ddm/activity/src=3048978;type=emplo253;cat=lpegapro;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1;num=1?\" width=\"1\" height=\"1\" alt=\"\"/></noscript></body></html>",
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:10:54.211769475Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/simulateur/'",
     "matcher-status": true,
     "matched-line": null
   },
@@ -696,10 +640,100 @@
     "host": "https://index-egapro.travail.gouv.fr",
     "matched-at": "https://index-egapro.travail.gouv.fr/",
     "request": "POST / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-    "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 157\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 18 Sep 2022 01:14:47 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.21.6</center>\r\n</body>\r\n</html>\r\n",
+    "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 157\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 25 Sep 2022 01:11:11 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.21.6</center>\r\n</body>\r\n</html>\r\n",
     "ip": "20.74.14.77",
-    "timestamp": "2022-09-18T01:14:47.569393005Z",
+    "timestamp": "2022-09-25T01:11:11.382620955Z",
     "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: index-egapro.travail.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/nameserver-fingerprint.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/nameserver-fingerprint.yaml",
+    "template-id": "nameserver-fingerprint",
+    "info": {
+      "name": "NS Record Detection",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "dns",
+        "ns"
+      ],
+      "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "type": "dns",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "extracted-results": [
+      "ns2-04.azure-dns.net.",
+      "ns3-04.azure-dns.org.",
+      "ns4-04.azure-dns.info.",
+      "ns1-04.azure-dns.com."
+    ],
+    "request": ";; opcode: QUERY, status: NOERROR, id: 22565\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 22565\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
+    "timestamp": "2022-09-25T01:11:13.026031816Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:11:21.874678575Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/detect-ssl-issuer.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/detect-ssl-issuer.yaml",
+    "template-id": "detect-ssl-issuer",
+    "info": {
+      "name": "Detect SSL Certificate Issuer",
+      "author": [
+        "lingtren"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://index-egapro.travail.gouv.fr",
+    "matched-at": "https://index-egapro.travail.gouv.fr",
+    "extracted-results": [
+      "Let's Encrypt"
+    ],
+    "ip": "20.74.14.77",
+    "timestamp": "2022-09-25T01:11:22.9509709Z",
     "matcher-status": true,
     "matched-line": null
   }
