@@ -11,7 +11,7 @@
       "value": "1",
       "domain": "tumeplay.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1665886881,
+      "expires": 1666491509,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -23,10 +23,10 @@
     },
     {
       "name": "_pk_id.77.0d7f",
-      "value": "9cefc6fbf536cc00.1665885082.",
+      "value": "3b2cf5b8b9e77e6f.1666489709.",
       "domain": "tumeplay.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1699840282,
+      "expires": 1700444909,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -41,7 +41,7 @@
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 16 Oct 2022 01:51:20 GMT",
+    "date": "Sun, 23 Oct 2022 01:48:28 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
@@ -143,7 +143,7 @@
     },
     {
       "hostname": "ipapi.co",
-      "ip": "104.26.8.44",
+      "ip": "104.26.9.44",
       "geoip": {
         "continent": {
           "code": "NA",
