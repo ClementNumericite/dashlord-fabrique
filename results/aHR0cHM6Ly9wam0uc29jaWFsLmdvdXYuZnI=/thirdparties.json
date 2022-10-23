@@ -53,7 +53,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 16 Oct 2022 01:50:57 GMT",
+    "date": "Sun, 23 Oct 2022 01:42:18 GMT",
     "etag": "W/\"62ab8a97-6790\"",
     "last-modified": "Thu, 16 Jun 2022 19:55:03 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -159,16 +159,8 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.68.131",
+      "ip": "173.194.194.94",
       "geoip": {
-        "city": {
-          "geoname_id": 5118626,
-          "names": {
-            "en": "Glen Cove",
-            "ja": "グレンコーブ",
-            "ru": "Глен-Коув"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -199,13 +191,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 40.8627,
-          "longitude": -73.6351,
-          "metro_code": 501,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "11542"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -220,23 +208,7 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 5128638,
-            "iso_code": "NY",
-            "names": {
-              "de": "New York",
-              "en": "New York",
-              "es": "Nueva York",
-              "fr": "New York",
-              "ja": "ニューヨーク州",
-              "pt-BR": "Nova Iorque",
-              "ru": "Нью-Йорк",
-              "zh-CN": "纽约州"
-            }
-          }
-        ]
+        }
       }
     }
   ]
