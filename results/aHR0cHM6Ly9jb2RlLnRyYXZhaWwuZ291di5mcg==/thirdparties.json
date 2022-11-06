@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "xiti",
-      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1667094214981&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x43x34&lng=en-US&idp=0143349336919&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
+      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1667698358615&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x32x38&lng=en-US&idp=0132389877522&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
       "details": {
         "id": "xiti",
         "message": "Use hosted Matomo instance"
@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1667096015,
+      "expires": 1667700158,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "79cd4e53516b9907.1667094215.",
+      "value": "6ef620ad296232a1.1667698359.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1701049415,
+      "expires": 1701653559,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -44,10 +44,10 @@
   "headers": {
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
-    "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net https://logs1412.xiti.com; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
+    "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net https://logs1412.xiti.com *.xiti.com *.doubleclick.net; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false https://www.googletagmanager.com *.doubleclick.net 'unsafe-inline'; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com *.doubleclick.net; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 30 Oct 2022 01:43:34 GMT",
-    "etag": "\"329da-SxeWuRrDnq7Pn4PW2i1RtVgSnCo\"",
+    "date": "Sun, 06 Nov 2022 01:32:37 GMT",
+    "etag": "\"32b31-7hKOM4YqoiljoHLaTMVlqaVtUGI\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-robots-tag": "all"
@@ -149,7 +149,7 @@
     },
     {
       "hostname": "logs1412.xiti.com",
-      "ip": "13.32.199.6",
+      "ip": "99.86.190.18",
       "geoip": {
         "continent": {
           "code": "NA",
