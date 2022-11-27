@@ -17,30 +17,6 @@
       }
     },
     {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/041a7965/www-player.css",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/041a7965/www-embed-player.vflset/www-embed-player.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/041a7965/player_ias.vflset/en_US/base.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
       "type": "google fonts",
       "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
       "details": {
@@ -58,7 +34,31 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/041a7965/fetch-polyfill.vflset/fetch-polyfill.js",
+      "url": "https://www.youtube.com/s/player/4eb6b35d/www-player.css",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/4eb6b35d/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/4eb6b35d/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/4eb6b35d/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/041a7965/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/4eb6b35d/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/ayf-ZXn06Q-bf2kvL7HvZn-6GmgIdMcaNWCzb_-s5mI.js",
+      "url": "https://www.google.com/js/th/G-wi0KRrIjmTWIDOn44AFVMvZ_aKLO1c96DfwAE3d4M.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -130,7 +130,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/041a7965/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/4eb6b35d/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -186,7 +186,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?dCPFbQ",
+      "url": "https://www.youtube.com/generate_204?gPVmbA",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +207,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1668911358,
+      "expires": 1669516093,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +219,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "d86fc059b0426e45.1668909558.",
+      "value": "cf353ace608a2a8e.1669514293.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1702864758,
+      "expires": 1703469493,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -236,7 +236,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 20 Nov 2022 01:59:16 GMT",
+    "date": "Sun, 27 Nov 2022 01:58:12 GMT",
     "etag": "\"5115-WbECNwhd81Ihl64QulWOewSkVJY\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -339,7 +339,7 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.85.20",
+      "ip": "104.16.88.20",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
@@ -359,7 +359,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.250.72.206",
+      "ip": "142.250.73.238",
       "geoip": {
         "city": {
           "geoname_id": 5118626,
@@ -441,7 +441,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.32.35",
+      "ip": "142.251.163.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -495,7 +495,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.32.34",
+      "ip": "142.251.163.155",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -549,7 +549,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.250.189.166",
+      "ip": "142.251.163.149",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -603,7 +603,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.250.191.42",
+      "ip": "172.253.122.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -657,7 +657,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.189.196",
+      "ip": "142.251.163.105",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -711,7 +711,7 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.251.214.129",
+      "ip": "142.251.16.132",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -765,7 +765,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.250.189.246",
+      "ip": "172.253.122.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -819,7 +819,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.32.35",
+      "ip": "142.251.167.94",
       "geoip": {
         "continent": {
           "code": "NA",
