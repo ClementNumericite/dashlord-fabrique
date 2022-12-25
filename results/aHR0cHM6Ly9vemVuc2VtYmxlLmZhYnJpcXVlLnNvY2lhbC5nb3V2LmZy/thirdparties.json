@@ -111,10 +111,6 @@
     {
       "type": "unknown",
       "url": "https://ozensemble.fr/presentation.mp4"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/home-background.mp4"
     }
   ],
   "cookies": [
@@ -123,7 +119,7 @@
       "value": "1",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1671327497,
+      "expires": 1671932467,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -135,10 +131,10 @@
     },
     {
       "name": "_pk_id.34.6677",
-      "value": "3205ee16b3db5826.1671325698.",
+      "value": "23a21af1ece06833.1671930667.",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1705280898,
+      "expires": 1705885867,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -152,7 +148,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 18 Dec 2022 01:08:16 GMT",
+    "date": "Sun, 25 Dec 2022 01:11:06 GMT",
     "etag": "W/\"62cd3d51-3ef6\"",
     "last-modified": "Tue, 12 Jul 2022 09:22:25 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
