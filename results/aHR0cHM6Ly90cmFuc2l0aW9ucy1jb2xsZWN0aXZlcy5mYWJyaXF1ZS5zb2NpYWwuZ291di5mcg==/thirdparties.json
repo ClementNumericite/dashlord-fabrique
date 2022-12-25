@@ -18,7 +18,15 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/34f9b71c/www-player.css",
+      "url": "https://www.youtube.com/s/player/21149d65/www-player.css",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/21149d65/www-embed-player.vflset/www-embed-player.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -42,7 +50,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/34f9b71c/www-embed-player.vflset/www-embed-player.js",
+      "url": "https://www.youtube.com/s/player/21149d65/player_ias.vflset/en_US/base.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -50,15 +58,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/34f9b71c/player_ias.vflset/en_US/base.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/34f9b71c/fetch-polyfill.vflset/fetch-polyfill.js",
+      "url": "https://www.youtube.com/s/player/21149d65/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/34f9b71c/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/21149d65/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/ayf-ZXn06Q-bf2kvL7HvZn-6GmgIdMcaNWCzb_-s5mI.js",
+      "url": "https://www.google.com/js/th/_mW_2QmsfiHfHQzuwJJjeV3lvrJQS7bChqYqZLie29Q.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -130,7 +130,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/34f9b71c/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/21149d65/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -186,7 +186,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?7e994Q",
+      "url": "https://www.youtube.com/generate_204?HTjtXw",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +207,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1671329248,
+      "expires": 1671934184,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +219,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "d8014d67c758dc66.1671327448.",
+      "value": "78c5861e2bae504d.1671932385.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1705282648,
+      "expires": 1705887585,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -236,7 +236,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 18 Dec 2022 01:37:27 GMT",
+    "date": "Sun, 25 Dec 2022 01:39:43 GMT",
     "etag": "\"5115-WbECNwhd81Ihl64QulWOewSkVJY\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -339,8 +339,53 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.86.20",
+      "ip": "146.75.29.229",
       "geoip": {
+        "city": {
+          "geoname_id": 4744870,
+          "names": {
+            "en": "Ashburn",
+            "ru": "Ашберн"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 20,
+          "latitude": 39.018,
+          "longitude": -77.539,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "20147"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
@@ -354,12 +399,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 6254928,
+            "iso_code": "VA",
+            "names": {
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.250.114.136",
+      "ip": "172.253.122.91",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -413,7 +472,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.115.94",
+      "ip": "142.251.163.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -467,7 +526,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.250.138.157",
+      "ip": "172.217.15.98",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -521,7 +580,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.32.134",
+      "ip": "172.253.122.149",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -575,7 +634,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.251.32.202",
+      "ip": "142.251.16.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -629,7 +688,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.32.132",
+      "ip": "172.253.122.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -683,7 +742,7 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.251.32.193",
+      "ip": "172.253.62.132",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -737,7 +796,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.251.32.150",
+      "ip": "172.253.122.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -791,7 +850,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.138.94",
+      "ip": "142.251.111.94",
       "geoip": {
         "continent": {
           "code": "NA",
