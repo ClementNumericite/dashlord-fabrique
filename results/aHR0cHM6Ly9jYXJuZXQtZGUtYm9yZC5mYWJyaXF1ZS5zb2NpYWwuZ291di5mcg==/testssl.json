@@ -346,7 +346,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "84 >= 30 days"
+              "finding"      : "77 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,14 +542,14 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1671931786"
+              "finding"      : "1672536962"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -605,7 +605,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-+QQW9f5gprl1ydObYZ/B2g=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
+              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-o5vm9Yc98JqTNZVki4iX9A=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1307,7 +1307,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -1454,7 +1454,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "84 >= 30 days"
+              "finding"      : "77 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1650,14 +1650,14 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1671931934"
+              "finding"      : "1672537112"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1713,7 +1713,7 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-v3bm9buIrK6Z84sOhkDJ/w=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
+              "finding"      : "default-src 'self' *.fabrique.social.gouv.fr *.crisp.chat; connect-src 'self' wss: https: *.fabrique.social.gouv.fr localhost:* client.relay.crisp.chat; font-src 'self' data: blob: *.crisp.chat; img-src 'self' data: *.fabrique.social.gouv.fr *.crisp.chat; script-src 'self' *.fabrique.social.gouv.fr *.crisp.chat 'nonce-+w6so5j3EJ/BDXbW7c11Bw=='; style-src 'self' *.crisp.chat 'unsafe-inline'"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -2220,6 +2220,6 @@
               "ip"           : "carnet-de-bord.fabrique.social.gouv.fr/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "305"
+              "finding"      : "307"
           }
 ]
