@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "xiti",
-      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1671931570124&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x26x10&lng=en-US&idp=0126103244497&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
+      "url": "https://logs1412.xiti.com/hit.xiti?s=619946&idclient=Consent-NO&ts=1672536747860&vtag=5.29.2&ptag=js&r=800x600x24x24&re=800x600&hl=1x32x27&lng=en-US&idp=0132272781790&jv=0&p=Code%20du%20travail%20num%C3%A9rique%20-%20Minist%C3%A8re%20du%20Travail&ref=",
       "details": {
         "id": "xiti",
         "message": "Use hosted Matomo instance"
@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1671933370,
+      "expires": 1672538548,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "f1919fb6cdbc3588.1671931571.",
+      "value": "c4c4caab891c9b81.1672536748.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1705886771,
+      "expires": 1706491948,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -46,8 +46,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net https://logs1412.xiti.com *.xiti.com; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; prefetch-src 'self' *.fabrique.social.gouv.fr;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 25 Dec 2022 01:26:09 GMT",
-    "etag": "\"38aa5-Mu9OFAQdxJMjjDPNpOzrc48KJE8\"",
+    "date": "Sun, 01 Jan 2023 01:32:26 GMT",
+    "etag": "\"38aa5-KD/dZJ8BCbR3T3qrLVWb2qWiMwM\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-robots-tag": "all"
