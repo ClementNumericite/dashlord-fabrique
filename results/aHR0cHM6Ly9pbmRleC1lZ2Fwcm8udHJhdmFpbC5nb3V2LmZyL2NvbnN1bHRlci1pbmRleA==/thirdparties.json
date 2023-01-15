@@ -1,45 +1,18 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.11.e81b",
-      "value": "1",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 1673140992,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.11.e81b",
-      "value": "755e2d9f28e1c99b.1673139192.",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 1707094392,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "content-encoding": "gzip",
+    "content-security-policy": "default-src 'self'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr https://www.googletagmanager.co; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://www.googletagmanager.com https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 08 Jan 2023 00:53:10 GMT",
-    "etag": "\"w9srpx4pih117f\"",
+    "date": "Sun, 15 Jan 2023 00:53:37 GMT",
+    "etag": "\"19ath7ypwn109x\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js"
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-powered-by": "Next.js",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
