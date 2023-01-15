@@ -1,43 +1,12 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.17.b1ca",
-      "value": "1",
-      "domain": "domifa.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1673141386,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.17.b1ca",
-      "value": "cb9739bfe5cd7a26.1673139586.",
-      "domain": "domifa.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1707094786,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 08 Jan 2023 00:59:44 GMT",
-    "etag": "W/\"63aad603-17f5\"",
-    "last-modified": "Tue, 27 Dec 2022 11:24:51 GMT",
+    "date": "Sun, 15 Jan 2023 00:58:41 GMT",
+    "etag": "W/\"63b7620d-17f5\"",
+    "last-modified": "Thu, 05 Jan 2023 23:49:33 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
