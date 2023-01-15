@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 1673140938,
+      "expires": 1673745819,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.11.e81b",
-      "value": "f6a2e9daf521a7e4.1673139138.",
+      "value": "f6e4eedaf43250bd.1673744019.",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 1707094338,
+      "expires": 1707699219,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -33,13 +33,19 @@
     }
   ],
   "headers": {
+    "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
+    "content-security-policy": "default-src 'self'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr https://www.googletagmanager.co; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://www.googletagmanager.com https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 08 Jan 2023 00:52:17 GMT",
-    "etag": "\"qej3yxdxpu19ze\"",
+    "date": "Sun, 15 Jan 2023 00:53:38 GMT",
+    "etag": "\"zrh1qbni5a1a38\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js"
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-nextjs-cache": "HIT",
+    "x-powered-by": "Next.js",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
