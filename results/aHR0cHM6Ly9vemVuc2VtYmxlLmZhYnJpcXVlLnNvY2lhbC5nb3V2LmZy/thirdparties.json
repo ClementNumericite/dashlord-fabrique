@@ -6,115 +6,91 @@
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/css/1938ba4a410cf4404018.css"
+      "url": "https://ozensemble.fr/_next/static/css/bb3495784d16bf05.css"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/webpack-8e15287518fa0c1f1e82.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/webpack-986ef164d7780c2e.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/framework-1eefeb1ba225146588ca.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/framework-2c79e2a64abdb08b.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/main-cdc763525a8ea4696302.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/main-a86d6dad948b84c4.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/pages/_app-00acebae775717cf415e.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/pages/_app-7d7ea1c8daf0766f.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/716-f04a93aefbf69f355890.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/1bfc9850-b3a5f95163724ae5.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/777-032154eb56895ebe8cc7.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/d7eeaac4-5549380d35918e95.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/pages/index-b5915b4b1f2d75cc649d.js"
+      "url": "https://ozensemble.fr/_next/static/chunks/d64684d8-730823322de4008b.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/logo-oz.png"
+      "url": "https://ozensemble.fr/_next/static/chunks/371-4c2a758d64294ecc.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/app-store-badge.svg"
+      "url": "https://ozensemble.fr/_next/static/chunks/pages/index-76c3222a2d2ef3b5.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/google-play-badge.svg"
+      "url": "https://ozensemble.fr/_next/static/bJzpxzM_1ZDXjSncIVtnR/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/demo-screen-1.png"
+      "url": "https://ozensemble.fr/_next/static/bJzpxzM_1ZDXjSncIVtnR/_ssgManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/icon-doctor.png"
+      "url": "https://ozensemble.fr/images/other/google-play-fr.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/icon-help.png"
+      "url": "https://ozensemble.fr/images/other/app-store-fr.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/icon-family.png"
+      "url": "https://ozensemble.fr/images/logo_oz.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/icon-finger.png"
+      "url": "https://ozensemble.fr/images/other/hero.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/icon-info.png"
+      "url": "https://ozensemble.fr/images/icon/check-circle-turqoise-500.svg"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/demo-eval.png"
+      "url": "https://ozensemble.fr/images/logo_ministeres_sociaux.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/demo-followup.png"
+      "url": "https://ozensemble.fr/images/logo_ars.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/demo-assist.png"
+      "url": "https://ozensemble.fr/images/logo_MILDECA.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/twitter.png"
+      "url": "https://ozensemble.fr/images/logo_CaPASSCite.png"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/img/logo-ministere.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/img/logo-capasscite.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/kkDNDGsgCwczgor4yknRz/_buildManifest.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/kkDNDGsgCwczgor4yknRz/_ssgManifest.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/home-background.mp4"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/presentation.mp4"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/home-background.mp4"
+      "url": "https://ozensemble.fr/images/logo_DINUM.png"
     }
   ],
   "cookies": [
@@ -123,7 +99,7 @@
       "value": "1",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1674352211,
+      "expires": 1674956782,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -135,10 +111,10 @@
     },
     {
       "name": "_pk_id.34.6677",
-      "value": "97882c4135a93602.1674350411.",
+      "value": "222c5a5e4434485c.1674954983.",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1708305611,
+      "expires": 1708910183,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -151,10 +127,10 @@
   ],
   "headers": {
     "content-encoding": "gzip",
-    "content-type": "text/html",
-    "date": "Sun, 22 Jan 2023 01:20:09 GMT",
-    "etag": "W/\"62cd3d51-3ef6\"",
-    "last-modified": "Tue, 12 Jul 2022 09:22:25 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 29 Jan 2023 01:16:21 GMT",
+    "etag": "W/\"63d3edfd-4cee\"",
+    "last-modified": "Fri, 27 Jan 2023 15:30:05 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
