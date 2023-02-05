@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
-      "expires": 1674956581,
+      "expires": 1675562371,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -33,10 +33,10 @@
     },
     {
       "name": "_pk_id.25.a06e",
-      "value": "890d609d025ab114.1674954782.",
+      "value": "a4d597d5820b7027.1675560572.",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
-      "expires": 1708909982,
+      "expires": 1709515772,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -48,7 +48,7 @@
     },
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "608941633bd8e8c988c1ae252f2a60cfe60ee4e39bfc13e6f01bce7ba5a51687%7C2be29d38c61fc90aeb29b47d68f31b44b119132b11f0ebff761348d40cef080e",
+      "value": "10b96524f22e463b459a6f95cfedbfa9936753059e18b1216908cd14fcb40f30%7Ce72e7cd644323cf791bcd24f8098ee3ea81f8943f7682cb5e89ad8ca8883cb1c",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -63,11 +63,11 @@
     },
     {
       "name": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000",
-      "value": "!mZzQ0IExWHwRFP0O3i6KKvhP0JX9p6VmmMh/sqnwib1bLEtjuqnMbhnX04hsLuTixsoOjJNfmPCn19C0FH8v7QRnLyvB",
+      "value": "2445564170.47115.0000",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
       "expires": -1,
-      "size": 146,
+      "size": 74,
       "httpOnly": true,
       "secure": true,
       "session": true,
@@ -80,12 +80,13 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 29 Jan 2023 01:13:00 GMT",
+    "date": "Sun, 05 Feb 2023 01:29:30 GMT",
+    "etag": "\"c4ff-6HZezGdMS1VZ6/7G0KZkJ8I8Lhc\"",
     "keep-alive": "timeout=5",
-    "set-cookie": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000=!mZzQ0IExWHwRFP0O3i6KKvhP0JX9p6VmmMh/sqnwib1bLEtjuqnMbhnX04hsLuTixsoOjJNfmPCn19C0FH8v7QRnLyvB; path=/; Httponly; Secure",
-    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "set-cookie": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000=2445564170.47115.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
-    "vary": "Accept-Encoding"
+    "vary": "Accept-Encoding",
+    "x-powered-by": "Next.js"
   },
   "endpoints": [
     {
