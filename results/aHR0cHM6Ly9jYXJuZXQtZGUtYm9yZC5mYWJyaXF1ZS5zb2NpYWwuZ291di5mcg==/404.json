@@ -16,7 +16,7 @@
         "href": "https://carnet-de-bord.fabrique.social.gouv.fr/"
       },
       "link": "https://carnet-de-bord.fabrique.social.gouv.fr/",
-      "line": "--2023-03-05 01:36:45--  https://carnet-de-bord.fabrique.social.gouv.fr/",
+      "line": "--2023-03-12 01:35:11--  https://carnet-de-bord.fabrique.social.gouv.fr/",
       "broken": false
     },
     {
@@ -24,18 +24,18 @@
         "protocol": "https:",
         "slashes": true,
         "auth": null,
-        "host": "carnet-de-bord.fabrique.social.gouv.fr",
+        "host": "carnetdebord.inclusion.beta.gouv.fr",
         "port": null,
-        "hostname": "carnet-de-bord.fabrique.social.gouv.fr",
+        "hostname": "carnetdebord.inclusion.beta.gouv.fr",
         "hash": null,
         "search": null,
         "query": null,
-        "pathname": "/robots.txt",
-        "path": "/robots.txt",
-        "href": "https://carnet-de-bord.fabrique.social.gouv.fr/robots.txt"
+        "pathname": "/",
+        "path": "/",
+        "href": "https://carnetdebord.inclusion.beta.gouv.fr/"
       },
-      "link": "https://carnet-de-bord.fabrique.social.gouv.fr/robots.txt",
-      "line": "--2023-03-05 01:36:45--  https://carnet-de-bord.fabrique.social.gouv.fr/robots.txt",
+      "link": "https://carnetdebord.inclusion.beta.gouv.fr/",
+      "line": "--2023-03-12 01:35:12--  https://carnetdebord.inclusion.beta.gouv.fr/",
       "broken": false
     }
   ],
