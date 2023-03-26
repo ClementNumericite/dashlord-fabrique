@@ -5,12 +5,43 @@
       "url": "https://ipapi.co/json/"
     }
   ],
-  "cookies": [],
+  "cookies": [
+    {
+      "name": "_pk_ses.77.0d7f",
+      "value": "1",
+      "domain": "tumeplay.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": 1679795429,
+      "size": 16,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    },
+    {
+      "name": "_pk_id.77.0d7f",
+      "value": "57fb9ea0cd363b60.1679793629.",
+      "domain": "tumeplay.fabrique.social.gouv.fr",
+      "path": "/",
+      "expires": 1713748829,
+      "size": 42,
+      "httpOnly": false,
+      "secure": false,
+      "session": false,
+      "sameSite": "Lax",
+      "sameParty": false,
+      "sourceScheme": "Secure",
+      "sourcePort": 443
+    }
+  ],
   "headers": {
     "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 19 Mar 2023 01:18:05 GMT",
+    "date": "Sun, 26 Mar 2023 01:20:28 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
@@ -112,7 +143,7 @@
     },
     {
       "hostname": "ipapi.co",
-      "ip": "172.67.69.226",
+      "ip": "104.26.8.44",
       "geoip": {
         "continent": {
           "code": "NA",
