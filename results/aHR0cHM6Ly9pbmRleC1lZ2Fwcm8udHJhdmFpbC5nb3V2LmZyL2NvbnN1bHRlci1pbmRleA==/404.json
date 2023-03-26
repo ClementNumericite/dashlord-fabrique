@@ -16,7 +16,7 @@
         "href": "https://index-egapro.travail.gouv.fr/consulter-index"
       },
       "link": "https://index-egapro.travail.gouv.fr/consulter-index",
-      "line": "--2023-03-19 00:54:59--  https://index-egapro.travail.gouv.fr/consulter-index",
+      "line": "--2023-03-26 00:50:35--  https://index-egapro.travail.gouv.fr/consulter-index",
       "broken": false
     },
     {
@@ -35,26 +35,7 @@
         "href": "https://egapro.travail.gouv.fr/consulter-index"
       },
       "link": "https://egapro.travail.gouv.fr/consulter-index",
-      "line": "--2023-03-19 00:55:00--  https://egapro.travail.gouv.fr/consulter-index",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "egapro.travail.gouv.fr",
-        "port": null,
-        "hostname": "egapro.travail.gouv.fr",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/consulter-index/",
-        "path": "/consulter-index/",
-        "href": "https://egapro.travail.gouv.fr/consulter-index/"
-      },
-      "link": "https://egapro.travail.gouv.fr/consulter-index/",
-      "line": "--2023-03-19 00:55:00--  https://egapro.travail.gouv.fr/consulter-index/",
+      "line": "--2023-03-26 00:50:35--  https://egapro.travail.gouv.fr/consulter-index",
       "broken": false
     }
   ],
