@@ -346,7 +346,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "197 >= 60 days"
+              "finding"      : "190 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -507,7 +507,7 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1679188093"
+              "finding"      : "1679792677"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1070,6 +1070,6 @@
               "ip"           : "medle.fabrique.social.gouv.fr/185.194.82.223",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "87"
+              "finding"      : "133"
           }
 ]
