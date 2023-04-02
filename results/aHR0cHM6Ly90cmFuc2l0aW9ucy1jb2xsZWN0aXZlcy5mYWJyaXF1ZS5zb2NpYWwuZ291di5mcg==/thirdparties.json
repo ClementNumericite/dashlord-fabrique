@@ -18,7 +18,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/ace4d669/www-player.css",
+      "url": "https://www.youtube.com/s/player/fa7eb95c/www-player.css",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -26,7 +26,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/ace4d669/www-embed-player.vflset/www-embed-player.js",
+      "url": "https://www.youtube.com/s/player/fa7eb95c/www-embed-player.vflset/www-embed-player.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -34,7 +34,15 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/ace4d669/player_ias.vflset/en_US/base.js",
+      "url": "https://www.youtube.com/s/player/fa7eb95c/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/fa7eb95c/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -54,14 +62,6 @@
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/ace4d669/fetch-polyfill.vflset/fetch-polyfill.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/ace4d669/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/fa7eb95c/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/09QSY-CUWkp9sd11ZUAJFeGr74Rau5wFI3HTYCOPMRs.js",
+      "url": "https://www.google.com/js/th/23K_wv65UPCiABIo6r4TLz_7ITKDRTsdN0481kHWjEo.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -138,7 +138,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/ace4d669/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/fa7eb95c/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -177,19 +177,19 @@
       }
     },
     {
+      "type": "youtube",
+      "url": "https://www.youtube.com/generate_204?4N4OWQ",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
       "type": "google",
       "url": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?AsJHzw",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -207,7 +207,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1679796644,
+      "expires": 1680401210,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +219,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "ba6790e48a4b7d69.1679794844.",
+      "value": "040074700f0aaac0.1680399410.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1713750044,
+      "expires": 1714354610,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -237,8 +237,8 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr https://cdn.jsdelivr.net https://www.youtube.com https://*.doubleclick.net; frame-src 'self' https://*.gouv.fr https://www.youtube.com https://youtube.com https://www.dailymotion.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 26 Mar 2023 01:40:43 GMT",
-    "etag": "\"5115-ZDobMrJ8369EuSAPJIV5S0d1s8E\"",
+    "date": "Sun, 02 Apr 2023 01:36:48 GMT",
+    "etag": "\"5115-BG7xU5cPg8t/v0bVxAEvO1MlfW8\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -343,7 +343,7 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "104.16.89.20",
+      "ip": "104.16.85.20",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
@@ -363,7 +363,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "172.253.63.91",
+      "ip": "142.251.35.206",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -395,8 +395,8 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
+          "latitude": 43.0382,
+          "longitude": -87.91,
           "time_zone": "America/Chicago"
         },
         "registered_country": {
@@ -412,12 +412,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5279468,
+            "iso_code": "WI",
+            "names": {
+              "en": "Wisconsin",
+              "es": "Wisconsin",
+              "fr": "Wisconsin",
+              "ja": "ウィスコンシン州",
+              "ru": "Висконсин",
+              "zh-CN": "威斯康辛州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.16.94",
+      "ip": "142.251.46.131",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -449,8 +463,8 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
+          "latitude": 43.0382,
+          "longitude": -87.91,
           "time_zone": "America/Chicago"
         },
         "registered_country": {
@@ -466,12 +480,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5279468,
+            "iso_code": "WI",
+            "names": {
+              "en": "Wisconsin",
+              "es": "Wisconsin",
+              "fr": "Wisconsin",
+              "ja": "ウィスコンシン州",
+              "ru": "Висконсин",
+              "zh-CN": "威斯康辛州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "172.253.63.154",
+      "ip": "216.58.193.130",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -525,7 +553,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.163.149",
+      "ip": "172.217.11.70",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -579,7 +607,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.251.16.95",
+      "ip": "142.250.114.95",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -633,7 +661,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.115.99",
+      "ip": "142.251.33.36",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -665,8 +693,8 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
+          "latitude": 43.0382,
+          "longitude": -87.91,
           "time_zone": "America/Chicago"
         },
         "registered_country": {
@@ -682,12 +710,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 5279468,
+            "iso_code": "WI",
+            "names": {
+              "en": "Wisconsin",
+              "es": "Wisconsin",
+              "fr": "Wisconsin",
+              "ja": "ウィスコンシン州",
+              "ru": "Висконсин",
+              "zh-CN": "威斯康辛州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.251.163.119",
+      "ip": "142.250.138.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -741,7 +783,7 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.251.16.132",
+      "ip": "142.250.68.161",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -795,7 +837,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.16.94",
+      "ip": "142.250.68.131",
       "geoip": {
         "continent": {
           "code": "NA",
