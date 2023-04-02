@@ -1,12 +1,5 @@
 [
          {
-              "id"           : "engine_problem",
-              "ip"           : "code.travail.gouv.fr/",
-              "port"         : "443",
-              "severity"     : "WARN",
-              "finding"      : "No engine or GOST support via engine with your /home/testssl/bin/openssl.Linux.x86_64"
-          }
-,         {
               "id"           : "service",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -213,7 +206,7 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "supported"
+              "finding"      : "not supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -353,7 +346,7 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "81 >= 30 days"
+              "finding"      : "74 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,14 +542,14 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1679793895"
+              "finding"      : "1680398425"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1140,6 +1133,6 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "58"
           }
 ]
