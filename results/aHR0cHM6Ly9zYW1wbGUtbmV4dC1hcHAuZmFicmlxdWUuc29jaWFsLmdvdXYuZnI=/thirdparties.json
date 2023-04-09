@@ -7,7 +7,7 @@
   ],
   "cookies": [],
   "headers": {
-    "date": "Sun, 02 Apr 2023 01:21:45 GMT"
+    "date": "Sun, 09 Apr 2023 01:15:57 GMT"
   },
   "endpoints": [
     {
@@ -106,7 +106,7 @@
     },
     {
       "hostname": "browser.sentry-cdn.com",
-      "ip": "151.101.2.217",
+      "ip": "151.101.66.217",
       "geoip": {
         "continent": {
           "code": "NA",
