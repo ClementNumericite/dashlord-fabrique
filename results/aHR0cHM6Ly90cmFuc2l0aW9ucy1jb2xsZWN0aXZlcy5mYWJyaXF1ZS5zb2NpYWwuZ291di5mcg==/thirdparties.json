@@ -17,22 +17,6 @@
       }
     },
     {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/6ed0d907/www-player.css",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/6ed0d907/www-embed-player.vflset/www-embed-player.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
       "type": "google fonts",
       "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
       "details": {
@@ -50,7 +34,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/6ed0d907/player_ias.vflset/en_US/base.js",
+      "url": "https://www.youtube.com/s/player/b7910ca8/www-player.css",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -58,7 +42,23 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/6ed0d907/fetch-polyfill.vflset/fetch-polyfill.js",
+      "url": "https://www.youtube.com/s/player/b7910ca8/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/b7910ca8/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/b7910ca8/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/6ed0d907/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/b7910ca8/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/BTPPf1EoKEaiOt0VlmXjKf8vkFXdFOQG-UQMlDOX4ig.js",
+      "url": "https://www.google.com/js/th/BqbBBigLGMI_8n0ENPHl-A4LePB1t5RlUxvFXJxc2c4.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -130,7 +130,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://i.ytimg.com/vi_webp/tMa2_T7sewo/maxresdefault.webp",
+      "url": "https://i1.ytimg.com/vi/tMa2_T7sewo/hqdefault.jpg",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -138,7 +138,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/6ed0d907/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/b7910ca8/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -186,7 +186,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?zOBc9A",
+      "url": "https://www.youtube.com/generate_204?XttQTw",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +207,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1687056952,
+      "expires": 1687659842,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +219,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "9ffd3c18865d09df.1687055152.",
+      "value": "488234acb9b4a9f6.1687658043.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1721010352,
+      "expires": 1721613243,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -237,7 +237,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr https://cdn.jsdelivr.net https://www.youtube.com https://*.doubleclick.net; frame-src 'self' https://*.gouv.fr https://www.youtube.com https://youtube.com https://www.dailymotion.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 18 Jun 2023 02:25:51 GMT",
+    "date": "Sun, 25 Jun 2023 01:54:01 GMT",
     "etag": "\"5115-BnsSVN69my1NYtaoIpTfqWKAv2Q\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -343,13 +343,18 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "146.75.29.229",
+      "ip": "151.101.41.229",
       "geoip": {
         "city": {
-          "geoname_id": 4744870,
+          "geoname_id": 5392171,
           "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
+            "de": "San José",
+            "en": "San Jose",
+            "es": "San José",
+            "fr": "San José",
+            "ja": "サンノゼ",
+            "pt-BR": "San José",
+            "ru": "Сан-Хосе"
           }
         },
         "continent": {
@@ -382,13 +387,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 39.018,
-          "longitude": -77.539,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
+          "latitude": 37.1835,
+          "longitude": -121.7714,
+          "metro_code": 807,
+          "time_zone": "America/Los_Angeles"
         },
         "postal": {
-          "code": "20147"
+          "code": "95141"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -406,15 +411,17 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
+            "geoname_id": 5332921,
+            "iso_code": "CA",
             "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
+              "de": "Kalifornien",
+              "en": "California",
+              "es": "California",
+              "fr": "Californie",
+              "ja": "カリフォルニア州",
+              "pt-BR": "Califórnia",
+              "ru": "Калифорния",
+              "zh-CN": "加州"
             }
           }
         ]
@@ -422,7 +429,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.251.167.91",
+      "ip": "142.251.32.46",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -454,9 +461,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 38.894,
+          "longitude": -77.0365,
+          "time_zone": "America/New_York"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -471,12 +478,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4138106,
+            "iso_code": "DC",
+            "names": {
+              "de": "Washington, D.C.",
+              "en": "District of Columbia",
+              "es": "Washington D.C.",
+              "fr": "District de Columbia",
+              "ja": "ワシントン・コロンビア特別区",
+              "ru": "Округ Колумбия"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.63.94",
+      "ip": "142.250.191.35",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -530,7 +551,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.163.154",
+      "ip": "142.251.46.162",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -562,9 +583,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 38.894,
+          "longitude": -77.0365,
+          "time_zone": "America/New_York"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -579,12 +600,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4138106,
+            "iso_code": "DC",
+            "names": {
+              "de": "Washington, D.C.",
+              "en": "District of Columbia",
+              "es": "Washington D.C.",
+              "fr": "District de Columbia",
+              "ja": "ワシントン・コロンビア特別区",
+              "ru": "Округ Колумбия"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.16.149",
+      "ip": "142.250.189.230",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -638,7 +673,7 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.251.163.95",
+      "ip": "172.217.12.106",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -692,7 +727,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.62.99",
+      "ip": "142.250.191.68",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -745,8 +780,8 @@
       }
     },
     {
-      "hostname": "i.ytimg.com",
-      "ip": "142.251.163.119",
+      "hostname": "i1.ytimg.com",
+      "ip": "142.251.214.142",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -800,7 +835,7 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "172.253.122.132",
+      "ip": "142.251.32.33",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -832,9 +867,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
+          "latitude": 38.894,
+          "longitude": -77.0365,
+          "time_zone": "America/New_York"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -849,12 +884,26 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 4138106,
+            "iso_code": "DC",
+            "names": {
+              "de": "Washington, D.C.",
+              "en": "District of Columbia",
+              "es": "Washington D.C.",
+              "fr": "District de Columbia",
+              "ja": "ワシントン・コロンビア特別区",
+              "ru": "Округ Колумбия"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.251.16.94",
+      "ip": "172.217.12.99",
       "geoip": {
         "continent": {
           "code": "NA",
