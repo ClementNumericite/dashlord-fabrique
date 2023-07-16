@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "fce.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "36 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (29)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "fce.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2023-08-14 23:38"
           }
 ,         {
@@ -549,7 +549,7 @@
               "ip"           : "fce.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1688867472"
+              "finding"      : "1689472405"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1126,6 +1126,6 @@
               "ip"           : "fce.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "93"
+              "finding"      : "57"
           }
 ]
