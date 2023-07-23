@@ -18,7 +18,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/4cc5d082/www-player.css",
+      "url": "https://www.youtube.com/s/player/8e83803a/www-player.css",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -26,7 +26,23 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/4cc5d082/www-embed-player.vflset/www-embed-player.js",
+      "url": "https://www.youtube.com/s/player/8e83803a/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/8e83803a/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/8e83803a/fetch-polyfill.vflset/fetch-polyfill.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -46,22 +62,6 @@
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/4cc5d082/player_ias.vflset/en_US/base.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/4cc5d082/fetch-polyfill.vflset/fetch-polyfill.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -114,7 +114,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/4cc5d082/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/8e83803a/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -122,7 +122,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/V7JOy9E5LPAmHC4-uXpPG1TUC0v77ajXJMI6Ew5elJ8.js",
+      "url": "https://www.google.com/js/th/dHCvt3ughio_dnfRepXG1zSJinDd1avDpolDZYAjBaA.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -138,7 +138,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/4cc5d082/player_ias.vflset/en_US/embed.js",
+      "url": "https://www.youtube.com/s/player/8e83803a/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -186,7 +186,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?JrmMsw",
+      "url": "https://www.youtube.com/generate_204?qpcbcg",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +207,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1689475041,
+      "expires": 1690081183,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +219,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "048487e365d3d0be.1689473241.",
+      "value": "716202e767d9e666.1690079384.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1723428441,
+      "expires": 1724034584,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -237,7 +237,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr https://cdn.jsdelivr.net https://www.youtube.com https://*.doubleclick.net; frame-src 'self' https://*.gouv.fr https://www.youtube.com https://youtube.com https://www.dailymotion.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 16 Jul 2023 02:07:19 GMT",
+    "date": "Sun, 23 Jul 2023 02:29:42 GMT",
     "etag": "\"5115-BnsSVN69my1NYtaoIpTfqWKAv2Q\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -422,7 +422,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "172.253.122.93",
+      "ip": "142.251.163.136",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -476,7 +476,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "142.251.111.94",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -530,7 +530,7 @@
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.251.16.156",
+      "ip": "172.253.115.155",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -584,7 +584,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.251.163.149",
+      "ip": "172.253.63.148",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -692,7 +692,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "172.253.63.99",
+      "ip": "142.251.16.147",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -746,7 +746,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "172.253.115.119",
+      "ip": "172.253.63.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -854,7 +854,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "172.253.115.94",
+      "ip": "172.253.63.94",
       "geoip": {
         "continent": {
           "code": "NA",
