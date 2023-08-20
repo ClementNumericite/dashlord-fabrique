@@ -11,7 +11,7 @@
       "value": "1",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1691892528,
+      "expires": 1692499982,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -23,10 +23,10 @@
     },
     {
       "name": "_pk_id.63.f7e2",
-      "value": "b3e1493242608ca0.1691890728.",
+      "value": "58f22eaf272d1855.1692498183.",
       "domain": "template.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1725845928,
+      "expires": 1726453383,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -40,9 +40,9 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 13 Aug 2023 01:38:46 GMT",
-    "etag": "W/\"64c501ba-39e1\"",
-    "last-modified": "Sat, 29 Jul 2023 12:10:34 GMT",
+    "date": "Sun, 20 Aug 2023 02:23:01 GMT",
+    "etag": "W/\"64da4277-39e1\"",
+    "last-modified": "Mon, 14 Aug 2023 15:04:23 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -146,8 +146,42 @@
     },
     {
       "hostname": "dummyimage.com",
-      "ip": "104.21.32.200",
+      "ip": "172.67.154.145",
       "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
