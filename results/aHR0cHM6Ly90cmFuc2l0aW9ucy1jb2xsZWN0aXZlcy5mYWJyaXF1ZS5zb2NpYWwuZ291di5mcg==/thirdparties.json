@@ -18,23 +18,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/3cd2d050/www-player.css",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/3cd2d050/player_ias.vflset/en_US/embed.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/3cd2d050/www-embed-player.vflset/www-embed-player.js",
+      "url": "https://www.youtube.com/s/player/f980f2a9/www-player.css",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -57,22 +41,6 @@
       }
     },
     {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/3cd2d050/player_ias.vflset/en_US/base.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
-      "type": "youtube",
-      "url": "https://www.youtube.com/s/player/3cd2d050/fetch-polyfill.vflset/fetch-polyfill.js",
-      "details": {
-        "id": "youtube",
-        "message": "Dont embed youtube scripts, use peertube"
-      }
-    },
-    {
       "type": "google fonts",
       "url": "https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2",
       "details": {
@@ -86,6 +54,22 @@
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/f980f2a9/www-embed-player.vflset/www-embed-player.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/f980f2a9/player_ias.vflset/en_US/base.js",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
       }
     },
     {
@@ -122,7 +106,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/s/player/3cd2d050/player_ias.vflset/en_US/remote.js",
+      "url": "https://www.youtube.com/s/player/f980f2a9/player_ias.vflset/en_US/remote.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -130,7 +114,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/th/xjGJsWQcw7a75uMOZzli3G6NfqTxNtUGx8TIPKXR2T4.js",
+      "url": "https://www.google.com/js/th/Z1gbtddfDF9RviW5LhIDoqc8eiJOdJs6NMzPuRNwWqo.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -139,6 +123,14 @@
     {
       "type": "youtube",
       "url": "https://i.ytimg.com/vi_webp/tMa2_T7sewo/maxresdefault.webp",
+      "details": {
+        "id": "youtube",
+        "message": "Dont embed youtube scripts, use peertube"
+      }
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/s/player/f980f2a9/player_ias.vflset/en_US/embed.js",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -186,7 +178,7 @@
     },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/generate_204?juZ5Ng",
+      "url": "https://www.youtube.com/generate_204?FxbPcQ",
       "details": {
         "id": "youtube",
         "message": "Dont embed youtube scripts, use peertube"
@@ -207,7 +199,7 @@
       "value": "1",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1691892283,
+      "expires": 1692499362,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -219,10 +211,10 @@
     },
     {
       "name": "_pk_id.58.c757",
-      "value": "f0b847ab82a3ff2c.1691890483.",
+      "value": "c4ea8405b5d452c1.1692497562.",
       "domain": "transco.travail-emploi.gouv.fr",
       "path": "/",
-      "expires": 1725845683,
+      "expires": 1726452762,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -237,7 +229,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: https://cdn.jsdelivr.net; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr https://cdn.jsdelivr.net https://www.youtube.com https://*.doubleclick.net; frame-src 'self' https://*.gouv.fr https://www.youtube.com https://youtube.com https://www.dailymotion.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 13 Aug 2023 01:34:41 GMT",
+    "date": "Sun, 20 Aug 2023 02:12:40 GMT",
     "etag": "\"5115-BnsSVN69my1NYtaoIpTfqWKAv2Q\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -343,19 +335,18 @@
     },
     {
       "hostname": "cdn.jsdelivr.net",
-      "ip": "151.101.201.229",
+      "ip": "146.75.105.229",
       "geoip": {
         "city": {
-          "geoname_id": 5393015,
+          "geoname_id": 4684888,
           "names": {
-            "de": "Santa Clara",
-            "en": "Santa Clara",
-            "es": "Santa Clara",
-            "fr": "Santa Clara",
-            "ja": "サンタクララ",
-            "pt-BR": "Santa Clara",
-            "ru": "Санта-Клара",
-            "zh-CN": "圣克拉拉"
+            "de": "Dallas",
+            "en": "Dallas",
+            "es": "Dallas",
+            "fr": "Dallas",
+            "ja": "ダラス",
+            "pt-BR": "Dallas",
+            "ru": "Даллас"
           }
         },
         "continent": {
@@ -388,13 +379,13 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 37.3931,
-          "longitude": -121.962,
-          "metro_code": 807,
-          "time_zone": "America/Los_Angeles"
+          "latitude": 32.7908,
+          "longitude": -96.8336,
+          "metro_code": 623,
+          "time_zone": "America/Chicago"
         },
         "postal": {
-          "code": "95054"
+          "code": "75207"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -412,17 +403,15 @@
         },
         "subdivisions": [
           {
-            "geoname_id": 5332921,
-            "iso_code": "CA",
+            "geoname_id": 4736286,
+            "iso_code": "TX",
             "names": {
-              "de": "Kalifornien",
-              "en": "California",
-              "es": "California",
-              "fr": "Californie",
-              "ja": "カリフォルニア州",
-              "pt-BR": "Califórnia",
-              "ru": "Калифорния",
-              "zh-CN": "加州"
+              "en": "Texas",
+              "es": "Texas",
+              "fr": "Texas",
+              "ja": "テキサス州",
+              "ru": "Техас",
+              "zh-CN": "德克萨斯州"
             }
           }
         ]
@@ -430,7 +419,7 @@
     },
     {
       "hostname": "www.youtube.com",
-      "ip": "142.250.189.238",
+      "ip": "64.233.191.93",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -484,14 +473,8 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.32.35",
+      "ip": "64.233.181.94",
       "geoip": {
-        "city": {
-          "geoname_id": 4361736,
-          "names": {
-            "en": "Marriottsville"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -522,13 +505,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 39.3385,
-          "longitude": -76.9201,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21104"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -543,28 +522,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "googleads.g.doubleclick.net",
-      "ip": "142.250.191.66",
+      "ip": "142.250.152.156",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -618,7 +581,7 @@
     },
     {
       "hostname": "static.doubleclick.net",
-      "ip": "142.250.189.198",
+      "ip": "142.250.128.148",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -672,14 +635,8 @@
     },
     {
       "hostname": "jnn-pa.googleapis.com",
-      "ip": "142.251.46.202",
+      "ip": "172.217.214.95",
       "geoip": {
-        "city": {
-          "geoname_id": 4361736,
-          "names": {
-            "en": "Marriottsville"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -710,13 +667,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 39.3385,
-          "longitude": -76.9201,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21104"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -731,28 +684,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.250.189.196",
+      "ip": "172.253.114.147",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -806,7 +743,7 @@
     },
     {
       "hostname": "i.ytimg.com",
-      "ip": "142.250.189.246",
+      "ip": "108.177.120.119",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -860,14 +797,8 @@
     },
     {
       "hostname": "yt3.ggpht.com",
-      "ip": "142.251.46.193",
+      "ip": "142.250.103.132",
       "geoip": {
-        "city": {
-          "geoname_id": 4361736,
-          "names": {
-            "en": "Marriottsville"
-          }
-        },
         "continent": {
           "code": "NA",
           "geoname_id": 6255149,
@@ -898,13 +829,9 @@
         },
         "location": {
           "accuracy_radius": 1000,
-          "latitude": 39.3385,
-          "longitude": -76.9201,
-          "metro_code": 512,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "21104"
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
         },
         "registered_country": {
           "geoname_id": 6252001,
@@ -919,28 +846,12 @@
             "ru": "США",
             "zh-CN": "美国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 4361885,
-            "iso_code": "MD",
-            "names": {
-              "de": "Maryland",
-              "en": "Maryland",
-              "es": "Maryland",
-              "fr": "Maryland",
-              "ja": "メリーランド州",
-              "pt-BR": "Maryland",
-              "ru": "Мэриленд",
-              "zh-CN": "马里兰州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.191.35",
+      "ip": "209.85.145.94",
       "geoip": {
         "continent": {
           "code": "NA",
