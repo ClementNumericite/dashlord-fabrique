@@ -46,11 +46,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/eacCAaJwjNlhi6q3hsr5n/_buildManifest.js"
+      "url": "https://ozensemble.fr/_next/static/FwG8wKIJQY90xd2lU9091/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/eacCAaJwjNlhi6q3hsr5n/_ssgManifest.js"
+      "url": "https://ozensemble.fr/_next/static/FwG8wKIJQY90xd2lU9091/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -99,7 +99,7 @@
       "value": "1",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1693704868,
+      "expires": 1694310570,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -111,10 +111,10 @@
     },
     {
       "name": "_pk_id.34.6677",
-      "value": "04ee999d028d19cb.1693703068.",
+      "value": "33e7672d46b76184.1694308770.",
       "domain": "ozensemble.fr",
       "path": "/",
-      "expires": 1727658268,
+      "expires": 1728263970,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -128,9 +128,9 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 03 Sep 2023 01:04:27 GMT",
-    "etag": "W/\"64c164d0-4fdb\"",
-    "last-modified": "Wed, 26 Jul 2023 18:24:16 GMT",
+    "date": "Sun, 10 Sep 2023 01:19:29 GMT",
+    "etag": "W/\"64fb1a54-4fdb\"",
+    "last-modified": "Fri, 08 Sep 2023 12:57:56 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
