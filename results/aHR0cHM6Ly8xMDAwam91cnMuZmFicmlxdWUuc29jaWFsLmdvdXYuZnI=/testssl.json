@@ -346,7 +346,7 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "46 >= 30 days"
+              "finding"      : "39 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,14 +542,14 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1694309456"
+              "finding"      : "1694914360"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -605,14 +605,21 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "deny"
+              "finding"      : "sameorigin"
           }
 ,         {
               "id"           : "X-Content-Type-Options",
               "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "nosniff"
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -1126,6 +1133,6 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "100"
+              "finding"      : "111"
           }
 ]
