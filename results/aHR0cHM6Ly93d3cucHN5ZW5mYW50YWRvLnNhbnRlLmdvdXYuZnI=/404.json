@@ -16,7 +16,7 @@
         "href": "https://www.psyenfantado.sante.gouv.fr/"
       },
       "link": "https://www.psyenfantado.sante.gouv.fr/",
-      "line": "--2023-09-10 01:22:32--  https://www.psyenfantado.sante.gouv.fr/",
+      "line": "--2023-09-17 01:24:10--  https://www.psyenfantado.sante.gouv.fr/",
       "broken": false
     },
     {
@@ -24,18 +24,18 @@
         "protocol": "https:",
         "slashes": true,
         "auth": null,
-        "host": "monparcourspsy.sante.gouv.fr",
+        "host": "monsoutienpsy.sante.gouv.fr",
         "port": null,
-        "hostname": "monparcourspsy.sante.gouv.fr",
+        "hostname": "monsoutienpsy.sante.gouv.fr",
         "hash": null,
         "search": null,
         "query": null,
         "pathname": "/",
         "path": "/",
-        "href": "https://monparcourspsy.sante.gouv.fr/"
+        "href": "https://monsoutienpsy.sante.gouv.fr/"
       },
-      "link": "https://monparcourspsy.sante.gouv.fr/",
-      "line": "--2023-09-10 01:22:32--  https://monparcourspsy.sante.gouv.fr/",
+      "link": "https://monsoutienpsy.sante.gouv.fr/",
+      "line": "--2023-09-17 01:24:11--  https://monsoutienpsy.sante.gouv.fr/",
       "broken": false
     }
   ],
