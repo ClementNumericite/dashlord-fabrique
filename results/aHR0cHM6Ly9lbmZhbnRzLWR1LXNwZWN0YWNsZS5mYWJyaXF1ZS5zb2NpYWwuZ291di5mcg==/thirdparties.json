@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "enfants-du-spectacle.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1694916810,
+      "expires": 1695521911,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.85.7734",
-      "value": "f1dc606cbeba75e3.1694915011.",
+      "value": "9658aa83830fb45f.1695520112.",
       "domain": "enfants-du-spectacle.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1728870211,
+      "expires": 1729475312,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -35,8 +35,8 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 17 Sep 2023 01:43:29 GMT",
-    "etag": "\"88e3-j9i0DrEq8+gFmC5z+A0o/yt+ldo\"",
+    "date": "Sun, 24 Sep 2023 01:48:30 GMT",
+    "etag": "\"88e3-BtXmzboIOKwkgWz7TRb5VzV4p0Y\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-powered-by": "Next.js"
