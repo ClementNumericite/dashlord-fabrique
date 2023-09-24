@@ -346,7 +346,7 @@
               "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1694917344"
+              "finding"      : "1695522953"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -591,7 +591,7 @@
               "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No application banner found"
+              "finding"      : "x-powered-by: Next.js"
           }
 ,         {
               "id"           : "cookie_count",
@@ -601,25 +601,11 @@
               "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "X-Frame-Options",
+              "id"           : "security_headers",
               "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "deny"
-          }
-,         {
-              "id"           : "X-Content-Type-Options",
-              "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "nosniff"
-          }
-,         {
-              "id"           : "X-XSS-Protection",
-              "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "1; mode=block"
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -698,7 +684,7 @@
               "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1126,6 +1112,6 @@
               "ip"           : "template.fabrique.social.gouv.fr/37.59.19.63",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "108"
+              "finding"      : "98"
           }
 ]
