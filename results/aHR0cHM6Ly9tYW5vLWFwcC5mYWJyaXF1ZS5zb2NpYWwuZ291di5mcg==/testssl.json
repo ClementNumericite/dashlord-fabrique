@@ -269,7 +269,7 @@
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0312EAE35D278B454B796589855656CF875A"
+              "finding"      : "0377B2A92C278BF14D839804D701A59D7970"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "4435E01C0A2D053A5783BCCE8C43D44DD5885409"
+              "finding"      : "2EAD0BE6965DC675CEBFECCF99B68790B81E6553"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "C00854B597CBF493AE81027BED7163626DAC8DBFBFD10BB427F66805D1AD90AC"
+              "finding"      : "658A1252907C20B580151F9FFF844D7B7A3FBCA1DD1F9CB8F04B27722C3C4045"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFDDCCA/SgAwIBAgISAxLq410ni0VLeWWJhVZWz4daMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA3MjgxMzQzMTdaFw0yMzEwMjYxMzQzMTZaMCsxKTAnBgNVBAMTIG1hbm8tYXBwLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFYtQGi5YzIwg1FSzMO1Z19xRBm+oHb+xVntqilv7vafV+huB8+Jbmm7q/BmrKx8oTDaPI7BtPOAqLOHLWytM2RwbFGoaiKgSe8tS3W520OllpBxjo7caRrint9naYtdJi2uff/r/jSANcMEOmCQ7fFN2Kz4lnGrm74JCdzqoc35OW0niXyfCAvFUWoK2zjvM+upyjRLU52dQ/bS0LW1Q/rUTCYeBiSXGXUwrrGKrjQ96cdwDGUWtWhhuhpUs5A9+7WJ/b86jkW2xjuy3hQcS/oBtJ6Ce+6talHQsQNzC126wJmltDkKPKtQaZdwxv4FVEqPLsPuMEKhHd4cmKHyWwIDAQABo4ICITCCAh0wDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQDjb1dPoOsFLROb7bosqg7v/arCjAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiBtYW5vLWFwcC5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABiZz0NSkAAAQDAEYwRAIgRFO0JLFhw8+9SSDZp/2oWABNhptd/79GAPRFBIMCjAcCIF/Q/hUa0yWU+hhz9x0zUZxtGUmDbDFsF2FX3YMzaFpVAHYAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvSK8E6V6NS61IAAAGJnPQ1PAAABAMARzBFAiBAlP/PsdE8FnKtWvOecc3gC5AQSaGOvfinIDBkHcfjcQIhAKo3HLmxgIqR8ioHcRSlzyHuoXphV9K4PZEsftjO6ijYMA0GCSqGSIb3DQEBCwUAA4IBAQCbf7Kst14zHgZTMWdpK977BjnbA+oqFm39BsBkb1ZyrYzQpybbsWhNGLzaXa36YjAxzUfP5gUmfJbPkbHIqgx72xhJsg77lC+Gbwd3ZHYMpvJJao2lfwRzQd0kq00sgfxqdSR4Ca5wmYALzjXeCUkIkOA55jDdFdp2g+h5M/+UkPQM7YjiSrVW76BeYweardxk52NFZ03ETy56niWbrgYEzdc2Tu4pMD0hJiTXnTNlHFtTiRNu1uDMeahJMmz3TwYnDP6XBbKtbs845tW5GXs5FISz7xm9WThKUKAb5fVSQ4VgVtU1lic1EN9YakXMJMhUTx6Vz9NLxyR3AUduGxW9\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFDzCCA/egAwIBAgISA3eyqSwni/FNg5gE1wGlnXlwMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzA5MjYxMjQzNDFaFw0yMzEyMjUxMjQzNDBaMCsxKTAnBgNVBAMTIG1hbm8tYXBwLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyFYtQGi5YzIwg1FSzMO1Z19xRBm+oHb+xVntqilv7vafV+huB8+Jbmm7q/BmrKx8oTDaPI7BtPOAqLOHLWytM2RwbFGoaiKgSe8tS3W520OllpBxjo7caRrint9naYtdJi2uff/r/jSANcMEOmCQ7fFN2Kz4lnGrm74JCdzqoc35OW0niXyfCAvFUWoK2zjvM+upyjRLU52dQ/bS0LW1Q/rUTCYeBiSXGXUwrrGKrjQ96cdwDGUWtWhhuhpUs5A9+7WJ/b86jkW2xjuy3hQcS/oBtJ6Ce+6talHQsQNzC126wJmltDkKPKtQaZdwxv4FVEqPLsPuMEKhHd4cmKHyWwIDAQABo4ICJDCCAiAwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQDjb1dPoOsFLROb7bosqg7v/arCjAfBgNVHSMEGDAWgBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiBtYW5vLWFwcC5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQYGCisGAQQB1nkCBAIEgfcEgfQA8gB3AHoyjFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABitG7Nm0AAAQDAEgwRgIhAIPCWiq565hwXBmElGYqLgemm/4gPb3Myc+wWX3xvHQFAiEA8k0kjtHmwcRlU1refBsCSjFIKuLylzf5OfLxUH7wXocAdwDoPtDaPvUGNTLnVyi8iWvJA9PL0RFr7Otp4Xd9bQa9bgAAAYrRuzZ7AAAEAwBIMEYCIQCALh04ElXgrOvq8yevkQw6FSh7Z31GJVaiWTy6e2PSsAIhAOc+NiybNnJ/jC4LZEYDTevmtTfjqplPkPoQicvBWzs0MA0GCSqGSIb3DQEBCwUAA4IBAQB1ii1f6Uq2JFWCySFYEKlzvfKxKDZZgiHcXJt4Z7Up3LcHsRG/lrvHiFxSxsoeIswWPtEeMXm7DEUM1xa+1zv0LnsjrVdBtNeA4ed6RALQaN99Oxp29ZvUTGdMtqQ6X8Wjcco0/t7aLKoKkF86Fn2yUBiEzqJwhA7up5+tggZtVFtk3EldCwyUOniSepvqqdIafg25fOb9MOZLAJUk9Xsgact8rQ3djYOxZobyo6C12OTvfZ/EUFQPpTVqj/XQykmQafkauzKkrJrtAxeYcDGkwDitUhJfMTvz9+b/Rm1opsjXWYLTVCiweDhE/qxeb+im94klZ86bW3o9ikcfhocq\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "finding"      : "85 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-07-28 13:43"
+              "finding"      : "2023-09-26 12:43"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-10-26 13:43"
+              "finding"      : "2023-12-25 12:43"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -542,14 +542,14 @@
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1695520577"
+              "finding"      : "1696125339"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -757,7 +757,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=C00854B597CBF493AE81027BED7163626DAC8DBFBFD10BB427F66805D1AD90AC"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=658A1252907C20B580151F9FFF844D7B7A3FBCA1DD1F9CB8F04B27722C3C4045"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1133,6 +1133,6 @@
               "ip"           : "mano-app.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "54"
+              "finding"      : "107"
           }
 ]
