@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
-      "expires": 1695520099,
+      "expires": 1696125137,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -33,10 +33,10 @@
     },
     {
       "name": "_pk_id.25.a06e",
-      "value": "a8bd8c6d6555af85.1695518300.",
+      "value": "1864e41f3ba741bd.1696123338.",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
-      "expires": 1729473500,
+      "expires": 1730078538,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -48,7 +48,7 @@
     },
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "0421bf0fa2028ebefc62ed01cf671e4823ae683cc80d82d8315c009b49c322de%7C21ab7c2d9248d01454800fd9c7b0e49a267531bf88850fd5d4ae3fa211929cce",
+      "value": "82b63c1c78b4cc6f6415f1d0d93dbd625d464e116c6ff1e4deb675d8f20ac11e%7Cd770ef87a9e445e33eb67c72c76fe341d9f0e295f57e0472b5b41f6df8b6d220",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -63,11 +63,11 @@
     },
     {
       "name": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000",
-      "value": "2445564170.47115.0000",
+      "value": "!tUNrJT681vvqqnUm0zi0rVXmcSp4Pf/wxez0Bprz9PD75q5Z/AU2vM8WtGn8QUklaJV9TEdzL0w19DFrvHDaOzo/vG1B",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
       "expires": -1,
-      "size": 74,
+      "size": 146,
       "httpOnly": true,
       "secure": true,
       "session": true,
@@ -80,13 +80,13 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 24 Sep 2023 01:18:17 GMT",
-    "etag": "\"c725-+DPRG9megSc62YHlMoF0164tWC4\"",
+    "date": "Sun, 01 Oct 2023 01:22:15 GMT",
     "keep-alive": "timeout=5",
-    "set-cookie": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000=2445564170.47115.0000; path=/; Httponly; Secure",
+    "set-cookie": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000=!tUNrJT681vvqqnUm0zi0rVXmcSp4Pf/wxez0Bprz9PD75q5Z/AU2vM8WtGn8QUklaJV9TEdzL0w19DFrvHDaOzo/vG1B; path=/; Httponly; Secure",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js"
+    "x-frame-options": "SAMEORIGIN"
   },
   "endpoints": [
     {
