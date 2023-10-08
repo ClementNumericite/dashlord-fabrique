@@ -2,21 +2,6 @@
   "trackers": [],
   "cookies": [
     {
-      "name": "_pk_ses.25.a06e",
-      "value": "1",
-      "domain": "dgos-onvs.sante.gouv.fr",
-      "path": "/",
-      "expires": 1696125137,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
       "name": "__Secure-next-auth.callback-url",
       "value": "https%3A%2F%2Fdgos-onvs.sante.gouv.fr",
       "domain": "dgos-onvs.sante.gouv.fr",
@@ -32,23 +17,8 @@
       "sourcePort": 443
     },
     {
-      "name": "_pk_id.25.a06e",
-      "value": "1864e41f3ba741bd.1696123338.",
-      "domain": "dgos-onvs.sante.gouv.fr",
-      "path": "/",
-      "expires": 1730078538,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
       "name": "__Host-next-auth.csrf-token",
-      "value": "82b63c1c78b4cc6f6415f1d0d93dbd625d464e116c6ff1e4deb675d8f20ac11e%7Cd770ef87a9e445e33eb67c72c76fe341d9f0e295f57e0472b5b41f6df8b6d220",
+      "value": "47dfb848b1c37675c70241a314e4d44ca8d402c15b193c9a1ba94946de3a3523%7Ce974f8c07e990a7a42a4ee4032af912642ecf1a097861d8dd2dcaa524b777582",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -63,7 +33,7 @@
     },
     {
       "name": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000",
-      "value": "!tUNrJT681vvqqnUm0zi0rVXmcSp4Pf/wxez0Bprz9PD75q5Z/AU2vM8WtGn8QUklaJV9TEdzL0w19DFrvHDaOzo/vG1B",
+      "value": "!vOc06LbLTtHCRWYm0zi0rVXmcSp4PVjJykf2DdBQ9TQmxrMMZG7zww5wpxnFlKdPQNd8+wDgt8bzbu66ERaBrP+fM6fE",
       "domain": "dgos-onvs.sante.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -79,14 +49,17 @@
   "headers": {
     "connection": "keep-alive",
     "content-encoding": "gzip",
+    "content-security-policy": "default-src 'self' static.piste.gouv.fr api-adresse.data.gouv.fr; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' static.piste.gouv.fr; img-src 'self' 'unsafe-inline' static.piste.gouv.fr data:; font-src 'self' static.piste.gouv.fr;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 01 Oct 2023 01:22:15 GMT",
+    "date": "Sun, 08 Oct 2023 01:03:56 GMT",
     "keep-alive": "timeout=5",
-    "set-cookie": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000=!tUNrJT681vvqqnUm0zi0rVXmcSp4Pf/wxez0Bprz9PD75q5Z/AU2vM8WtGn8QUklaJV9TEdzL0w19DFrvHDaOzo/vG1B; path=/; Httponly; Secure",
+    "set-cookie": "BIGipServerpool-onvs-production.cegedim.cloud-TCP3000=!vOc06LbLTtHCRWYm0zi0rVXmcSp4PVjJykf2DdBQ9TQmxrMMZG7zww5wpxnFlKdPQNd8+wDgt8bzbu66ERaBrP+fM6fE; path=/; Httponly; Secure",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "transfer-encoding": "chunked",
     "vary": "Accept-Encoding",
-    "x-frame-options": "SAMEORIGIN"
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN\nSAMEORIGIN",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
