@@ -16,7 +16,7 @@
         "href": "https://monpsy.sante.gouv.fr/"
       },
       "link": "https://monpsy.sante.gouv.fr/",
-      "line": "--2023-09-03 01:32:22--  https://monpsy.sante.gouv.fr/",
+      "line": "--2023-10-08 01:31:08--  https://monpsy.sante.gouv.fr/",
       "broken": false
     },
     {
@@ -24,18 +24,18 @@
         "protocol": "https:",
         "slashes": true,
         "auth": null,
-        "host": "monparcourspsy.sante.gouv.fr",
+        "host": "monsoutienpsy.sante.gouv.fr",
         "port": null,
-        "hostname": "monparcourspsy.sante.gouv.fr",
+        "hostname": "monsoutienpsy.sante.gouv.fr",
         "hash": null,
         "search": null,
         "query": null,
         "pathname": "/",
         "path": "/",
-        "href": "https://monparcourspsy.sante.gouv.fr/"
+        "href": "https://monsoutienpsy.sante.gouv.fr/"
       },
-      "link": "https://monparcourspsy.sante.gouv.fr/",
-      "line": "--2023-09-03 01:32:22--  https://monparcourspsy.sante.gouv.fr/",
+      "link": "https://monsoutienpsy.sante.gouv.fr/",
+      "line": "--2023-10-08 01:31:09--  https://monsoutienpsy.sante.gouv.fr/",
       "broken": false
     }
   ],
