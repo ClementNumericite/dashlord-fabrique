@@ -36,9 +36,9 @@
       "host": "https://ozensemble.fabrique.social.gouv.fr",
       "matched-at": "https://ozensemble.fabrique.social.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: ozensemble.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 15 Oct 2023 01:57:09 GMT\r\nLocation: https://ozensemble.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 22 Oct 2023 01:32:45 GMT\r\nLocation: https://ozensemble.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-15T01:57:09.236191775Z",
+      "timestamp": "2023-10-22T01:32:45.815456276Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: ozensemble.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ozensemble.fabrique.social.gouv.fr/'",
       "matcher-status": true
     },
@@ -68,7 +68,7 @@
         "Let's Encrypt"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-15T01:58:45.474677276Z",
+      "timestamp": "2023-10-22T01:34:25.254146207Z",
       "matcher-status": true
     },
     {
@@ -98,7 +98,7 @@
         "www.ozensemble.fr"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-15T01:58:45.474789876Z",
+      "timestamp": "2023-10-22T01:34:25.254288415Z",
       "matcher-status": true
     },
     {
@@ -128,7 +128,7 @@
         "tls12"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-15T01:58:47.800712446Z",
+      "timestamp": "2023-10-22T01:34:27.534058296Z",
       "matcher-status": true
     },
     {
@@ -158,7 +158,7 @@
         "tls13"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-15T01:58:48.161344173Z",
+      "timestamp": "2023-10-22T01:34:27.827435317Z",
       "matcher-status": true
     }
   ]
