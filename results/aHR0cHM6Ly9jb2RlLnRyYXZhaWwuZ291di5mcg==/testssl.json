@@ -346,7 +346,7 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "71 >= 30 days"
+              "finding"      : "64 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,14 +542,14 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1698542690"
+              "finding"      : "1699147186"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -608,18 +608,11 @@
               "finding"      : "DENY"
           }
 ,         {
-              "id"           : "X-Content-Type-Options",
-              "ip"           : "code.travail.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "nosniff"
-          }
-,         {
               "id"           : "Content-Security-Policy",
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://www.service-public.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com https://cdtnadminprod.blob.core.windows.net; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; worker-src 'self' blob:; child-src 'self' blob:;"
+              "finding"      : "default-src 'self' *.travail.gouv.fr *.data.gouv.fr *.fabrique.social.gouv.fr; img-src 'self' data: *.fabrique.social.gouv.fr https://travail-emploi.gouv.fr https://mon-entreprise.urssaf.fr https://www.service-public.fr https://cdtnadminprod.blob.core.windows.net https://cdtnadmindev.blob.core.windows.net *.adform.net; script-src 'self' https://mon-entreprise.urssaf.fr *.fabrique.social.gouv.fr https://cdnjs.cloudflare.com *.adform.net false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com https://cdtnadminprod.blob.core.windows.net; style-src 'self' 'unsafe-inline'; font-src 'self' data: blob:; worker-src 'self' blob:; child-src 'self' blob:;"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -1133,6 +1126,6 @@
               "ip"           : "code.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "109"
+              "finding"      : "57"
           }
 ]
