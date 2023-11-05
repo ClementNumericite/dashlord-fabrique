@@ -1,6 +1,43 @@
 [
   [
     {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "ozensemble.fabrique.social.gouv.fr.",
+      "matched-at": "ozensemble.fabrique.social.gouv.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 47883\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;ozensemble.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 47883\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;ozensemble.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2023-11-05T01:24:45.704681534Z",
+      "matcher-status": true
+    },
+    {
       "template": "http/technologies/waf-detect.yaml",
       "template-url": "https://templates.nuclei.sh/public/waf-detect",
       "template-id": "waf-detect",
@@ -36,9 +73,9 @@
       "host": "https://ozensemble.fabrique.social.gouv.fr",
       "matched-at": "https://ozensemble.fabrique.social.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: ozensemble.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 29 Oct 2023 01:24:28 GMT\r\nLocation: https://ozensemble.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 05 Nov 2023 01:26:11 GMT\r\nLocation: https://ozensemble.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-29T01:24:28.931925083Z",
+      "timestamp": "2023-11-05T01:26:11.490124233Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: ozensemble.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://ozensemble.fabrique.social.gouv.fr/'",
       "matcher-status": true
     },
@@ -68,7 +105,7 @@
         "Let's Encrypt"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-29T01:25:57.253134974Z",
+      "timestamp": "2023-11-05T01:27:45.967642139Z",
       "matcher-status": true
     },
     {
@@ -98,7 +135,7 @@
         "www.ozensemble.fr"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-29T01:25:57.253263376Z",
+      "timestamp": "2023-11-05T01:27:45.967783841Z",
       "matcher-status": true
     },
     {
@@ -128,7 +165,7 @@
         "tls12"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-29T01:25:58.680215438Z",
+      "timestamp": "2023-11-05T01:27:47.938082777Z",
       "matcher-status": true
     },
     {
@@ -158,7 +195,7 @@
         "tls13"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-10-29T01:25:58.853602824Z",
+      "timestamp": "2023-11-05T01:27:48.203470945Z",
       "matcher-status": true
     }
   ]
