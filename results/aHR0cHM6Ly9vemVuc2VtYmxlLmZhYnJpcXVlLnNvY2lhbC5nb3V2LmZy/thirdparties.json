@@ -1,129 +1,12 @@
 {
-  "trackers": [
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/css/ee711b7b593e2044.css"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/webpack-af49562d36e68867.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/framework-2c79e2a64abdb08b.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/main-e27c278221c16b82.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/pages/_app-1fb086bd3748c8cf.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/1bfc9850-b3a5f95163724ae5.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/d7eeaac4-5549380d35918e95.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/d64684d8-730823322de4008b.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/371-4c2a758d64294ecc.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/chunks/pages/index-480334fa87e9f921.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/TJGrNJkOm3A8n1cqUKcG7/_buildManifest.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/_next/static/TJGrNJkOm3A8n1cqUKcG7/_ssgManifest.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/other/google-play-fr.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/other/app-store-fr.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/logo_oz.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/other/hero.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/icon/check-circle-turqoise-500.svg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/other/january_challenge.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/logo_ministeres_sociaux.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/logo_ars.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/logo_MILDECA.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/logo_CaPASSCite.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/logo_DINUM.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/icon/link.svg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/icon/instagram.svg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/icon/facebook.svg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/icon/X.svg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://ozensemble.fr/images/icon/linkedin.svg"
-    }
-  ],
+  "trackers": [],
   "cookies": [
     {
-      "name": "_pk_ses.34.6677",
+      "name": "_pk_ses.34.d3dd",
       "value": "1",
-      "domain": "ozensemble.fr",
+      "domain": "ozensemble.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1699755662,
+      "expires": 1700358853,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -134,11 +17,11 @@
       "sourcePort": 443
     },
     {
-      "name": "_pk_id.34.6677",
-      "value": "b036c1315f80954a.1699753862.",
-      "domain": "ozensemble.fr",
+      "name": "_pk_id.34.d3dd",
+      "value": "53bab7dd4da18c0a.1700357054.",
+      "domain": "ozensemble.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1733709062,
+      "expires": 1734312254,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -152,9 +35,9 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 12 Nov 2023 01:51:01 GMT",
-    "etag": "W/\"6543d859-60b0\"",
-    "last-modified": "Thu, 02 Nov 2023 17:11:53 GMT",
+    "date": "Sun, 19 Nov 2023 01:24:12 GMT",
+    "etag": "W/\"65564c72-60b0\"",
+    "last-modified": "Thu, 16 Nov 2023 17:08:02 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -164,100 +47,6 @@
   "endpoints": [
     {
       "hostname": "ozensemble.fabrique.social.gouv.fr",
-      "ip": "20.74.14.77",
-      "geoip": {
-        "city": {
-          "geoname_id": 2988507,
-          "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
-          }
-        },
-        "continent": {
-          "code": "EU",
-          "geoname_id": 6255148,
-          "names": {
-            "de": "Europa",
-            "en": "Europe",
-            "es": "Europa",
-            "fr": "Europe",
-            "ja": "ヨーロッパ",
-            "pt-BR": "Europa",
-            "ru": "Европа",
-            "zh-CN": "欧洲"
-          }
-        },
-        "country": {
-          "geoname_id": 3017382,
-          "is_in_european_union": true,
-          "iso_code": "FR",
-          "names": {
-            "de": "Frankreich",
-            "en": "France",
-            "es": "Francia",
-            "fr": "France",
-            "ja": "フランス共和国",
-            "pt-BR": "França",
-            "ru": "Франция",
-            "zh-CN": "法国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 20,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
-          "time_zone": "Europe/Paris"
-        },
-        "postal": {
-          "code": "75001"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
-            "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
-            }
-          },
-          {
-            "geoname_id": 2968815,
-            "iso_code": "75",
-            "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "hostname": "ozensemble.fr",
       "ip": "20.74.14.77",
       "geoip": {
         "city": {
