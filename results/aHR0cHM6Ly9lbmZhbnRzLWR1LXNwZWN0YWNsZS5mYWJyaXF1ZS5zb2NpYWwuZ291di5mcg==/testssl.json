@@ -346,7 +346,7 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "57 >= 30 days"
+              "finding"      : "50 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -542,14 +542,14 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1699755713"
+              "finding"      : "1700358641"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -601,11 +601,32 @@
               "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "security_headers",
+              "id"           : "X-Frame-Options",
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "--"
+              "severity"     : "OK",
+              "finding"      : "deny"
+          }
+,         {
+              "id"           : "X-Content-Type-Options",
+              "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "nosniff"
+          }
+,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; media-src 'self'; font-src 'self' data:; img-src 'self' data:; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'"
+          }
+,         {
+              "id"           : "X-XSS-Protection",
+              "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "1; mode=block"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1112,6 +1133,6 @@
               "ip"           : "enfants-du-spectacle.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "55"
           }
 ]
