@@ -1,12 +1,21 @@
 {
-  "trackers": [],
+  "trackers": [
+    {
+      "type": "hotjar",
+      "url": "https://static.hotjar.com/c/hotjar-3733360.js?sv=6",
+      "details": {
+        "id": "hotjar",
+        "message": "Dont use HotJar"
+      }
+    }
+  ],
   "cookies": [
     {
       "name": "_pk_ses.38.ac6f",
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1699756626,
+      "expires": 1700359802,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +27,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "44fd0883643433c6.1699754826.",
+      "value": "4d2f4c2151b55dfb.1700358003.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1733710026,
+      "expires": 1734313203,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -36,7 +45,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 12 Nov 2023 02:07:04 GMT",
+    "date": "Sun, 19 Nov 2023 01:40:01 GMT",
     "etag": "W/\"651586cd-4562\"",
     "last-modified": "Thu, 28 Sep 2023 13:59:41 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -138,6 +147,60 @@
             }
           }
         ]
+      }
+    },
+    {
+      "hostname": "static.hotjar.com",
+      "ip": "18.160.41.49",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "Vereinigte Staaten",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
       }
     }
   ]
