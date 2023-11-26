@@ -1,6 +1,46 @@
 [
   [
     {
+      "template": "dns/nameserver-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
+      "template-id": "nameserver-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
+      "info": {
+        "name": "NS Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "ns"
+        ],
+        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "monpsy.sante.gouv.fr.",
+      "matched-at": "monpsy.sante.gouv.fr",
+      "extracted-results": [
+        "ns1-04.azure-dns.com.",
+        "ns2-04.azure-dns.net.",
+        "ns3-04.azure-dns.org.",
+        "ns4-04.azure-dns.info."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 20489\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 20489\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns1-04.azure-dns.com.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns2-04.azure-dns.net.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns3-04.azure-dns.org.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns4-04.azure-dns.info.\n",
+      "timestamp": "2023-11-26T02:06:12.763838457Z",
+      "matcher-status": true
+    },
+    {
       "template": "dns/caa-fingerprint.yaml",
       "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
       "template-id": "caa-fingerprint",
@@ -32,49 +72,9 @@
       "type": "dns",
       "host": "monpsy.sante.gouv.fr.",
       "matched-at": "monpsy.sante.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 23372\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 23372\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmonpsy.sante.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2023-11-19T02:00:03.2996099Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/nameserver-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
-      "template-id": "nameserver-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
-      "info": {
-        "name": "NS Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "ns"
-        ],
-        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "monpsy.sante.gouv.fr.",
-      "matched-at": "monpsy.sante.gouv.fr",
-      "extracted-results": [
-        "ns3-04.azure-dns.org.",
-        "ns4-04.azure-dns.info.",
-        "ns1-04.azure-dns.com.",
-        "ns2-04.azure-dns.net."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 30211\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 30211\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns1-04.azure-dns.com.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns2-04.azure-dns.net.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns3-04.azure-dns.org.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns4-04.azure-dns.info.\n",
-      "timestamp": "2023-11-19T02:00:03.300265579Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 45262\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 45262\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmonpsy.sante.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2023-11-26T02:06:12.77298168Z",
       "matcher-status": true
     },
     {
@@ -113,9 +113,9 @@
       "host": "https://monpsy.sante.gouv.fr",
       "matched-at": "https://monpsy.sante.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: monpsy.sante.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 19 Nov 2023 02:01:41 GMT\r\nLocation: https://monsoutienpsy.sante.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 26 Nov 2023 02:07:53 GMT\r\nLocation: https://monsoutienpsy.sante.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2023-11-19T02:01:41.630758149Z",
+      "timestamp": "2023-11-26T02:07:53.825083664Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: monpsy.sante.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://monpsy.sante.gouv.fr/'",
       "matcher-status": true
     },
@@ -145,7 +145,7 @@
         "Let's Encrypt"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-11-19T02:03:29.694075147Z",
+      "timestamp": "2023-11-26T02:09:43.383015878Z",
       "matcher-status": true
     },
     {
@@ -172,17 +172,17 @@
       "matched-at": "monpsy.sante.gouv.fr:443",
       "extracted-results": [
         "monpsy.sante.gouv.fr",
-        "www.monsoutienpsy.sante.gouv.fr",
-        "www.monpsy.sante.gouv.fr",
         "www.psy-enfant-ado.sante.gouv.fr",
-        "www.psyenfantado.sante.gouv.fr",
         "monparcourspsy.sante.gouv.fr",
         "psy-enfant-ado.sante.gouv.fr",
         "psyenfantado.sante.gouv.fr",
-        "www.monparcourspsy.sante.gouv.fr"
+        "www.monparcourspsy.sante.gouv.fr",
+        "www.monpsy.sante.gouv.fr",
+        "www.monsoutienpsy.sante.gouv.fr",
+        "www.psyenfantado.sante.gouv.fr"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-11-19T02:03:29.694215608Z",
+      "timestamp": "2023-11-26T02:09:43.383165985Z",
       "matcher-status": true
     },
     {
@@ -212,7 +212,7 @@
         "tls12"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-11-19T02:03:31.656596622Z",
+      "timestamp": "2023-11-26T02:09:45.419729256Z",
       "matcher-status": true
     },
     {
@@ -242,7 +242,7 @@
         "tls13"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-11-19T02:03:32.041005994Z",
+      "timestamp": "2023-11-26T02:09:45.713355126Z",
       "matcher-status": true
     }
   ]
