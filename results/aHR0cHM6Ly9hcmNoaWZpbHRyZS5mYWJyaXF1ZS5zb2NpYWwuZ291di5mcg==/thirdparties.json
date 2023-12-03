@@ -182,55 +182,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/94726e6d-eaf9146f36f8e14b.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/530-fe7be4eb17f88237.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/mails-994d35698137eced.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-6d08614682ce3fbf.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-bceff5a265d7f60e.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-2cce1539578746f8.js"
     },
     {
       "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-f6a360d7ee178fc5.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-04a48b344e816a40.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-9d7092de0fbe5d7c.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7c7a991dfad37ab6.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-dddc0cd52e23b254.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre-backoffice.prismic.io/prismic-toolbar/4.0.9/iframe.html"
     }
   ],
   "cookies": [
@@ -239,7 +195,7 @@
       "value": "1",
       "domain": "archifiltre.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1700961407,
+      "expires": 1701566598,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -251,10 +207,10 @@
     },
     {
       "name": "_pk_id.20.0b0e",
-      "value": "e4b012d5aa80ade0.1700959607.",
+      "value": "a5ae82ed9b813a2b.1701564799.",
       "domain": "archifiltre.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1734914807,
+      "expires": 1735519999,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -268,7 +224,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 26 Nov 2023 00:46:46 GMT",
+    "date": "Sun, 03 Dec 2023 00:53:18 GMT",
     "etag": "W/\"65539d60-ecc7\"",
     "last-modified": "Tue, 14 Nov 2023 16:16:32 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -461,139 +417,6 @@
               "en": "Paris",
               "es": "Paris",
               "fr": "Paris"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "hostname": "static.cdn.prismic.io",
-      "ip": "99.84.191.45",
-      "geoip": {
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 37.751,
-          "longitude": -97.822,
-          "time_zone": "America/Chicago"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        }
-      }
-    },
-    {
-      "hostname": "archifiltre-backoffice.prismic.io",
-      "ip": "34.225.88.91",
-      "geoip": {
-        "city": {
-          "geoname_id": 4744870,
-          "names": {
-            "en": "Ashburn",
-            "ru": "Ашберн"
-          }
-        },
-        "continent": {
-          "code": "NA",
-          "geoname_id": 6255149,
-          "names": {
-            "de": "Nordamerika",
-            "en": "North America",
-            "es": "Norteamérica",
-            "fr": "Amérique du Nord",
-            "ja": "北アメリカ",
-            "pt-BR": "América do Norte",
-            "ru": "Северная Америка",
-            "zh-CN": "北美洲"
-          }
-        },
-        "country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "location": {
-          "accuracy_radius": 1000,
-          "latitude": 39.0469,
-          "longitude": -77.4903,
-          "metro_code": 511,
-          "time_zone": "America/New_York"
-        },
-        "postal": {
-          "code": "20149"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 6254928,
-            "iso_code": "VA",
-            "names": {
-              "en": "Virginia",
-              "fr": "Virginie",
-              "ja": "バージニア州",
-              "pt-BR": "Virgínia",
-              "ru": "Вирджиния",
-              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
