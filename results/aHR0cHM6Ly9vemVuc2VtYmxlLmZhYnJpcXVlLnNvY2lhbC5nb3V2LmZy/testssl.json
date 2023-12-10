@@ -3,8 +3,8 @@
               "id"           : "service",
               "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "HTTP"
+              "severity"     : "DEBUG",
+              "finding"      : "Couldn't determine service, skipping all HTTP checks"
           }
 ,         {
               "id"           : "pre_128cipher",
@@ -346,7 +346,7 @@
               "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -531,105 +531,6 @@
               "finding"      : "intermediate certificate(s) is/are ok"
           }
 ,         {
-              "id"           : "HTTP_status_code",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "200 OK ('/')"
-          }
-,         {
-              "id"           : "HTTP_clock_skew",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
-          }
-,         {
-              "id"           : "HTTP_headerTime",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "1701567040"
-          }
-,         {
-              "id"           : "HSTS_time",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "182 days (=15724800 seconds) > 15552000 seconds"
-          }
-,         {
-              "id"           : "HSTS_subdomains",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "includes subdomains"
-          }
-,         {
-              "id"           : "HSTS_preload",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "domain is NOT marked for preloading"
-          }
-,         {
-              "id"           : "HPKP",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No support for HTTP Public Key Pinning"
-          }
-,         {
-              "id"           : "banner_server",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No Server banner line in header, interesting!"
-          }
-,         {
-              "id"           : "banner_application",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No application banner found"
-          }
-,         {
-              "id"           : "cookie_count",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "0 at '/'"
-          }
-,         {
-              "id"           : "X-Frame-Options",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "deny"
-          }
-,         {
-              "id"           : "X-Content-Type-Options",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "nosniff"
-          }
-,         {
-              "id"           : "X-XSS-Protection",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "1; mode=block"
-          }
-,         {
-              "id"           : "banner_reverseproxy",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "cwe"          : "CWE-200",
-              "finding"      : "--"
-          }
-,         {
               "id"           : "heartbleed",
               "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
@@ -651,10 +552,10 @@
               "id"           : "ticketbleed",
               "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "INFO",
               "cve"          : "CVE-2016-9244",
               "cwe"          : "CWE-200",
-              "finding"      : "no session ticket extension"
+              "finding"      : "not applicable, not HTTP"
           }
 ,         {
               "id"           : "ROBOT",
@@ -689,16 +590,7 @@
               "severity"     : "OK",
               "cve"          : "CVE-2012-4929",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable"
-          }
-,         {
-              "id"           : "BREACH",
-              "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "MEDIUM",
-              "cve"          : "CVE-2013-3587",
-              "cwe"          : "CWE-310",
-              "finding"      : "potentially VULNERABLE, gzip HTTP compression detected  - only supplied '/' tested"
+              "finding"      : "not vulnerable (not using HTTP anyway)"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1126,6 +1018,6 @@
               "ip"           : "ozensemble.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "97"
+              "finding"      : "91"
           }
 ]
