@@ -2,7 +2,7 @@
   "trackers": [
     {
       "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/comfortaa/v40/1PtCg8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMXL830efAesmwYSFoxBEP_I28dnyM.woff2",
+      "url": "https://fonts.gstatic.com/s/comfortaa/v45/1PtCg8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMXL830efAesmwYSFoxBEP_I28dnyM.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -10,7 +10,7 @@
     },
     {
       "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/quicksand/v30/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2",
+      "url": "https://fonts.gstatic.com/s/quicksand/v31/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -18,7 +18,7 @@
     },
     {
       "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2",
+      "url": "https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -26,7 +26,7 @@
     },
     {
       "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/comfortaa/v40/1PtCg8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMXL830efAesmwYSFoxBEP_I28dnyM.woff2",
+      "url": "https://fonts.gstatic.com/s/comfortaa/v45/1PtCg8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMXL830efAesmwYSFoxBEP_I28dnyM.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -34,7 +34,7 @@
     },
     {
       "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/quicksand/v30/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2",
+      "url": "https://fonts.gstatic.com/s/quicksand/v31/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -42,7 +42,7 @@
     },
     {
       "type": "google fonts",
-      "url": "https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2",
+      "url": "https://fonts.gstatic.com/s/opensans/v36/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2",
       "details": {
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
@@ -54,9 +54,9 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self'; connect-src 'self' https://*.gouv.fr; font-src 'self' https://fonts.gstatic.com/; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 03 Dec 2023 01:35:06 GMT",
-    "etag": "W/\"64be2d26-6a37\"",
-    "last-modified": "Mon, 24 Jul 2023 07:49:58 GMT",
+    "date": "Sun, 10 Dec 2023 01:28:55 GMT",
+    "etag": "W/\"6573530c-6a37\"",
+    "last-modified": "Fri, 08 Dec 2023 17:31:56 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -160,7 +160,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.250.190.99",
+      "ip": "172.253.63.94",
       "geoip": {
         "continent": {
           "code": "NA",
