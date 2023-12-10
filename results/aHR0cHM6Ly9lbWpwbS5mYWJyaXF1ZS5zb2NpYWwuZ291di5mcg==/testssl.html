@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az1152-403:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az1240-394:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2023-12-03 01:02:00                --&gt;&gt; 20.74.14.77:443 (emjpm.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2023-12-10 00:58:42                --&gt;&gt; 20.74.14.77:443 (emjpm.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
  rDNS (20.74.14.77):     --
  Service detected:       HTTP
@@ -97,15 +97,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication, TLS Web Client Authentication
-<span style="font-weight:bold;"> Serial                       </span>033F639664636D4A785555DA32FB04D022D7 (OK: length 18)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 11AB81ADF2C6AA15CAD67DB601889CCA745CA48C
-                              SHA256 407E8CE270F7886A24A31FA56E603B9B83BC509CA6B891A8E161467DFE3D6AB8
+<span style="font-weight:bold;"> Serial                       </span>0475BA6533BF5A8B734B1C465AC51BD863B4 (OK: length 18)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 F6713BCE11C8610A27EE6DAE09642ADF725FDC23
+                              SHA256 B6D864D6046CD1689B81CC0B32DB0D78A9E4C5FE9F89D60DF29F025760FFA9F7
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>emjpm.fabrique.social.gouv.fr </i> (CN in response to request w/o SNI: <i>Kubernetes Ingress Controller Fake Certificate </i>)
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>emjpm.fabrique.social.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">30 &gt;= 30 days</span> (2023-10-04 21:05 --&gt; 2024-01-02 21:05)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">83 &gt;= 30 days</span> (2023-12-03 20:05 --&gt; 2024-03-02 20:05)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>--
 <span style="font-weight:bold;"> OCSP URI                     </span>http://r3.o.lencr.org
@@ -123,7 +123,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">182 days</span>=15724800 s<span style="color:#008817;">, includeSubDomains</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>(no &quot;Server&quot; line in header, interesting!)
@@ -172,7 +172,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=407E8CE270F7886A24A31FA56E603B9B83BC509CA6B891A8E161467DFE3D6AB8" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=407E8CE270F7886A24A31FA56E603B9B83BC509CA6B891A8E161467DFE3D6AB8</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=B6D864D6046CD1689B81CC0B32DB0D78A9E4C5FE9F89D60DF29F025760FFA9F7" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=B6D864D6046CD1689B81CC0B32DB0D78A9E4C5FE9F89D60DF29F025760FFA9F7</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -231,7 +231,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2023-12-03 01:02:52 [  54s] --&gt;&gt; 20.74.14.77:443 (emjpm.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2023-12-10 00:59:36 [  56s] --&gt;&gt; 20.74.14.77:443 (emjpm.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
