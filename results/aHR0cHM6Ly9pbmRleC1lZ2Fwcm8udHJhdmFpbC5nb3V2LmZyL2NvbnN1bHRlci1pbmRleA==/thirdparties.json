@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "mtm_consent_removed",
-      "value": "1701564771870",
+      "value": "1702169219785",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 2647644771,
+      "expires": 2648249219,
       "size": 32,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     },
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "cf6c0ab13ae27898c8b12e46daab2cf350eb0e9b18e208fc93f5cca2408287dd%7C162399f46046e49130a273880a99125a96ca89e07c4d35b9aa3c17e37827d2a9",
+      "value": "739ace678f93c96d5abbee9dd7a7c79b5d2e302c5ad967fbc6dc4064b096d8b1%7Cd2d58291a259ba0f367c6be4b6b6706a208b2aee70ed47d659dd85caf76c12c8",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -52,7 +52,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 03 Dec 2023 00:52:50 GMT",
+    "date": "Sun, 10 Dec 2023 00:46:57 GMT",
     "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
