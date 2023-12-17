@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1702174466,
+      "expires": 1702779514,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "ee131e3aa954baa6.1702172667.",
+      "value": "8122e307b0449991.1702777715.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1736127867,
+      "expires": 1736732915,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -45,9 +45,9 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 10 Dec 2023 01:44:25 GMT",
-    "etag": "W/\"651586cd-4562\"",
-    "last-modified": "Thu, 28 Sep 2023 13:59:41 GMT",
+    "date": "Sun, 17 Dec 2023 01:48:32 GMT",
+    "etag": "W/\"65777f05-4562\"",
+    "last-modified": "Mon, 11 Dec 2023 21:28:37 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "none",
@@ -57,21 +57,8 @@
   "endpoints": [
     {
       "hostname": "1000jours.fabrique.social.gouv.fr",
-      "ip": "20.74.14.77",
+      "ip": "57.128.91.43",
       "geoip": {
-        "city": {
-          "geoname_id": 2988507,
-          "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -102,56 +89,31 @@
           }
         },
         "location": {
-          "accuracy_radius": 20,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
+          "accuracy_radius": 500,
+          "latitude": 48.8582,
+          "longitude": 2.3387,
           "time_zone": "Europe/Paris"
         },
-        "postal": {
-          "code": "75001"
-        },
         "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
+          "geoname_id": 3017382,
+          "is_in_european_union": true,
+          "iso_code": "FR",
           "names": {
-            "de": "Vereinigte Staaten",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
+            "de": "Frankreich",
+            "en": "France",
+            "es": "Francia",
+            "fr": "France",
+            "ja": "フランス共和国",
+            "pt-BR": "França",
+            "ru": "Франция",
+            "zh-CN": "法国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
-            "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
-            }
-          },
-          {
-            "geoname_id": 2968815,
-            "iso_code": "75",
-            "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "static.hotjar.com",
-      "ip": "18.160.41.53",
+      "ip": "108.139.10.66",
       "geoip": {
         "continent": {
           "code": "NA",
