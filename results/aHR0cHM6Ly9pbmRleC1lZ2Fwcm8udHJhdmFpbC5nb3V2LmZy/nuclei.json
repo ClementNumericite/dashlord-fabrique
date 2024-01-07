@@ -30,14 +30,14 @@
       "host": "index-egapro.travail.gouv.fr.",
       "matched-at": "index-egapro.travail.gouv.fr",
       "extracted-results": [
+        "ns2-04.azure-dns.net.",
         "ns3-04.azure-dns.org.",
         "ns4-04.azure-dns.info.",
-        "ns1-04.azure-dns.com.",
-        "ns2-04.azure-dns.net."
+        "ns1-04.azure-dns.com."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 8285\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 8285\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
-      "timestamp": "2023-12-31T00:47:44.161082548Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 51725\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 51725\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t21600\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t21600\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t21600\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t21600\tIN\tNS\tns4-04.azure-dns.info.\n",
+      "timestamp": "2024-01-07T00:49:37.316498025Z",
       "matcher-status": true
     },
     {
@@ -72,9 +72,9 @@
       "type": "dns",
       "host": "index-egapro.travail.gouv.fr.",
       "matched-at": "index-egapro.travail.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 59023\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 59023\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nindex-egapro.travail.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2023-12-31T00:47:44.267489762Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 17840\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 17840\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nindex-egapro.travail.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-01-07T00:49:37.386575339Z",
       "matcher-status": true
     },
     {
@@ -114,9 +114,9 @@
         "1; mode=block"
       ],
       "request": "GET / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Security-Policy: default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr\r\nContent-Type: text/html\r\nDate: Sun, 31 Dec 2023 00:47:55 GMT\r\nLocation: https://egapro.travail.gouv.fr/\r\nReferrer-Policy: no-referrer, strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Security-Policy: default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr\r\nContent-Type: text/html\r\nDate: Sun, 07 Jan 2024 00:49:48 GMT\r\nLocation: https://egapro.travail.gouv.fr/\r\nReferrer-Policy: no-referrer, strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2023-12-31T00:47:55.102819857Z",
+      "timestamp": "2024-01-07T00:49:48.081344161Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr'",
       "matcher-status": true
     },
@@ -156,9 +156,9 @@
       "host": "https://index-egapro.travail.gouv.fr",
       "matched-at": "https://index-egapro.travail.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Security-Policy: default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr\r\nContent-Type: text/html\r\nDate: Sun, 31 Dec 2023 00:48:49 GMT\r\nLocation: https://egapro.travail.gouv.fr/\r\nReferrer-Policy: no-referrer, strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Security-Policy: default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr\r\nContent-Type: text/html\r\nDate: Sun, 07 Jan 2024 00:50:41 GMT\r\nLocation: https://egapro.travail.gouv.fr/\r\nReferrer-Policy: no-referrer, strict-origin-when-cross-origin\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2023-12-31T00:48:49.318252716Z",
+      "timestamp": "2024-01-07T00:50:41.202316778Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: index-egapro.travail.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/'",
       "matcher-status": true
     },
@@ -189,7 +189,7 @@
         "Let's Encrypt"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-12-31T00:50:28.705356635Z",
+      "timestamp": "2024-01-07T00:52:20.107715208Z",
       "matcher-status": true
     },
     {
@@ -216,11 +216,11 @@
       "host": "index-egapro.travail.gouv.fr",
       "matched-at": "index-egapro.travail.gouv.fr:443",
       "extracted-results": [
-        "egapro.fabrique.social.gouv.fr",
-        "index-egapro.travail.gouv.fr"
+        "index-egapro.travail.gouv.fr",
+        "egapro.fabrique.social.gouv.fr"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-12-31T00:50:28.705457604Z",
+      "timestamp": "2024-01-07T00:52:20.107834211Z",
       "matcher-status": true
     },
     {
@@ -251,7 +251,7 @@
         "tls12"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-12-31T00:50:29.95650515Z",
+      "timestamp": "2024-01-07T00:52:21.420896932Z",
       "matcher-status": true
     },
     {
@@ -282,7 +282,7 @@
         "tls13"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2023-12-31T00:50:30.147466792Z",
+      "timestamp": "2024-01-07T00:52:21.610983079Z",
       "matcher-status": true
     }
   ]
