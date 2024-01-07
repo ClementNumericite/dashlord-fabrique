@@ -346,7 +346,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (27)"
+              "finding"      : "expires < 30 days (20)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1703985333"
+              "finding"      : "1704590009"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1112,6 +1112,6 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50"
+              "finding"      : "51"
           }
 ]
