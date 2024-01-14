@@ -178,14 +178,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-6d08614682ce3fbf.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-bceff5a265d7f60e.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/94726e6d-eaf9146f36f8e14b.js"
     },
     {
@@ -198,11 +190,27 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7c7a991dfad37ab6.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-6d08614682ce3fbf.js"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-8ccfcde1c5cb28c8.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-bceff5a265d7f60e.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-dddc0cd52e23b254.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-04a48b344e816a40.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-2cce1539578746f8.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
     },
     {
       "type": "unknown",
@@ -210,7 +218,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-04a48b344e816a40.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7c7a991dfad37ab6.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre-backoffice.prismic.io/prismic-toolbar/4.0.9/iframe.html"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-8ccfcde1c5cb28c8.js"
     }
   ],
   "cookies": [
@@ -219,7 +235,7 @@
       "value": "1",
       "domain": "archifiltre.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1704590319,
+      "expires": 1705195149,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -231,10 +247,10 @@
     },
     {
       "name": "_pk_id.20.0b0e",
-      "value": "d0186140f1b76b91.1704588519.",
+      "value": "6cfc3bd7b05a530f.1705193349.",
       "domain": "archifiltre.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1738543719,
+      "expires": 1739148549,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -248,7 +264,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 07 Jan 2024 00:48:38 GMT",
+    "date": "Sun, 14 Jan 2024 00:49:08 GMT",
     "etag": "W/\"65772208-ed93\"",
     "last-modified": "Mon, 11 Dec 2023 14:51:52 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -317,7 +333,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -336,7 +352,9 @@
               "en": "Île-de-France",
               "es": "Isla de Francia",
               "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "zh-CN": "法兰西岛"
             }
           },
           {
@@ -411,7 +429,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -430,7 +448,9 @@
               "en": "Île-de-France",
               "es": "Isla de Francia",
               "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "zh-CN": "法兰西岛"
             }
           },
           {
@@ -441,6 +461,139 @@
               "en": "Paris",
               "es": "Paris",
               "fr": "Paris"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "hostname": "static.cdn.prismic.io",
+      "ip": "13.227.74.93",
+      "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        }
+      }
+    },
+    {
+      "hostname": "archifiltre-backoffice.prismic.io",
+      "ip": "72.44.55.222",
+      "geoip": {
+        "city": {
+          "geoname_id": 4744870,
+          "names": {
+            "en": "Ashburn",
+            "ru": "Ашберн"
+          }
+        },
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 20,
+          "latitude": 39.0469,
+          "longitude": -77.4903,
+          "metro_code": 511,
+          "time_zone": "America/New_York"
+        },
+        "postal": {
+          "code": "20149"
+        },
+        "registered_country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 6254928,
+            "iso_code": "VA",
+            "names": {
+              "en": "Virginia",
+              "fr": "Virginie",
+              "ja": "バージニア州",
+              "pt-BR": "Virgínia",
+              "ru": "Вирджиния",
+              "zh-CN": "弗吉尼亚州"
             }
           }
         ]
