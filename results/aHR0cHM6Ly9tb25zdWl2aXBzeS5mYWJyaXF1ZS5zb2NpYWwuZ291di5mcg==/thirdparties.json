@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "jardinmental.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1704591752,
+      "expires": 1705196717,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.33.5031",
-      "value": "f76fe91dd8f81f3f.1704589952.",
+      "value": "37c1bd9d3192aae5.1705194918.",
       "domain": "jardinmental.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1738545152,
+      "expires": 1739150118,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -36,7 +36,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 07 Jan 2024 01:12:31 GMT",
+    "date": "Sun, 14 Jan 2024 01:15:17 GMT",
     "etag": "\"48a4-LK2v8vxiXXPP/hslD1Gtcm7IGa0\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -105,7 +105,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -124,7 +124,9 @@
               "en": "Île-de-France",
               "es": "Isla de Francia",
               "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "zh-CN": "法兰西岛"
             }
           },
           {
