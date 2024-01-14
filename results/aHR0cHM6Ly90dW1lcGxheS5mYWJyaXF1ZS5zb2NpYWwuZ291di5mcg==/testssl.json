@@ -346,7 +346,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "68 >= 30 days"
+              "finding"      : "61 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1704591151"
+              "finding"      : "1705195973"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -601,11 +601,11 @@
               "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "Cache-Control",
+              "id"           : "security_headers",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "private, no-cache, no-store, max-age=0, must-revalidate"
+              "severity"     : "MEDIUM",
+              "finding"      : "--"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -811,7 +811,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
+              "finding"      : "No connection"
           }
 ,         {
               "id"           : "clientsimulation-android_90",
@@ -835,283 +835,17 @@
               "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
-              "id"           : "clientsimulation-android_12",
+              "id"           : "scanProblem",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-chrome_79_win10",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-chrome_101_win10",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-firefox_66_win81",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-firefox_100_win10",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-ie_6_xp",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_8_win7",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_8_xp",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_11_win7",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_11_win81",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_11_winphone81",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-ie_11_win10",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-edge_15_win10",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-edge_101_win10_21h2",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-safari_121_ios_122",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-safari_130_osx_10146",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-safari_154_osx_1231",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-java_7u25",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "No connection"
-          }
-,         {
-              "id"           : "clientsimulation-java_8u161",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-java1102",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-java1703",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-go_1178",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-libressl_283",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-openssl_102e",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-openssl_110l",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-openssl_111d",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-openssl_303",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "clientsimulation-apple_mail_16_0",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
-          }
-,         {
-              "id"           : "clientsimulation-thunderbird_91_9",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
-          }
-,         {
-              "id"           : "rating_spec",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "SSL Labs's 'SSL Server Rating Guide' (version 2009q from 2020-01-30)"
-          }
-,         {
-              "id"           : "rating_doc",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide"
-          }
-,         {
-              "id"           : "protocol_support_score",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "100"
-          }
-,         {
-              "id"           : "protocol_support_score_weighted",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "30"
-          }
-,         {
-              "id"           : "key_exchange_score",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "90"
-          }
-,         {
-              "id"           : "key_exchange_score_weighted",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "27"
-          }
-,         {
-              "id"           : "cipher_strength_score",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "60"
-          }
-,         {
-              "id"           : "cipher_strength_score_weighted",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "24"
-          }
-,         {
-              "id"           : "final_score",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "81"
-          }
-,         {
-              "id"           : "overall_grade",
-              "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "A+"
+              "severity"     : "FATAL",
+              "finding"      : "repeated TCP connect problems, giving up"
           }
 ,         {
               "id"           : "scanTime",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/20.74.14.77",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "55"
+              "severity"     : "WARN",
+              "finding"      : "Scan interrupted"
           }
 ]
