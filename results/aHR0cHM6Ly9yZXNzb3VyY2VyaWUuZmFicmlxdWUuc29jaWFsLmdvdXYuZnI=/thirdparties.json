@@ -15,7 +15,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr https://plausible.numericite.eu; font-src 'self' data:; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://plausible.numericite.eu https://cdn.ravenjs.com https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 07 Jan 2024 02:04:11 GMT",
+    "date": "Sun, 14 Jan 2024 02:06:17 GMT",
     "etag": "\"134h2y98qnq1che\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -141,7 +141,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -160,7 +160,9 @@
               "en": "Île-de-France",
               "es": "Isla de Francia",
               "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "zh-CN": "法兰西岛"
             }
           },
           {
@@ -178,7 +180,7 @@
     },
     {
       "hostname": "cdn.ravenjs.com",
-      "ip": "151.101.194.217",
+      "ip": "151.101.130.217",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -198,7 +200,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -218,7 +220,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
