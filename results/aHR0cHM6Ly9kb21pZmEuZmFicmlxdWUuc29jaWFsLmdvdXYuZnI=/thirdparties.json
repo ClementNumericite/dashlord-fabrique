@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1704590792,
+      "expires": 1705195785,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.17.b1ca",
-      "value": "63d5cd8b718cf4c0.1704588992.",
+      "value": "3b53f6919c4cc16d.1705193986.",
       "domain": "domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1738544192,
+      "expires": 1739149186,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -37,9 +37,9 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 07 Jan 2024 00:56:31 GMT",
-    "etag": "W/\"65959aac-1fee\"",
-    "last-modified": "Wed, 03 Jan 2024 17:34:36 GMT",
+    "date": "Sun, 14 Jan 2024 00:59:44 GMT",
+    "etag": "W/\"659fee6c-1fee\"",
+    "last-modified": "Thu, 11 Jan 2024 13:34:36 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -106,7 +106,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -125,7 +125,9 @@
               "en": "Île-de-France",
               "es": "Isla de Francia",
               "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "zh-CN": "法兰西岛"
             }
           },
           {
