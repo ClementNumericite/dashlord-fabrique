@@ -8,10 +8,10 @@
   "cookies": [
     {
       "name": "mtm_consent_removed",
-      "value": "1704593572451",
+      "value": "1705198196259",
       "domain": "mon-domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 2650673572,
+      "expires": 2651278196,
       "size": 32,
       "httpOnly": false,
       "secure": false,
@@ -27,9 +27,9 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 07 Jan 2024 02:12:51 GMT",
-    "etag": "W/\"65959a98-1f6e\"",
-    "last-modified": "Wed, 03 Jan 2024 17:34:16 GMT",
+    "date": "Sun, 14 Jan 2024 02:09:55 GMT",
+    "etag": "W/\"659f1f2d-1f6e\"",
+    "last-modified": "Wed, 10 Jan 2024 22:50:21 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -96,7 +96,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -115,7 +115,9 @@
               "en": "Île-de-France",
               "es": "Isla de Francia",
               "fr": "Île-de-France",
-              "pt-BR": "Ilha de França"
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "zh-CN": "法兰西岛"
             }
           },
           {
@@ -153,7 +155,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
@@ -173,7 +175,7 @@
           "geoname_id": 6252001,
           "iso_code": "US",
           "names": {
-            "de": "Vereinigte Staaten",
+            "de": "USA",
             "en": "United States",
             "es": "Estados Unidos",
             "fr": "États Unis",
