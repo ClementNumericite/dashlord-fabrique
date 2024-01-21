@@ -346,7 +346,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "73 >= 30 days"
+              "finding"      : "66 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1705193355"
+              "finding"      : "1705798182"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -615,11 +615,11 @@
               "finding"      : "nosniff"
           }
 ,         {
-              "id"           : "Content-Security-Policy",
+              "id"           : "Permissions-Policy",
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-ancestors 'self' https://*.gouv.fr; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr"
+              "finding"      : "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -1140,6 +1140,6 @@
               "ip"           : "index-egapro.travail.gouv.fr/20.74.14.77",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "94"
+              "finding"      : "91"
           }
 ]
