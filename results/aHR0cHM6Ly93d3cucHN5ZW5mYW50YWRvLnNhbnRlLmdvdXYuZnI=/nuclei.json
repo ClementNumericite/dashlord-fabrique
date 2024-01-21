@@ -1,46 +1,6 @@
 [
   [
     {
-      "template": "dns/nameserver-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
-      "template-id": "nameserver-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
-      "info": {
-        "name": "NS Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "ns"
-        ],
-        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "www.psyenfantado.sante.gouv.fr.",
-      "matched-at": "www.psyenfantado.sante.gouv.fr",
-      "extracted-results": [
-        "ns3-03.azure-dns.org.",
-        "ns4-03.azure-dns.info.",
-        "ns1-03.azure-dns.com.",
-        "ns2-03.azure-dns.net."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 37897\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 37897\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns1-03.azure-dns.com.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns2-03.azure-dns.net.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns3-03.azure-dns.org.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns4-03.azure-dns.info.\n",
-      "timestamp": "2024-01-14T01:35:18.217622936Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/dns-saas-service-detection.yaml",
       "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
       "template-id": "dns-saas-service-detection",
@@ -72,9 +32,9 @@
       "extracted-results": [
         "psyenfantado.sante.gouv.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 17926\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 17926\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3599\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t1799\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-01-14T01:35:19.202879907Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 30947\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 30947\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t1800\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-01-21T01:36:39.78229905Z",
       "matcher-status": true
     },
     {
@@ -109,9 +69,49 @@
       "type": "dns",
       "host": "www.psyenfantado.sante.gouv.fr.",
       "matched-at": "www.psyenfantado.sante.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 34448\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 34448\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t300\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-01-14T01:35:19.385198532Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 50145\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 50145\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t300\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-01-21T01:36:39.841308813Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/nameserver-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
+      "template-id": "nameserver-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
+      "info": {
+        "name": "NS Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "ns"
+        ],
+        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.psyenfantado.sante.gouv.fr.",
+      "matched-at": "www.psyenfantado.sante.gouv.fr",
+      "extracted-results": [
+        "ns3-03.azure-dns.org.",
+        "ns4-03.azure-dns.info.",
+        "ns1-03.azure-dns.com.",
+        "ns2-03.azure-dns.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 371\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 371\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3599\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns1-03.azure-dns.com.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns2-03.azure-dns.net.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns3-03.azure-dns.org.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns4-03.azure-dns.info.\n",
+      "timestamp": "2024-01-21T01:36:40.7698662Z",
       "matcher-status": true
     },
     {
@@ -150,9 +150,9 @@
       "host": "https://www.psyenfantado.sante.gouv.fr",
       "matched-at": "https://www.psyenfantado.sante.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: www.psyenfantado.sante.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 14 Jan 2024 01:36:21 GMT\r\nLocation: https://monsoutienpsy.sante.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 21 Jan 2024 01:37:45 GMT\r\nLocation: https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-14T01:36:21.998754793Z",
+      "timestamp": "2024-01-21T01:37:45.994586538Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: www.psyenfantado.sante.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://www.psyenfantado.sante.gouv.fr/'",
       "matcher-status": true
     },
@@ -183,7 +183,7 @@
         "Let's Encrypt"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-14T01:38:00.851776421Z",
+      "timestamp": "2024-01-21T01:39:25.854208141Z",
       "matcher-status": true
     },
     {
@@ -210,18 +210,10 @@
       "host": "www.psyenfantado.sante.gouv.fr",
       "matched-at": "www.psyenfantado.sante.gouv.fr:443",
       "extracted-results": [
-        "www.monsoutienpsy.sante.gouv.fr",
-        "psy-enfant-ado.sante.gouv.fr",
-        "monpsy.sante.gouv.fr",
-        "psyenfantado.sante.gouv.fr",
-        "www.monparcourspsy.sante.gouv.fr",
-        "www.monpsy.sante.gouv.fr",
-        "www.psy-enfant-ado.sante.gouv.fr",
-        "www.psyenfantado.sante.gouv.fr",
-        "monparcourspsy.sante.gouv.fr"
+        "www.psyenfantado.sante.gouv.fr"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-14T01:38:00.851910912Z",
+      "timestamp": "2024-01-21T01:39:25.854310594Z",
       "matcher-status": true
     },
     {
@@ -252,7 +244,7 @@
         "tls12"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-14T01:38:02.265550743Z",
+      "timestamp": "2024-01-21T01:39:28.722640461Z",
       "matcher-status": true
     },
     {
@@ -283,7 +275,7 @@
         "tls13"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-14T01:38:02.452068331Z",
+      "timestamp": "2024-01-21T01:39:28.901727501Z",
       "matcher-status": true
     }
   ]

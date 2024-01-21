@@ -16,7 +16,7 @@
         "href": "https://www.psyenfantado.sante.gouv.fr/"
       },
       "link": "https://www.psyenfantado.sante.gouv.fr/",
-      "line": "--2024-01-14 01:32:24--  https://www.psyenfantado.sante.gouv.fr/",
+      "line": "--2024-01-21 01:33:49--  https://www.psyenfantado.sante.gouv.fr/",
       "broken": false
     },
     {
@@ -24,18 +24,18 @@
         "protocol": "https:",
         "slashes": true,
         "auth": null,
-        "host": "monsoutienpsy.sante.gouv.fr",
+        "host": "www.ameli.fr",
         "port": null,
-        "hostname": "monsoutienpsy.sante.gouv.fr",
+        "hostname": "www.ameli.fr",
         "hash": null,
         "search": null,
         "query": null,
-        "pathname": "/",
-        "path": "/",
-        "href": "https://monsoutienpsy.sante.gouv.fr/"
+        "pathname": "/assure/remboursements/rembourse/seances-avec-un-psychologue",
+        "path": "/assure/remboursements/rembourse/seances-avec-un-psychologue",
+        "href": "https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue"
       },
-      "link": "https://monsoutienpsy.sante.gouv.fr/",
-      "line": "--2024-01-14 01:32:24--  https://monsoutienpsy.sante.gouv.fr/",
+      "link": "https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue",
+      "line": "--2024-01-21 01:33:50--  https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue",
       "broken": false
     }
   ],
