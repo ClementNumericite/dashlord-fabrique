@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "ozensemble.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1705802092,
+      "expires": 1706407062,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.34.d3dd",
-      "value": "e10270669318ef41.1705800292.",
+      "value": "6859e7a3c0f23e14.1706405262.",
       "domain": "ozensemble.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1739755492,
+      "expires": 1740360462,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -35,9 +35,9 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 21 Jan 2024 01:24:51 GMT",
-    "etag": "W/\"659e5b6c-6e68\"",
-    "last-modified": "Wed, 10 Jan 2024 08:55:08 GMT",
+    "date": "Sun, 28 Jan 2024 01:27:41 GMT",
+    "etag": "W/\"65b267ff-7492\"",
+    "last-modified": "Thu, 25 Jan 2024 13:54:07 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -79,7 +79,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
