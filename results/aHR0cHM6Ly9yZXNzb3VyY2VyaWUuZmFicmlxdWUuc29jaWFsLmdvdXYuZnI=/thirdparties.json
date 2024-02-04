@@ -5,8 +5,12 @@
       "url": "https://plausible.numericite.eu/js/plausible.js"
     },
     {
-      "type": "unknown",
-      "url": "https://cdn.ravenjs.com/3.19.1/raven.min.js"
+      "type": "sentry",
+      "url": "https://cdn.ravenjs.com/3.19.1/raven.min.js",
+      "details": {
+        "id": "sentry",
+        "message": "Ensure your TOS notify the Sentry usage"
+      }
     }
   ],
   "cookies": [],
@@ -15,7 +19,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr https://plausible.numericite.eu; font-src 'self' data:; img-src 'self' data:; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://plausible.numericite.eu https://cdn.ravenjs.com https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'; manifest-src 'self'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 28 Jan 2024 02:06:02 GMT",
+    "date": "Sun, 04 Feb 2024 02:37:06 GMT",
     "etag": "\"fc77-H/5JazaRNkohG4DsDvGVE2v0y5A\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -180,7 +184,7 @@
     },
     {
       "hostname": "cdn.ravenjs.com",
-      "ip": "151.101.194.217",
+      "ip": "151.101.66.217",
       "geoip": {
         "continent": {
           "code": "NA",
