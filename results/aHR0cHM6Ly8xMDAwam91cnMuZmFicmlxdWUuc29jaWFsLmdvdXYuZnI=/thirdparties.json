@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1706408023,
+      "expires": 1707014320,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "f2ad45eba7dc6634.1706406224.",
+      "value": "39046be2432937c1.1707012520.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1740361424,
+      "expires": 1740967720,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -45,7 +45,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 28 Jan 2024 01:43:42 GMT",
+    "date": "Sun, 04 Feb 2024 02:08:39 GMT",
     "etag": "W/\"65806c43-4562\"",
     "last-modified": "Mon, 18 Dec 2023 15:58:59 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -113,7 +113,7 @@
     },
     {
       "hostname": "static.hotjar.com",
-      "ip": "108.139.10.63",
+      "ip": "52.84.18.58",
       "geoip": {
         "continent": {
           "code": "NA",
