@@ -1,6 +1,43 @@
 [
   [
     {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "index-egapro.travail.gouv.fr.",
+      "matched-at": "index-egapro.travail.gouv.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 15421\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 15421\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nindex-egapro.travail.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-02-04T00:45:44.420280256Z",
+      "matcher-status": true
+    },
+    {
       "template": "dns/nameserver-fingerprint.yaml",
       "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
       "template-id": "nameserver-fingerprint",
@@ -35,46 +72,9 @@
         "ns3-04.azure-dns.org.",
         "ns4-04.azure-dns.info."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 19313\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 19313\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
-      "timestamp": "2024-01-28T00:46:42.293647718Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "index-egapro.travail.gouv.fr.",
-      "matched-at": "index-egapro.travail.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 39919\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 39919\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nindex-egapro.travail.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-01-28T00:46:42.295192063Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 48626\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 48626\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;index-egapro.travail.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nindex-egapro.travail.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
+      "timestamp": "2024-02-04T00:45:44.528168891Z",
       "matcher-status": true
     },
     {
@@ -113,9 +113,9 @@
       "host": "https://index-egapro.travail.gouv.fr/consulter-index",
       "matched-at": "https://index-egapro.travail.gouv.fr/consulter-index/",
       "request": "POST /consulter-index/ HTTP/1.1\r\nHost: index-egapro.travail.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 28 Jan 2024 00:48:26 GMT\r\nLocation: https://egapro.travail.gouv.fr/consulter-index/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 04 Feb 2024 00:46:51 GMT\r\nLocation: https://egapro.travail.gouv.fr/consulter-index/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-28T00:48:26.405951291Z",
+      "timestamp": "2024-02-04T00:46:51.694064545Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: index-egapro.travail.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://index-egapro.travail.gouv.fr/consulter-index/'",
       "matcher-status": true
     },
@@ -146,7 +146,7 @@
         "Let's Encrypt"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-28T00:50:16.838893661Z",
+      "timestamp": "2024-02-04T00:48:31.429821984Z",
       "matcher-status": true
     },
     {
@@ -177,7 +177,7 @@
         "index-egapro.travail.gouv.fr"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-28T00:50:16.83900505Z",
+      "timestamp": "2024-02-04T00:48:31.429934382Z",
       "matcher-status": true
     },
     {
@@ -208,7 +208,7 @@
         "tls12"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-28T00:50:19.762364816Z",
+      "timestamp": "2024-02-04T00:48:32.773080224Z",
       "matcher-status": true
     },
     {
@@ -239,7 +239,7 @@
         "tls13"
       ],
       "ip": "20.74.14.77",
-      "timestamp": "2024-01-28T00:50:20.052566489Z",
+      "timestamp": "2024-02-04T00:48:32.973442635Z",
       "matcher-status": true
     }
   ]
