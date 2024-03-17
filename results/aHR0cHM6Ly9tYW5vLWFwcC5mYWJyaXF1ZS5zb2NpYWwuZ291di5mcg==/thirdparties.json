@@ -38,11 +38,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/NKc7wRfR6FnZclkND3ipr/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/dQgP_NdIyYDfci5D_FVXN/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/NKc7wRfR6FnZclkND3ipr/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/dQgP_NdIyYDfci5D_FVXN/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -157,8 +157,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 10 Mar 2024 02:21:06 GMT",
-    "etag": "\"ykp2n078udp2t\"",
+    "date": "Sun, 17 Mar 2024 02:20:18 GMT",
+    "etag": "\"j9qkd6ipjlp2t\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
