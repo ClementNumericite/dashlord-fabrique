@@ -1,43 +1,6 @@
 [
   [
     {
-      "template": "dns/dns-saas-service-detection.yaml",
-      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
-      "template-id": "dns-saas-service-detection",
-      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
-      "info": {
-        "name": "DNS SaaS Service Detection",
-        "author": [
-          "noah @thesubtlety",
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "service"
-        ],
-        "description": "A CNAME DNS record was discovered",
-        "reference": [
-          "https://ns1.com/resources/cname",
-          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
-          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "type": "dns",
-      "host": "carnet-de-bord.fabrique.social.gouv.fr.",
-      "matched-at": "carnet-de-bord.fabrique.social.gouv.fr",
-      "extracted-results": [
-        "cdb-app-production.osc-secnum-fr1.scalingo.io."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 17154\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 17154\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\n",
-      "timestamp": "2024-03-10T02:09:25.357123514Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/caa-fingerprint.yaml",
       "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
       "template-id": "caa-fingerprint",
@@ -69,9 +32,46 @@
       "type": "dns",
       "host": "carnet-de-bord.fabrique.social.gouv.fr.",
       "matched-at": "carnet-de-bord.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 1766\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 1766\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\ncdb-app-production.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2335326522 10000 2400 604800 1800\n",
-      "timestamp": "2024-03-10T02:09:25.384016924Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 39643\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 39643\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\ncdb-app-production.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2335326522 10000 2400 604800 1800\n",
+      "timestamp": "2024-03-17T02:09:06.446451837Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/dns-saas-service-detection.yaml",
+      "template-url": "https://templates.nuclei.sh/public/dns-saas-service-detection",
+      "template-id": "dns-saas-service-detection",
+      "template-path": "/home/runner/nuclei-templates/dns/dns-saas-service-detection.yaml",
+      "info": {
+        "name": "DNS SaaS Service Detection",
+        "author": [
+          "noah @thesubtlety",
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "service"
+        ],
+        "description": "A CNAME DNS record was discovered",
+        "reference": [
+          "https://ns1.com/resources/cname",
+          "https://www.theregister.com/2021/02/24/dns_cname_tracking/",
+          "https://www.ionos.com/digitalguide/hosting/technical-matters/cname-record/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "type": "dns",
+      "host": "carnet-de-bord.fabrique.social.gouv.fr.",
+      "matched-at": "carnet-de-bord.fabrique.social.gouv.fr",
+      "extracted-results": [
+        "cdb-app-production.osc-secnum-fr1.scalingo.io."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 6248\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 6248\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\n",
+      "timestamp": "2024-03-17T02:09:07.396243631Z",
       "matcher-status": true
     },
     {
@@ -100,8 +100,8 @@
       "extracted-results": [
         "Let's Encrypt"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2024-03-10T02:16:23.449791479Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2024-03-17T02:16:12.868280302Z",
       "matcher-status": true
     },
     {
@@ -130,8 +130,8 @@
       "extracted-results": [
         "carnet-de-bord.fabrique.social.gouv.fr"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2024-03-10T02:16:23.44990939Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2024-03-17T02:16:12.868421175Z",
       "matcher-status": true
     },
     {
@@ -161,8 +161,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2024-03-10T02:16:25.095444235Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2024-03-17T02:16:14.584875414Z",
       "matcher-status": true
     },
     {
@@ -192,8 +192,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2024-03-10T02:16:25.29905742Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2024-03-17T02:16:14.816055989Z",
       "matcher-status": true
     }
   ]
