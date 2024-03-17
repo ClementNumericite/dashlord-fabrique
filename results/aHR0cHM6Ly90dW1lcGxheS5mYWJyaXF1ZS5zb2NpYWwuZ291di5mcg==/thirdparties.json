@@ -9,7 +9,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 10 Mar 2024 01:51:58 GMT",
+    "date": "Sun, 17 Mar 2024 01:47:34 GMT",
     "etag": "\"29x2qc6omyr7x\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -74,7 +74,7 @@
     },
     {
       "hostname": "ipapi.co",
-      "ip": "104.21.69.65",
+      "ip": "104.26.9.44",
       "geoip": {
         "registered_country": {
           "geoname_id": 6252001,
