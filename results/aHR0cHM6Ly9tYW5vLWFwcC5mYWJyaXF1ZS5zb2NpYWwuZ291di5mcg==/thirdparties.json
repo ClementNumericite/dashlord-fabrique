@@ -6,7 +6,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/css/a5c6ef8e2e904b8b.css"
+      "url": "https://mano.sesan.fr/_next/static/css/2669b28ff9eea645.css"
     },
     {
       "type": "unknown",
@@ -34,15 +34,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/chunks/pages/index-454a3655380df556.js"
+      "url": "https://mano.sesan.fr/_next/static/chunks/pages/index-de8b48a6f85f6ed2.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/dQgP_NdIyYDfci5D_FVXN/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/t2FK1cw6p-FAJr0c5X3Ks/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/dQgP_NdIyYDfci5D_FVXN/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/t2FK1cw6p-FAJr0c5X3Ks/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -126,11 +126,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/chunks/pages/faq-92b80a288ce5cc58.js"
+      "url": "https://mano.sesan.fr/_next/static/chunks/pages/faq-e12013eec562d8a4.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/chunks/pages/faq-92b80a288ce5cc58.js"
+      "url": "https://mano.sesan.fr/_next/static/chunks/pages/faq-e12013eec562d8a4.js"
     },
     {
       "type": "unknown",
@@ -157,8 +157,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 17 Mar 2024 02:20:18 GMT",
-    "etag": "\"j9qkd6ipjlp2t\"",
+    "date": "Sun, 24 Mar 2024 02:17:54 GMT",
+    "etag": "\"170j0hwz1wgp9l\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
@@ -227,14 +227,16 @@
       "ip": "194.56.95.20",
       "geoip": {
         "city": {
-          "geoname_id": 3020601,
+          "geoname_id": 2988507,
           "names": {
-            "en": "Eaubonne",
-            "fr": "Eaubonne",
-            "ja": "オーボンヌ",
-            "pt-BR": "Eaubonne",
-            "ru": "Обонн",
-            "zh-CN": "奥博讷"
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
           }
         },
         "continent": {
@@ -268,12 +270,12 @@
         },
         "location": {
           "accuracy_radius": 10,
-          "latitude": 48.9999,
-          "longitude": 2.2821,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "95600"
+          "code": "75019"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -301,17 +303,18 @@
               "fr": "Île-de-France",
               "ja": "イル・ド・フランス",
               "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
               "zh-CN": "法兰西岛"
             }
           },
           {
-            "geoname_id": 2971071,
-            "iso_code": "95",
+            "geoname_id": 2968815,
+            "iso_code": "75",
             "names": {
-              "de": "Val d'Oise",
-              "en": "Val d'Oise",
-              "es": "Valle de Oise",
-              "fr": "Val-d'Oise"
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
             }
           }
         ]
@@ -322,14 +325,16 @@
       "ip": "194.56.95.20",
       "geoip": {
         "city": {
-          "geoname_id": 3020601,
+          "geoname_id": 2988507,
           "names": {
-            "en": "Eaubonne",
-            "fr": "Eaubonne",
-            "ja": "オーボンヌ",
-            "pt-BR": "Eaubonne",
-            "ru": "Обонн",
-            "zh-CN": "奥博讷"
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
           }
         },
         "continent": {
@@ -363,12 +368,12 @@
         },
         "location": {
           "accuracy_radius": 10,
-          "latitude": 48.9999,
-          "longitude": 2.2821,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "95600"
+          "code": "75019"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -396,17 +401,18 @@
               "fr": "Île-de-France",
               "ja": "イル・ド・フランス",
               "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
               "zh-CN": "法兰西岛"
             }
           },
           {
-            "geoname_id": 2971071,
-            "iso_code": "95",
+            "geoname_id": 2968815,
+            "iso_code": "75",
             "names": {
-              "de": "Val d'Oise",
-              "en": "Val d'Oise",
-              "es": "Valle de Oise",
-              "fr": "Val-d'Oise"
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
             }
           }
         ]
