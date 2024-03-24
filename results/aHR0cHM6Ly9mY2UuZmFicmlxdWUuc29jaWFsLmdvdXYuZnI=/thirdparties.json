@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "fce.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1710643304,
+      "expires": 1711248089,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.8.66b2",
-      "value": "a0a00a0ad99057eb.1710641505.",
+      "value": "774e099a9d3311d9.1711246290.",
       "domain": "fce.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1744596705,
+      "expires": 1745201490,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -35,7 +35,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 17 Mar 2024 02:11:43 GMT",
+    "date": "Sun, 24 Mar 2024 02:11:28 GMT",
     "etag": "W/\"65e5efa2-231\"",
     "last-modified": "Mon, 04 Mar 2024 15:58:26 GMT",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
@@ -125,6 +125,7 @@
               "fr": "Île-de-France",
               "ja": "イル・ド・フランス",
               "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
               "zh-CN": "法兰西岛"
             }
           },
