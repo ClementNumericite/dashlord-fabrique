@@ -16,26 +16,7 @@
         "href": "https://monpsy.sante.gouv.fr/"
       },
       "link": "https://monpsy.sante.gouv.fr/",
-      "line": "--2024-03-17 02:21:14--  https://monpsy.sante.gouv.fr/",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "www.ameli.fr",
-        "port": null,
-        "hostname": "www.ameli.fr",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/assure/remboursements/rembourse/seances-avec-un-psychologue",
-        "path": "/assure/remboursements/rembourse/seances-avec-un-psychologue",
-        "href": "https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue"
-      },
-      "link": "https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue",
-      "line": "--2024-03-17 02:21:15--  https://www.ameli.fr/assure/remboursements/rembourse/seances-avec-un-psychologue",
+      "line": "--2024-03-24 02:21:37--  https://monpsy.sante.gouv.fr/",
       "broken": false
     }
   ],
