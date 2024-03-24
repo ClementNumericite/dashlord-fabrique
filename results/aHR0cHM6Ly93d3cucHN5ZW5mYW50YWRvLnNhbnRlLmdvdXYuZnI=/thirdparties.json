@@ -1,42 +1,15 @@
 {
   "trackers": [
     {
-      "type": "cloudflare",
-      "url": "https://challenges.cloudflare.com/turnstile/v0/b/ace796eb5511/api.js?onload=BrnBEe5&render=explicit",
-      "details": {
-        "id": "cloudflare",
-        "message": "Host files locally"
-      }
-    },
-    {
-      "type": "cloudflare",
-      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/if/ov2/av0/rcv0/0/7gnsz/0x4AAAAAAADnPIDROrmt1Wwj/light/normal",
-      "details": {
-        "id": "cloudflare",
-        "message": "Host files locally"
-      }
+      "type": "unknown",
+      "url": "https://browser.sentry-cdn.com/5.15.5/bundle.min.js"
     }
   ],
   "cookies": [],
   "headers": {
-    "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
-    "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
-    "cf-chl-out": "ljCsvecjf8R670qAHor2wh+QYbVd8CC4/eTkjEO+tHv4XhoIQC3dsO+R2eCuH0loEfhtLWQ8jySHSHIL964elrgXJV1TOLDEg7JA3ae9Jj/G+UsBQ9SBmofwpvhnx9QsuHs5gw9l89THLIfIItvR9A==$wasBwukThREpFu02AEtClA==",
-    "cf-mitigated": "challenge",
-    "cf-ray": "865954b36acb2282-CDG",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=UTF-8",
-    "cross-origin-embedder-policy": "require-corp",
-    "cross-origin-opener-policy": "same-origin",
-    "cross-origin-resource-policy": "same-origin",
-    "date": "Sun, 17 Mar 2024 01:50:13 GMT",
-    "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
-    "origin-agent-cluster": "?1",
-    "permissions-policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
-    "referrer-policy": "same-origin",
-    "server": "cloudflare",
-    "vary": "Accept-Encoding",
-    "x-frame-options": "SAMEORIGIN"
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 24 Mar 2024 01:52:24 GMT",
+    "strict-transport-security": "max-age=15724800; includeSubDomains"
   },
   "endpoints": [
     {
@@ -119,6 +92,7 @@
               "fr": "Île-de-France",
               "ja": "イル・ド・フランス",
               "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
               "zh-CN": "法兰西岛"
             }
           },
@@ -136,9 +110,43 @@
       }
     },
     {
-      "hostname": "challenges.cloudflare.com",
-      "ip": "104.17.2.184",
+      "hostname": "browser.sentry-cdn.com",
+      "ip": "151.101.130.217",
       "geoip": {
+        "continent": {
+          "code": "NA",
+          "geoname_id": 6255149,
+          "names": {
+            "de": "Nordamerika",
+            "en": "North America",
+            "es": "Norteamérica",
+            "fr": "Amérique du Nord",
+            "ja": "北アメリカ",
+            "pt-BR": "América do Norte",
+            "ru": "Северная Америка",
+            "zh-CN": "北美洲"
+          }
+        },
+        "country": {
+          "geoname_id": 6252001,
+          "iso_code": "US",
+          "names": {
+            "de": "USA",
+            "en": "United States",
+            "es": "Estados Unidos",
+            "fr": "États Unis",
+            "ja": "アメリカ",
+            "pt-BR": "EUA",
+            "ru": "США",
+            "zh-CN": "美国"
+          }
+        },
+        "location": {
+          "accuracy_radius": 1000,
+          "latitude": 37.751,
+          "longitude": -97.822,
+          "time_zone": "America/Chicago"
+        },
         "registered_country": {
           "geoname_id": 6252001,
           "iso_code": "US",
