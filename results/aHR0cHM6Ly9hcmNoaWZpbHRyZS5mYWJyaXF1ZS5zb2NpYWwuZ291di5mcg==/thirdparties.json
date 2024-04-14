@@ -182,7 +182,47 @@
     },
     {
       "type": "unknown",
-      "url": "https://api.pirsch.io/hit?nc=1712450747244&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
+      "url": "https://archifiltre.fr/_next/static/chunks/94726e6d-c4cbb5dcf369a3dc.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/785-3c0aea30c53d4ec0.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/mails-65f6bdcbb28e41b5.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-284a1b40f60a8498.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-03c2e3bc4203e271.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-d0b3c11450cb2ee3.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://api.pirsch.io/hit?nc=1713055551578&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
+    },
+    {
+      "type": "unknown",
+      "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-60bb0cc029308a51.js"
     },
     {
       "type": "unknown",
@@ -202,46 +242,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-284a1b40f60a8498.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/94726e6d-c4cbb5dcf369a3dc.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/785-3c0aea30c53d4ec0.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-60bb0cc029308a51.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/mails-65f6bdcbb28e41b5.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-03c2e3bc4203e271.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-d0b3c11450cb2ee3.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
-    },
-    {
-      "type": "unknown",
       "url": "https://archifiltre-backoffice.prismic.io/prismic-toolbar/4.1.0/iframe.html"
     }
   ],
@@ -250,7 +250,7 @@
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 07 Apr 2024 00:45:46 GMT",
+    "date": "Sun, 14 Apr 2024 00:45:41 GMT",
     "etag": "\"1301ygi6ia09gt\"",
     "strict-transport-security": "max-age=15724800; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -460,7 +460,7 @@
     },
     {
       "hostname": "static.cdn.prismic.io",
-      "ip": "99.84.191.33",
+      "ip": "99.84.191.5",
       "geoip": {
         "continent": {
           "code": "NA",
