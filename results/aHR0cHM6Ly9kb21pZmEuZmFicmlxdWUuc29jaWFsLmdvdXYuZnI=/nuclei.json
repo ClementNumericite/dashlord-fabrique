@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "domifa.fabrique.social.gouv.fr.",
       "matched-at": "domifa.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 62531\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;domifa.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 62531\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;domifa.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-04-07T01:02:32.221946057Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 59818\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;domifa.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 59818\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;domifa.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-04-14T01:01:03.046295899Z",
       "matcher-status": true
     },
     {
@@ -74,243 +74,9 @@
         "1; mode=block"
       ],
       "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:02:51 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:12 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:02:51.530474351Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "permissions-policy",
-      "type": "http",
-      "host": "https://domifa.fabrique.social.gouv.fr",
-      "matched-at": "https://domifa.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917057545Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "x-permitted-cross-domain-policies",
-      "type": "http",
-      "host": "https://domifa.fabrique.social.gouv.fr",
-      "matched-at": "https://domifa.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917102419Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "referrer-policy",
-      "type": "http",
-      "host": "https://domifa.fabrique.social.gouv.fr",
-      "matched-at": "https://domifa.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917115944Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "clear-site-data",
-      "type": "http",
-      "host": "https://domifa.fabrique.social.gouv.fr",
-      "matched-at": "https://domifa.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917129199Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-embedder-policy",
-      "type": "http",
-      "host": "https://domifa.fabrique.social.gouv.fr",
-      "matched-at": "https://domifa.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917147754Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "cross-origin-opener-policy",
-      "type": "http",
-      "host": "https://domifa.fabrique.social.gouv.fr",
-      "matched-at": "https://domifa.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917197056Z",
+      "timestamp": "2024-04-14T01:01:12.937855346Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -347,9 +113,243 @@
       "host": "https://domifa.fabrique.social.gouv.fr",
       "matched-at": "https://domifa.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:03:47 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:03:47.917214197Z",
+      "timestamp": "2024-04-14T01:01:46.295889111Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "permissions-policy",
+      "type": "http",
+      "host": "https://domifa.fabrique.social.gouv.fr",
+      "matched-at": "https://domifa.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-04-14T01:01:46.295942441Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "x-permitted-cross-domain-policies",
+      "type": "http",
+      "host": "https://domifa.fabrique.social.gouv.fr",
+      "matched-at": "https://domifa.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-04-14T01:01:46.29596325Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://domifa.fabrique.social.gouv.fr",
+      "matched-at": "https://domifa.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-04-14T01:01:46.295978468Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "clear-site-data",
+      "type": "http",
+      "host": "https://domifa.fabrique.social.gouv.fr",
+      "matched-at": "https://domifa.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-04-14T01:01:46.295992424Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-embedder-policy",
+      "type": "http",
+      "host": "https://domifa.fabrique.social.gouv.fr",
+      "matched-at": "https://domifa.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-04-14T01:01:46.296005459Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "cross-origin-opener-policy",
+      "type": "http",
+      "host": "https://domifa.fabrique.social.gouv.fr",
+      "matched-at": "https://domifa.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:46 GMT\r\nEtag: W/\"66041c15-8f4\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!DOCTYPE html>\n<html lang=\"fr\">\n  <head>\n    <meta charset=\"utf-8\"/>\n    <base href=\"/\"/>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../assets/favicon/apple-touch-icon.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../assets/favicon/favicon-32x32.png\"/>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../assets/favicon/favicon-16x16.png\"/>\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"../assets/favicon/favicon.ico\"/>\n    <meta name=\"google-site-verification\" content=\"snKhzjeGyAFbfjnqc2BFFmpC3m230MuTzKgxayer-fI\"/>\n    <link rel=\"manifest\" href=\"../assets/favicon/site.webmanifest\"/>\n    <link rel=\"mask-icon\" href=\"../assets/favicon/safari-pinned-tab.svg\" color=\"#4164F5\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\"/>\n    <meta name=\"theme-color\" content=\"#ffffff\"/>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"/>\n    <meta name=\"robots\" content=\"index,follow\"/>\n    <title>\n      DomiFa : faciliter la domiciliation des personnes sans domicile stable\n    </title>\n    <meta name=\"description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta name=\"twitter:card\" content=\"summary\"/>\n    <meta property=\"og:title\" content=\"DomiFa : faciliter la domiciliation des personnes sans domicile stable\"/>\n    <meta property=\"og:type\" content=\"website\"/>\n    <meta property=\"og:description\" content=\"DomiFa est un outil numérique gratuit permettant aux organismes domiciliataires de simplifier la gestion de la domiciliation des personnes sans domicile stable.\"/>\n    <meta property=\"og:site_name\" content=\"DomiFa\"/>\n    <meta property=\"og:locale\" content=\"fr\"/>\n  <link rel=\"stylesheet\" href=\"styles.WHU5YMKW.css\"><link rel=\"modulepreload\" href=\"chunk-G3PBQQBB.js\"><link rel=\"modulepreload\" href=\"chunk-A2QSGLRT.js\"><link rel=\"modulepreload\" href=\"chunk-WSEWLZP4.js\"><link rel=\"modulepreload\" href=\"chunk-OZOPGBSW.js\"><link rel=\"modulepreload\" href=\"chunk-NUGQY7PR.js\"></head>\n  <body id=\"top-site\">\n    <app-root></app-root>\n  <script src=\"polyfills.QFXUKYGF.js\" type=\"module\"></script><script src=\"main.6ELW645S.js\" type=\"module\"></script></body>\n</html>\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-04-14T01:01:46.296017842Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -378,9 +378,9 @@
       "host": "https://domifa.fabrique.social.gouv.fr",
       "matched-at": "https://domifa.fabrique.social.gouv.fr/robots.txt",
       "request": "GET /robots.txt HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 24\r\nAccept-Ranges: bytes\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:04:05 GMT\r\nEtag: \"66041c15-18\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\nUser-agent: *\nDisallow:\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 24\r\nAccept-Ranges: bytes\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/plain; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:01:55 GMT\r\nEtag: \"66041c15-18\"\r\nLast-Modified: Wed, 27 Mar 2024 13:16:05 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\nUser-agent: *\nDisallow:\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:04:05.119549Z",
+      "timestamp": "2024-04-14T01:01:55.880505127Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr/robots.txt'",
       "matcher-status": true
     },
@@ -420,9 +420,9 @@
       "host": "https://domifa.fabrique.social.gouv.fr",
       "matched-at": "https://domifa.fabrique.social.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: domifa.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 150\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 07 Apr 2024 01:04:28 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 150\r\nCache-Control: no-store\r\nContent-Security-Policy: default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html; charset=utf-8\r\nDate: Sun, 14 Apr 2024 01:02:08 GMT\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body>\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:04:28.306391788Z",
+      "timestamp": "2024-04-14T01:02:08.982635877Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: domifa.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://domifa.fabrique.social.gouv.fr/'",
       "matcher-status": true
     },
@@ -453,7 +453,7 @@
         "Let's Encrypt"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:05:05.198703098Z",
+      "timestamp": "2024-04-14T01:02:30.614735632Z",
       "matcher-status": true
     },
     {
@@ -483,7 +483,7 @@
         "domifa.fabrique.social.gouv.fr"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:05:05.198823803Z",
+      "timestamp": "2024-04-14T01:02:30.614840949Z",
       "matcher-status": true
     },
     {
@@ -514,7 +514,7 @@
         "tls12"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:05:07.357752429Z",
+      "timestamp": "2024-04-14T01:02:32.159498489Z",
       "matcher-status": true
     },
     {
@@ -545,7 +545,7 @@
         "tls13"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-07T01:05:07.682625479Z",
+      "timestamp": "2024-04-14T01:02:32.338743495Z",
       "matcher-status": true
     }
   ]
