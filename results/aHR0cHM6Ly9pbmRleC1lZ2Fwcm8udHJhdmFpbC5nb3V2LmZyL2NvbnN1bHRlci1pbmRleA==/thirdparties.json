@@ -6,18 +6,10 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; worker-src 'self' blob:; frame-ancestors 'self' https://*.gouv.fr; object-src 'none'; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr; block-all-mixed-content; upgrade-insecure-requests;",
     "content-type": "text/html; charset=utf-8",
-    "cross-origin-embedder-policy": "credentialless",
-    "cross-origin-opener-policy": "same-origin",
-    "cross-origin-resource-policy": "cross-origin",
-    "date": "Sun, 28 Apr 2024 00:46:47 GMT",
-    "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
-    "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
-    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "date": "Sun, 05 May 2024 00:45:48 GMT",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
-    "x-cache-status": "MISS",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "deny",
-    "x-xss-protection": "1; mode=block"
+    "x-cache-status": "MISS"
   },
   "endpoints": [
     {
