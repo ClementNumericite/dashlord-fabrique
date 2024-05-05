@@ -32,52 +32,9 @@
       "type": "dns",
       "host": "monsuivipsy.fabrique.social.gouv.fr.",
       "matched-at": "monsuivipsy.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 7329\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monsuivipsy.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 7329\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;monsuivipsy.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-04-28T01:47:07.157882674Z",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/xss-deprecated-header.yaml",
-      "template-url": "https://templates.nuclei.sh/public/xss-deprecated-header",
-      "template-id": "xss-deprecated-header",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/xss-deprecated-header.yaml",
-      "info": {
-        "name": "XSS-Protection Header - Cross-Site Scripting",
-        "author": [
-          "joshlarsen"
-        ],
-        "tags": [
-          "xss",
-          "misconfig",
-          "generic"
-        ],
-        "description": "Setting the XSS-Protection header is deprecated. Setting the header to anything other than `0` can actually introduce an XSS vulnerability.",
-        "reference": [
-          "https://developer.mozilla.org/en-us/docs/web/http/headers/x-xss-protection",
-          "https://owasp.org/www-project-secure-headers/#x-xss-protection"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": null,
-          "cvss-metrics": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
-        }
-      },
-      "type": "http",
-      "host": "https://monsuivipsy.fabrique.social.gouv.fr",
-      "matched-at": "https://monsuivipsy.fabrique.social.gouv.fr",
-      "extracted-results": [
-        "1; mode=block"
-      ],
-      "request": "GET / HTTP/1.1\r\nHost: monsuivipsy.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Security-Policy: default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html\r\nDate: Sun, 28 Apr 2024 01:47:18 GMT\r\nLocation: https://jardinmental.fabrique.social.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:47:18.064556999Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://monsuivipsy.fabrique.social.gouv.fr'",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 6419\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monsuivipsy.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 6419\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monsuivipsy.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-05-05T02:00:37.74907521Z",
       "matcher-status": true
     },
     {
@@ -116,9 +73,9 @@
       "host": "https://monsuivipsy.fabrique.social.gouv.fr",
       "matched-at": "https://monsuivipsy.fabrique.social.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: monsuivipsy.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Security-Policy: default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'\r\nContent-Type: text/html\r\nDate: Sun, 28 Apr 2024 01:48:19 GMT\r\nLocation: https://jardinmental.fabrique.social.gouv.fr/\r\nStrict-Transport-Security: max-age=15724800; includeSubDomains\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 301 Moved Permanently\r\nConnection: close\r\nContent-Length: 162\r\nContent-Type: text/html\r\nDate: Sun, 05 May 2024 02:02:33 GMT\r\nLocation: https://jardinmental.fabrique.social.gouv.fr/\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:19.44551236Z",
+      "timestamp": "2024-05-05T02:02:33.618843647Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: monsuivipsy.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://monsuivipsy.fabrique.social.gouv.fr/'",
       "matcher-status": true
     },
@@ -149,7 +106,7 @@
         "Acme Co"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:42.466630439Z",
+      "timestamp": "2024-05-05T02:03:10.604346299Z",
       "matcher-status": true
     },
     {
@@ -187,7 +144,7 @@
         "Issuer: Kubernetes Ingress Controller Fake Certificate"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:42.466699017Z",
+      "timestamp": "2024-05-05T02:03:10.604413754Z",
       "matcher-status": true
     },
     {
@@ -221,7 +178,7 @@
         "CN: Kubernetes Ingress Controller Fake Certificate"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:42.466731718Z",
+      "timestamp": "2024-05-05T02:03:10.604440524Z",
       "matcher-status": true
     },
     {
@@ -254,7 +211,7 @@
       "host": "monsuivipsy.fabrique.social.gouv.fr",
       "matched-at": "monsuivipsy.fabrique.social.gouv.fr:443",
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:42.466756915Z",
+      "timestamp": "2024-05-05T02:03:10.604471151Z",
       "matcher-status": true
     },
     {
@@ -284,7 +241,7 @@
         "ingress.local"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:42.466799324Z",
+      "timestamp": "2024-05-05T02:03:10.604522106Z",
       "matcher-status": true
     },
     {
@@ -315,7 +272,7 @@
         "tls12"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:44.009437822Z",
+      "timestamp": "2024-05-05T02:03:13.128242087Z",
       "matcher-status": true
     },
     {
@@ -346,7 +303,7 @@
         "tls13"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-04-28T01:48:44.181352065Z",
+      "timestamp": "2024-05-05T02:03:13.436018392Z",
       "matcher-status": true
     }
   ]
