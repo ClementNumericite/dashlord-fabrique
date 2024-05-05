@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "mtm_consent_removed",
-      "value": "1714265194323",
+      "value": "1714869966419",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 2660345194,
+      "expires": 2660949966,
       "size": 32,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     },
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "83ec1dc11b4d0a455e3f0992f53adddeeeb3b705ab26ce4c962a96c5f5a22cfd%7C83c8ee727b3a02ccf6ff43102cb33cc91dcba560114dee7bf4cff975383aefd8",
+      "value": "360d7ffeec1ee1924089d4e55c3a1217e3cebbe2f04b239cdd92bea05f3f76f6%7Cfba5237bae49d49c2634b4f718df7bdc86f37ee4757ee1728a02140dca7416ac",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -52,20 +52,12 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; worker-src 'self' blob:; frame-ancestors 'self' https://*.gouv.fr; object-src 'none'; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr; block-all-mixed-content; upgrade-insecure-requests;",
     "content-type": "text/html; charset=utf-8",
-    "cross-origin-embedder-policy": "credentialless",
-    "cross-origin-opener-policy": "same-origin",
-    "cross-origin-resource-policy": "cross-origin",
-    "date": "Sun, 28 Apr 2024 00:46:32 GMT",
+    "date": "Sun, 05 May 2024 00:46:05 GMT",
     "etag": "\"umt517abng40d0\"",
-    "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
-    "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
-    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
     "x-cache-status": "HIT",
-    "x-content-type-options": "nosniff",
-    "x-frame-options": "deny",
-    "x-nextjs-cache": "HIT",
-    "x-xss-protection": "1; mode=block"
+    "x-nextjs-cache": "HIT"
   },
   "endpoints": [
     {
