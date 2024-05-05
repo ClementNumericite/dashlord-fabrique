@@ -8,10 +8,10 @@
   "cookies": [
     {
       "name": "mtm_consent_removed",
-      "value": "1714274436075",
+      "value": "1714886815316",
       "domain": "mon-domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 2660354436,
+      "expires": 2660966815,
       "size": 32,
       "httpOnly": false,
       "secure": false,
@@ -23,14 +23,12 @@
     }
   ],
   "headers": {
-    "cache-control": "no-store",
     "content-encoding": "gzip",
-    "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 28 Apr 2024 03:20:35 GMT",
-    "etag": "W/\"66041c1a-87c\"",
-    "last-modified": "Wed, 27 Mar 2024 13:16:10 GMT",
-    "strict-transport-security": "max-age=15724800; includeSubDomains",
+    "date": "Sun, 05 May 2024 05:26:54 GMT",
+    "etag": "W/\"66338183-87c\"",
+    "last-modified": "Thu, 02 May 2024 12:05:23 GMT",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "deny",
@@ -95,7 +93,7 @@
     },
     {
       "hostname": "tally.so",
-      "ip": "172.67.175.26",
+      "ip": "172.64.80.1",
       "geoip": {
         "continent": {
           "code": "NA",
