@@ -1,63 +1,25 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "mtm_consent_removed",
-      "value": "1714869966419",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 2660949966,
-      "size": 32,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "__Secure-next-auth.callback-url",
-      "value": "https%3A%2F%2Fegapro.travail.gouv.fr",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 67,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "__Host-next-auth.csrf-token",
-      "value": "360d7ffeec1ee1924089d4e55c3a1217e3cebbe2f04b239cdd92bea05f3f76f6%7Cfba5237bae49d49c2634b4f718df7bdc86f37ee4757ee1728a02140dca7416ac",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 158,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; font-src 'self' data: blob:; media-src 'self' https://*.gouv.fr; img-src 'self' data: https://*.gouv.fr; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' https://*.gouv.fr 'unsafe-inline'; worker-src 'self' blob:; frame-ancestors 'self' https://*.gouv.fr; object-src 'none'; base-uri 'self' https://*.gouv.fr; form-action 'self' https://*.gouv.fr; block-all-mixed-content; upgrade-insecure-requests;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 05 May 2024 00:46:05 GMT",
+    "cross-origin-embedder-policy": "credentialless",
+    "cross-origin-opener-policy": "same-origin",
+    "cross-origin-resource-policy": "cross-origin",
+    "date": "Sun, 12 May 2024 00:48:00 GMT",
     "etag": "\"umt517abng40d0\"",
+    "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
+    "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
     "x-cache-status": "HIT",
-    "x-nextjs-cache": "HIT"
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-nextjs-cache": "HIT",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
