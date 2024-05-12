@@ -346,7 +346,7 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "64 >= 30 days"
+              "finding"      : "57 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -507,7 +507,7 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1714879898"
+              "finding"      : "1715483655"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -563,14 +563,21 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "deny"
+              "finding"      : "sameorigin"
           }
 ,         {
               "id"           : "X-Content-Type-Options",
               "ip"           : "1000jours.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "nosniff"
+              "finding"      : "none"
+          }
+,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "1000jours.fabrique.social.gouv.fr/57.128.91.43",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'self' data:; connect-src 'self' https://*.gouv.fr https://metrics.articulate.com; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'"
           }
 ,         {
               "id"           : "X-XSS-Protection",
@@ -1084,6 +1091,6 @@
               "ip"           : "1000jours.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "53"
+              "finding"      : "69"
           }
 ]
