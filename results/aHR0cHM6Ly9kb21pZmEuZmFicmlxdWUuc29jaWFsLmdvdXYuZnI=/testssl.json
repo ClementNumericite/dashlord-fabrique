@@ -206,7 +206,7 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -346,7 +346,7 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "82 >= 30 days"
+              "finding"      : "75 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -507,7 +507,7 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1714870892"
+              "finding"      : "1715475678"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -573,11 +573,25 @@
               "finding"      : "nosniff"
           }
 ,         {
+              "id"           : "Content-Security-Policy",
+              "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'"
+          }
+,         {
               "id"           : "X-XSS-Protection",
               "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1; mode=block"
+          }
+,         {
+              "id"           : "Cache-Control",
+              "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "no-store"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1084,6 +1098,6 @@
               "ip"           : "domifa.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "132"
+              "finding"      : "51"
           }
 ]
