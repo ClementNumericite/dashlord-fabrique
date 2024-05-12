@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "enfants-du-spectacle.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1714883584,
+      "expires": 1715487066,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.85.7734",
-      "value": "42aa29d308f3aa5f.1714881784.",
+      "value": "7acc49040f031e8f.1715485267.",
       "domain": "enfants-du-spectacle.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1748836984,
+      "expires": 1749440467,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -34,12 +34,16 @@
   ],
   "headers": {
     "content-encoding": "gzip",
+    "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr; media-src 'self'; font-src 'self' data:; img-src 'self' data:; script-src 'self' https://*.gouv.fr 'unsafe-inline'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 05 May 2024 04:03:03 GMT",
+    "date": "Sun, 12 May 2024 03:41:05 GMT",
     "etag": "\"8904-dfbrMMzfmr3LH75lvjgEouHL6Xw\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js"
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "deny",
+    "x-powered-by": "Next.js",
+    "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
