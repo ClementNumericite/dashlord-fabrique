@@ -70,6 +70,10 @@
     },
     {
       "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
+    },
+    {
+      "type": "unknown",
       "url": "https://mano.sesan.fr/message.png"
     },
     {
@@ -91,10 +95,6 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/sesan.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -509,7 +509,7 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 19 May 2024 04:18:55 GMT",
+    "date": "Sun, 26 May 2024 04:04:26 GMT",
     "etag": "\"oq0watokxknfx\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
