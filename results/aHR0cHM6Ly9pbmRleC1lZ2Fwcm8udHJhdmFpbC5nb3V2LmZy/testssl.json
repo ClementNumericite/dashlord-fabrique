@@ -206,7 +206,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -269,7 +269,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "034E5D4B139BDA26133351B3B24E4C1B79B9"
+              "finding"      : "0390C78F0AE4AB0081FF1F1E598F0B5C473C"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "19DA25C77BE01670C7B0A489155C5EDB9BF68754"
+              "finding"      : "78BE60BC711DE1B12A654EEF6212D59179BFBF6D"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "A8B0D2F30DC8052D05C258E23CF0A7812327212CE90AE6621B816153BF5ACEDE"
+              "finding"      : "DAEF700515A4962F0B31FA38EDC6F3DD0839D3915D2993DBA5562AE4FCC24C31"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFKDCCBBCgAwIBAgISA05dSxOb2iYTM1Gzsk5MG3m5MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDAzMjEyMTQwMTZaFw0yNDA2MTkyMTQwMTVaMCkxJzAlBgNVBAMTHmVnYXByby5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMBoBWX4i2Ql+ql3yifuigo6Khn3+3o0i0SIEFhfqmNNQH1ztwsE5tc8PwlPeFkv4z6XQhmtzZi56yrFlbIQQ0ksEtGVi8BjTlH7yh9dH6kib0CM6mq8yWqs48rzIddIT8VqgHOxqiu+pnQgKK6TuSJIeg7R5KbyeMhfcSaMiYgGZtmyKHK401VS1pCgivVnPCHBfR5ZYi/WBik+P5rVwNtm1MnPA9yydixj9Hbde/I+CzMpqYoNvKaN0iBcRFldbUCcHWTY2MS0rUlJmGtYQV51ZYgvGefgwfZsXxneaLr9WSf7RbP2C3ptGINp2aSXXjGXCwGoeI5kj57kugMJoUsCAwEAAaOCAj8wggI7MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUkIGGlVu02zeFYcSnMf0fqcfelDkwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wRwYDVR0RBEAwPoIeZWdhcHJvLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyghxpbmRleC1lZ2Fwcm8udHJhdmFpbC5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGOYywURgAABAMASDBGAiEA5gkmK+pM8WoCVyB5X2HuMhMyqHVucFUq7u+88xl4duECIQCnFT0KmXzCICy/RCdXNPFNzJeEZs3w3mJBt1XzY/knLQB2AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdMWjp0AAABjmMsFJYAAAQDAEcwRQIge2ycvGpcmrFDoSwzr0s9hEaxc/iSt5QGUNB1mbgc3MoCIQD/RgaHP/wR3P8ZmHuRDlhwdCCo4wVpS2AS7o+S/mkSSjANBgkqhkiG9w0BAQsFAAOCAQEAqgbfnsrtq72AD/rdrvH0ztyLNq+PXtjhYxEUcqzw2Tb710vhIv56kFvNX7jjYGqSWyBCivBZupqgk49Llg4PDysbISCTlg7qL1ooww0Ebq0xgXhbAe20QFMyPN/BPP9fFJ/RCdK/Ut7AvT6ytzAxRXy06+7jMBRVl8QVb1BkAhQs08OQxJhmV4AgTr8ya9spTdV5jtbsWiceyuhP++1d0lqJx2grp7UarvO/IUTUnifaMbDQKg5xV7iD9kP06X7pj6QQRpLGtQv7jcZ7iYu2CB006Me+S2tUxfl4X8NUd13F7sqCUTNlLFitY35a61+huvjDMpY8bJoo2NNvYw3W6Q==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFKTCCBBGgAwIBAgISA5DHjwrkqwCB/x8eWY8LXEc8MA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MjAyMDQwNDVaFw0yNDA4MTgyMDQwNDRaMCkxJzAlBgNVBAMTHmVnYXByby5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMBoBWX4i2Ql+ql3yifuigo6Khn3+3o0i0SIEFhfqmNNQH1ztwsE5tc8PwlPeFkv4z6XQhmtzZi56yrFlbIQQ0ksEtGVi8BjTlH7yh9dH6kib0CM6mq8yWqs48rzIddIT8VqgHOxqiu+pnQgKK6TuSJIeg7R5KbyeMhfcSaMiYgGZtmyKHK401VS1pCgivVnPCHBfR5ZYi/WBik+P5rVwNtm1MnPA9yydixj9Hbde/I+CzMpqYoNvKaN0iBcRFldbUCcHWTY2MS0rUlJmGtYQV51ZYgvGefgwfZsXxneaLr9WSf7RbP2C3ptGINp2aSXXjGXCwGoeI5kj57kugMJoUsCAwEAAaOCAkAwggI8MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUkIGGlVu02zeFYcSnMf0fqcfelDkwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wRwYDVR0RBEAwPoIeZWdhcHJvLmZhYnJpcXVlLnNvY2lhbC5nb3V2LmZyghxpbmRleC1lZ2Fwcm8udHJhdmFpbC5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBgYKKwYBBAHWeQIEAgSB9wSB9ADyAHcAPxdLT9ciR1iUHWUchL4NEu2QN38fhWrrwb8ohez4ZG4AAAGPl/MnqwAABAMASDBGAiEA3Mxg3ob6G3+FTbov1L/K5XcN6iV+WUj+PKSroTdDD84CIQDzqSuFHPrekNPZISE8bnmfQoaG0wv+p6MiOEOHoEveZwB3ABmYEHEJ8NZSLjCA0p4/ZLuDbijM+Q9Sju7fzko/FrTKAAABj5fzJ68AAAQDAEgwRgIhAMOHommAI2qOuCyMh11MYoJ6i1YGvGFg37lDvkVSX8FZAiEAgIffEruqfrLoUhmPv9Z1pvBD0IrSiMqKv0sFxeBWKyMwDQYJKoZIhvcNAQELBQADggEBAAnL5Ajjhv4Y97lVaN+xIVWZGBjPFbFGw34f3EYqH1flrXyqk//GTvMKhflpt+L4y+8mEpQpI5ukjjvC4/Fs6kkXbJSabjQcPsyI9uRVQ9yKHOL5eWJ9FL/d8AEJBIpZfnGk9/U5VrQHIVAbnHXzWOvZxyVIfzSv2rgTMS+DT/v1isG6/nGxVRluYfwn1657a1I+Hxyyk9bUaqVtCI1z7NTvSuOalgFB72hHtOjrAqqFxKOxLrbburgoG/r2Tu0hweJgYdp1trWnvYh1INYnih/rHqf2+GDtn0LMzCPb3tGMMNR1FcXNZtK0KwAzWH3VGaWmPxGOVlSD9TokcXZ+kCM=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "31 >= 30 days"
+              "finding"      : "84 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-03-21 21:40"
+              "finding"      : "2024-05-20 20:40"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-06-19 21:40"
+              "finding"      : "2024-08-18 20:40"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -507,7 +507,7 @@
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1716079728"
+              "finding"      : "1716684642"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -694,7 +694,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=A8B0D2F30DC8052D05C258E23CF0A7812327212CE90AE6621B816153BF5ACEDE"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=DAEF700515A4962F0B31FA38EDC6F3DD0839D3915D2993DBA5562AE4FCC24C31"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1070,6 +1070,6 @@
               "ip"           : "index-egapro.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "55"
+              "finding"      : "92"
           }
 ]
