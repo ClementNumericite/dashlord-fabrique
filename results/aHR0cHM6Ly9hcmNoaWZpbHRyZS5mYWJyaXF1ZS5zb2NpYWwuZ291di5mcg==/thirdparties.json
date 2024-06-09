@@ -46,7 +46,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/_app-480daf52e12050cc.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/_app-f8eaeb333341af6a.js"
     },
     {
       "type": "unknown",
@@ -54,11 +54,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/eI6bXppDYK0HrbI4LvgpP/_buildManifest.js"
+      "url": "https://archifiltre.fr/_next/static/OOv0dCJ17f_3oQdBldzm4/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/eI6bXppDYK0HrbI4LvgpP/_ssgManifest.js"
+      "url": "https://archifiltre.fr/_next/static/OOv0dCJ17f_3oQdBldzm4/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -106,11 +106,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/eI6bXppDYK0HrbI4LvgpP/index.json"
+      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/index.json"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/eI6bXppDYK0HrbI4LvgpP/docs.json"
+      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/docs.json"
     },
     {
       "type": "unknown",
@@ -126,7 +126,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/eI6bXppDYK0HrbI4LvgpP/mails.json"
+      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/mails.json"
     },
     {
       "type": "unknown",
@@ -134,7 +134,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/eI6bXppDYK0HrbI4LvgpP/qui-sommes-nous.json"
+      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/qui-sommes-nous.json"
     },
     {
       "type": "unknown",
@@ -142,7 +142,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/eI6bXppDYK0HrbI4LvgpP/faq.json"
+      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/faq.json"
     },
     {
       "type": "unknown",
@@ -150,7 +150,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/eI6bXppDYK0HrbI4LvgpP/telechargements.json"
+      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/telechargements.json"
     },
     {
       "type": "unknown",
@@ -179,22 +179,6 @@
     {
       "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-284a1b40f60a8498.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-03c2e3bc4203e271.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://api.pirsch.io/hit?nc=1717289317997&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
     },
     {
       "type": "unknown",
@@ -202,19 +186,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-6b2f4c83ada8a478.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
+      "url": "https://api.pirsch.io/hit?nc=1717894276452&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
     },
     {
       "type": "unknown",
       "url": "https://archifiltre-backoffice.prismic.io/prismic-toolbar/4.1.0/iframe.html"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-d0b3c11450cb2ee3.js"
     },
     {
       "type": "unknown",
@@ -230,6 +206,34 @@
     },
     {
       "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-03c2e3bc4203e271.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-60bb0cc029308a51.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-284a1b40f60a8498.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-6b2f4c83ada8a478.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-d0b3c11450cb2ee3.js"
+    },
+    {
+      "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-ed9c03a038bed699.js"
     },
     {
@@ -239,10 +243,6 @@
     {
       "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/digital-cleanup-day-69807a74a18d778b.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-60bb0cc029308a51.js"
     }
   ],
   "cookies": [],
@@ -250,8 +250,8 @@
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 02 Jun 2024 00:48:37 GMT",
-    "etag": "\"yv4jxcohsg9le\"",
+    "date": "Sun, 09 Jun 2024 00:51:15 GMT",
+    "etag": "\"4wpdcuknom9le\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-nextjs-cache": "HIT",
@@ -372,21 +372,8 @@
     },
     {
       "hostname": "api.pirsch.io",
-      "ip": "159.69.94.230",
+      "ip": "49.12.191.129",
       "geoip": {
-        "city": {
-          "geoname_id": 2861650,
-          "names": {
-            "de": "Nürnberg",
-            "en": "Nuremberg",
-            "es": "Nuremberg",
-            "fr": "Nuremberg",
-            "ja": "ニュルンベルク",
-            "pt-BR": "Nuremberga",
-            "ru": "Нюрнберг",
-            "zh-CN": "纽伦堡"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -418,12 +405,9 @@
         },
         "location": {
           "accuracy_radius": 200,
-          "latitude": 49.4423,
-          "longitude": 11.0191,
+          "latitude": 51.2993,
+          "longitude": 9.491,
           "time_zone": "Europe/Berlin"
-        },
-        "postal": {
-          "code": "90431"
         },
         "registered_country": {
           "geoname_id": 2921044,
@@ -439,28 +423,12 @@
             "ru": "ФРГ",
             "zh-CN": "德国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 2951839,
-            "iso_code": "BY",
-            "names": {
-              "de": "Bayern",
-              "en": "Bavaria",
-              "es": "Baviera",
-              "fr": "Bavière",
-              "ja": "バイエルン",
-              "pt-BR": "Baviera",
-              "ru": "Бавария",
-              "zh-CN": "巴伐利亚州"
-            }
-          }
-        ]
+        }
       }
     },
     {
       "hostname": "static.cdn.prismic.io",
-      "ip": "99.84.191.5",
+      "ip": "13.32.164.102",
       "geoip": {
         "continent": {
           "code": "NA",
