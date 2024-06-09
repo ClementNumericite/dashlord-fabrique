@@ -339,7 +339,7 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "358 >= 60 days"
+              "finding"      : "351 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,14 +500,14 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1717295966"
+              "finding"      : "1717900793"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1084,6 +1084,6 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "59"
+              "finding"      : "49"
           }
 ]
