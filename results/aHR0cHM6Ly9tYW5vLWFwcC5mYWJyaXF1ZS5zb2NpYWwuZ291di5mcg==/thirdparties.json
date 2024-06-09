@@ -38,11 +38,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/qnkTxhZmqgsQYPuYh_rsu/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/qigKnxds9nmtFmNxb6idA/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/qnkTxhZmqgsQYPuYh_rsu/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/qigKnxds9nmtFmNxb6idA/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -517,8 +517,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 02 Jun 2024 04:13:02 GMT",
-    "etag": "\"t8beblzsdxnfx\"",
+    "date": "Sun, 09 Jun 2024 04:24:13 GMT",
+    "etag": "\"vgk1mbohlknfx\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
@@ -740,7 +740,7 @@
     },
     {
       "hostname": "js.sentry-cdn.com",
-      "ip": "151.101.130.217",
+      "ip": "151.101.2.217",
       "geoip": {
         "city": {
           "geoname_id": 5391959,
