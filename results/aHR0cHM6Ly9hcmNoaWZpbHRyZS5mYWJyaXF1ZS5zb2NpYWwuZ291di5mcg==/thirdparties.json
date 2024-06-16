@@ -54,11 +54,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/OOv0dCJ17f_3oQdBldzm4/_buildManifest.js"
+      "url": "https://archifiltre.fr/_next/static/foAgSnAxE7HzTXiUbjZS7/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/OOv0dCJ17f_3oQdBldzm4/_ssgManifest.js"
+      "url": "https://archifiltre.fr/_next/static/foAgSnAxE7HzTXiUbjZS7/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -106,11 +106,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/index.json"
+      "url": "https://archifiltre.fr/_next/data/foAgSnAxE7HzTXiUbjZS7/index.json"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/docs.json"
+      "url": "https://archifiltre.fr/_next/data/foAgSnAxE7HzTXiUbjZS7/docs.json"
     },
     {
       "type": "unknown",
@@ -126,7 +126,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/mails.json"
+      "url": "https://archifiltre.fr/_next/data/foAgSnAxE7HzTXiUbjZS7/mails.json"
     },
     {
       "type": "unknown",
@@ -134,7 +134,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/qui-sommes-nous.json"
+      "url": "https://archifiltre.fr/_next/data/foAgSnAxE7HzTXiUbjZS7/qui-sommes-nous.json"
     },
     {
       "type": "unknown",
@@ -142,7 +142,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/faq.json"
+      "url": "https://archifiltre.fr/_next/data/foAgSnAxE7HzTXiUbjZS7/faq.json"
     },
     {
       "type": "unknown",
@@ -150,7 +150,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/data/OOv0dCJ17f_3oQdBldzm4/telechargements.json"
+      "url": "https://archifiltre.fr/_next/data/foAgSnAxE7HzTXiUbjZS7/telechargements.json"
     },
     {
       "type": "unknown",
@@ -174,19 +174,19 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-ed9c03a038bed699.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-347e78ae193fc419.js"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-7b87e7e0a5c028e5.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://api.pirsch.io/hit?nc=1718499055615&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
     },
     {
       "type": "unknown",
       "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
-    },
-    {
-      "type": "unknown",
-      "url": "https://api.pirsch.io/hit?nc=1717894276452&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
     },
     {
       "type": "unknown",
@@ -214,7 +214,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-6b2f4c83ada8a478.js"
     },
     {
       "type": "unknown",
@@ -222,11 +222,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-6b2f4c83ada8a478.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-68cb48456ea2d15f.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
     },
     {
       "type": "unknown",
@@ -234,7 +230,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-ed9c03a038bed699.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-7b87e7e0a5c028e5.js"
     },
     {
       "type": "unknown",
@@ -243,6 +239,10 @@
     {
       "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/digital-cleanup-day-69807a74a18d778b.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-347e78ae193fc419.js"
     }
   ],
   "cookies": [],
@@ -250,8 +250,8 @@
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 09 Jun 2024 00:51:15 GMT",
-    "etag": "\"4wpdcuknom9le\"",
+    "date": "Sun, 16 Jun 2024 00:50:53 GMT",
+    "etag": "\"uf9jnd842q9le\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-nextjs-cache": "HIT",
@@ -372,8 +372,21 @@
     },
     {
       "hostname": "api.pirsch.io",
-      "ip": "49.12.191.129",
+      "ip": "159.69.94.230",
       "geoip": {
+        "city": {
+          "geoname_id": 2861650,
+          "names": {
+            "de": "Nürnberg",
+            "en": "Nuremberg",
+            "es": "Nuremberg",
+            "fr": "Nuremberg",
+            "ja": "ニュルンベルク",
+            "pt-BR": "Nuremberga",
+            "ru": "Нюрнберг",
+            "zh-CN": "纽伦堡"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -405,9 +418,12 @@
         },
         "location": {
           "accuracy_radius": 200,
-          "latitude": 51.2993,
-          "longitude": 9.491,
+          "latitude": 49.4423,
+          "longitude": 11.0191,
           "time_zone": "Europe/Berlin"
+        },
+        "postal": {
+          "code": "90431"
         },
         "registered_country": {
           "geoname_id": 2921044,
@@ -423,12 +439,28 @@
             "ru": "ФРГ",
             "zh-CN": "德国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 2951839,
+            "iso_code": "BY",
+            "names": {
+              "de": "Bayern",
+              "en": "Bavaria",
+              "es": "Baviera",
+              "fr": "Bavière",
+              "ja": "バイエルン",
+              "pt-BR": "Baviera",
+              "ru": "Бавария",
+              "zh-CN": "巴伐利亚州"
+            }
+          }
+        ]
       }
     },
     {
       "hostname": "static.cdn.prismic.io",
-      "ip": "13.32.164.102",
+      "ip": "99.84.191.120",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -482,7 +514,7 @@
     },
     {
       "hostname": "archifiltre-backoffice.prismic.io",
-      "ip": "18.204.174.249",
+      "ip": "44.221.184.70",
       "geoip": {
         "city": {
           "geoname_id": 4744870,
@@ -526,7 +558,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
+          "accuracy_radius": 1000,
           "latitude": 39.0469,
           "longitude": -77.4903,
           "metro_code": 511,
