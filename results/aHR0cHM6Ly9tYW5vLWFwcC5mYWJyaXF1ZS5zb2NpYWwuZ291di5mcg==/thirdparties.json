@@ -38,11 +38,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/qigKnxds9nmtFmNxb6idA/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/mXfgYRRq2L2saBlup6oq7/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/qigKnxds9nmtFmNxb6idA/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/mXfgYRRq2L2saBlup6oq7/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -59,6 +59,10 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/mano-secu.svg"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -91,10 +95,6 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/sesan.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -394,10 +394,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/i18n.dc00453d015b.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/js/modules/urls.c93a5f028672.js"
     },
     {
@@ -431,6 +427,10 @@
     {
       "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/js/modules/orderable.a0051b3381fe.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/i18n.dc00453d015b.js"
     },
     {
       "type": "unknown",
@@ -517,8 +517,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 09 Jun 2024 04:24:13 GMT",
-    "etag": "\"vgk1mbohlknfx\"",
+    "date": "Sun, 16 Jun 2024 04:11:47 GMT",
+    "etag": "\"u8rkmfetwmnfx\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
