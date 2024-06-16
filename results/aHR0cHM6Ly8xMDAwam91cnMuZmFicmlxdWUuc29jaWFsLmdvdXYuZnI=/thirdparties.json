@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1717904398,
+      "expires": 1718509525,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "f614fd4a3c9b0108.1717902598.",
+      "value": "fb40905270597342.1718507725.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1751857798,
+      "expires": 1752462925,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -45,9 +45,9 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' data:; connect-src 'self' https://*.gouv.fr https://metrics.articulate.com; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 09 Jun 2024 03:09:57 GMT",
-    "etag": "W/\"6622218c-490e\"",
-    "last-modified": "Fri, 19 Apr 2024 07:47:24 GMT",
+    "date": "Sun, 16 Jun 2024 03:15:24 GMT",
+    "etag": "W/\"6666f74c-4921\"",
+    "last-modified": "Mon, 10 Jun 2024 12:53:32 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "none",
@@ -113,7 +113,7 @@
     },
     {
       "hostname": "static.hotjar.com",
-      "ip": "52.84.18.67",
+      "ip": "18.160.41.112",
       "geoip": {
         "continent": {
           "code": "NA",
