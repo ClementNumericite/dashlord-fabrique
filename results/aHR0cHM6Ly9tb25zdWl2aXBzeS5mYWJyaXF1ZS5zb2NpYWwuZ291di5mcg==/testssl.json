@@ -206,7 +206,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -346,7 +346,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "359 >= 60 days"
+              "finding"      : "352 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -472,7 +472,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1718503569"
+              "finding"      : "1719109158"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -916,7 +916,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-java1703",
@@ -937,7 +937,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
@@ -951,7 +951,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_111d",
@@ -1070,6 +1070,6 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "77"
+              "finding"      : "91"
           }
 ]
