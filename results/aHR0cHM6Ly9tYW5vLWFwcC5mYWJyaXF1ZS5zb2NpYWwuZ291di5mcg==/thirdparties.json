@@ -34,15 +34,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/chunks/pages/index-4d50b5b9f09b703e.js"
+      "url": "https://mano.sesan.fr/_next/static/chunks/pages/index-0eba5f4aeac3ab6d.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/u-tHD9JYYSgFH_t7KBFHD/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/7YeIlUFpKe_8wIU02niaH/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/u-tHD9JYYSgFH_t7KBFHD/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/7YeIlUFpKe_8wIU02niaH/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -51,6 +51,10 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/mano-tel.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -91,10 +95,6 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/sesan.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -402,15 +402,15 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/font/FiraSans-Light.af42317212d4.woff2"
-    },
-    {
-      "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/js/components/base.ba9eb538b25a.js"
     },
     {
       "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/js/components/alerts/alert.43f565101328.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/font/FiraSans-Light.af42317212d4.woff2"
     },
     {
       "type": "unknown",
@@ -585,8 +585,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 30 Jun 2024 04:24:53 GMT",
-    "etag": "\"vq84szgcpknfx\"",
+    "date": "Sun, 07 Jul 2024 04:45:50 GMT",
+    "etag": "\"qlwcktn06lnfy\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
@@ -655,14 +655,16 @@
       "ip": "194.56.95.20",
       "geoip": {
         "city": {
-          "geoname_id": 3020601,
+          "geoname_id": 2988507,
           "names": {
-            "en": "Eaubonne",
-            "fr": "Eaubonne",
-            "ja": "オーボンヌ",
-            "pt-BR": "Eaubonne",
-            "ru": "Обонн",
-            "zh-CN": "奥博讷"
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
           }
         },
         "continent": {
@@ -696,12 +698,12 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 48.9999,
-          "longitude": 2.2821,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "95600"
+          "code": "75000"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -734,17 +736,13 @@
             }
           },
           {
-            "geoname_id": 2971071,
-            "iso_code": "95",
+            "geoname_id": 2968815,
+            "iso_code": "75",
             "names": {
-              "de": "Val d'Oise",
-              "en": "Val d'Oise",
-              "es": "Valle de Oise",
-              "fr": "Val-d'Oise",
-              "ja": "ヴァル＝ドワーズ県",
-              "pt-BR": "Val-d'Oise",
-              "ru": "Валь-д’Уаз",
-              "zh-CN": "瓦兹河谷省"
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
             }
           }
         ]
