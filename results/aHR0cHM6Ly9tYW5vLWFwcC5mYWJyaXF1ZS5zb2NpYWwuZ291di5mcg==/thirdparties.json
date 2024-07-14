@@ -38,11 +38,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/7YeIlUFpKe_8wIU02niaH/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/2mNLGd6paInzgD4NT9iDZ/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/7YeIlUFpKe_8wIU02niaH/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/2mNLGd6paInzgD4NT9iDZ/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -51,10 +51,6 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/mano-tel.png"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -95,6 +91,10 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/sesan.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -174,7 +174,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/vars.55a88a93ee02.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/vars.2969262c132c.css"
     },
     {
       "type": "unknown",
@@ -182,11 +182,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/css/icon.2f373a49c834.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/css/icon.12b780d5986b.css"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/base.e3cd986c1745.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/base.5bcfa4c01c3e.css"
     },
     {
       "type": "unknown",
@@ -198,11 +198,19 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/map.fa871b75806f.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/map.ab881509547f.css"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/css/panel.4769b9b4196d.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/css/slideshow.617287eed344.css"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/css/contextmenu.777c1a7f4ce4.css"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/css/panel.0a746267c793.css"
     },
     {
       "type": "unknown",
@@ -210,15 +218,19 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/css/tooltip.4154384b69a8.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/css/tooltip.20d3488564b8.css"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/css/dialog.3265602ed723.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/css/dialog.3cae98314d8e.css"
     },
     {
       "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/css/importers.e00749d825d6.css"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/css/tableeditor.c808356f0733.css"
     },
     {
       "type": "unknown",
@@ -230,7 +242,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/components/alerts/alert.466070ce9b4e.css"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/components/alerts/alert.23a919cb30c2.css"
     },
     {
       "type": "unknown",
@@ -242,11 +254,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/global.27923c34ec3d.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/global.5ee0bf4762e5.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/locale/fr.b19a40cb698c.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/locale/fr.9ba225583d08.js"
     },
     {
       "type": "unknown",
@@ -274,11 +286,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/vendors/togeojson/togeojson.umd.95a2ea038c77.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/vendors/osmtogeojson/osmtogeojson.9525e07370af.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/vendors/osmtogeojson/osmtogeojson.bc21b389e3bd.js"
     },
     {
       "type": "unknown",
@@ -314,7 +322,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/vendors/formbuilder/Leaflet.FormBuilder.9d1b328e88a2.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/vendors/formbuilder/Leaflet.FormBuilder.52b6d1b7760f.js"
     },
     {
       "type": "unknown",
@@ -322,15 +330,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/vendors/togpx/togpx.549cf9914499.js"
-    },
-    {
-      "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/vendors/iconlayers/iconLayers.73b220e72069.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/vendors/tokml/tokml.bb3f95178d5d.js"
     },
     {
       "type": "unknown",
@@ -350,11 +350,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.popup.99b83e96b4ce.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.popup.00ed897d1995.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.forms.5329584ed4d7.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.forms.fafc57c7e14b.js"
     },
     {
       "type": "unknown",
@@ -362,11 +362,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.features.2bc6a5508cde.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.features.113af54cc322.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.permissions.d364b9cd72ae.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.permissions.f15aa1fe0a66.js"
     },
     {
       "type": "unknown",
@@ -374,31 +374,23 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.layer.f9035bda36f1.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.layer.caa09b882ec5.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.controls.d358ded16c11.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.controls.c25b3f03a4a9.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.slideshow.cb7e799c4e8f.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.tableeditor.03dd33dbd6aa.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.share.ac9ff06cb515.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.0f9599c8a7b5.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/umap.7e9f8379e643.js"
     },
     {
       "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/js/components/fragment.06ec6d3af817.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/font/FiraSans-Light.af42317212d4.woff2"
     },
     {
       "type": "unknown",
@@ -414,31 +406,31 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/font/FiraSans-Light.af42317212d4.woff2"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/autocomplete.daf22056f956.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/autocomplete.cfa6ee9c7117.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/browser.11fc20da9296.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/browser.16218f34bcb6.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/caption.158be7f20a71.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/caption.306ac80d223d.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/facets.58cc886dd2b4.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/facets.80821ce3efae.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/formatter.d0cd5f508d22.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/help.e20ea31f8c1a.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/help.817193adbcbc.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importer.9e2f28dd82bc.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importer.c6637d56b350.js"
     },
     {
       "type": "unknown",
@@ -450,11 +442,19 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/rules.86a0d5d56e0a.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/rules.16f7e80349a2.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/schema.2a18e9ce4354.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/schema.310ca4a6d5e9.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/share.bd0758b34ec0.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/slideshow.4ea30415b2d9.js"
     },
     {
       "type": "unknown",
@@ -462,23 +462,27 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/dialog.77d2617a1a7e.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/dialog.985f02e91828.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/panel.279e0fa8f3d2.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/panel.f24456a5420b.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/tooltip.bf6fda633641.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/tableeditor.1cd8896bf0df.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/urls.0b8786e95fe2.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/tooltip.669829626d47.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/utils.5bf75d006a13.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/urls.31c86d2cfca3.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/utils.2253e3a61258.js"
     },
     {
       "type": "unknown",
@@ -494,23 +498,31 @@
     },
     {
       "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/contextmenu.5a9cfbc5ac24.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/base.bc85c8fb3d56.js"
+    },
+    {
+      "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/vendors/dompurify/purify.es.320dcf5291b8.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/geodatamine.1bbde01adafb.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/geodatamine.4ee21262ee18.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/overpass.9164d49daa02.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/overpass.efd59d32b139.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/communesfr.85700b338bcb.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/communesfr.f9185800f521.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/datasets.6d6df50918e2.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/importers/datasets.862964199039.js"
     },
     {
       "type": "unknown",
@@ -585,8 +597,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 07 Jul 2024 04:45:50 GMT",
-    "etag": "\"qlwcktn06lnfy\"",
+    "date": "Sun, 14 Jul 2024 04:36:47 GMT",
+    "etag": "\"uvsihzep4bnfy\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
@@ -655,16 +667,12 @@
       "ip": "194.56.95.20",
       "geoip": {
         "city": {
-          "geoname_id": 2988507,
+          "geoname_id": 2968705,
           "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
+            "en": "Villejuif",
+            "ja": "ヴィルジュイフ",
+            "ru": "Вильжюиф",
+            "zh-CN": "犹太城"
           }
         },
         "continent": {
@@ -698,12 +706,12 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
+          "latitude": 48.7913,
+          "longitude": 2.3632,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "75000"
+          "code": "94800"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -736,13 +744,17 @@
             }
           },
           {
-            "geoname_id": 2968815,
-            "iso_code": "75",
+            "geoname_id": 2971090,
+            "iso_code": "94",
             "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
+              "de": "Val-de-Marne",
+              "en": "Val-de-Marne",
+              "es": "Valle de Marne",
+              "fr": "Val-de-Marne",
+              "ja": "ヴァル＝ド＝マルヌ県",
+              "pt-BR": "Val-de-Marne",
+              "ru": "Валь-де-Марн",
+              "zh-CN": "马恩河谷省"
             }
           }
         ]
