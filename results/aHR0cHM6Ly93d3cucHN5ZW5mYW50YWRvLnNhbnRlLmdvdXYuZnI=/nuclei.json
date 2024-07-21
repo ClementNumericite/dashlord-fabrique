@@ -30,51 +30,14 @@
       "host": "www.psyenfantado.sante.gouv.fr.",
       "matched-at": "www.psyenfantado.sante.gouv.fr",
       "extracted-results": [
-        "ns3-03.azure-dns.org.",
-        "ns4-03.azure-dns.info.",
+        "ns1-03.azure-dns.com.",
         "ns2-03.azure-dns.net.",
-        "ns1-03.azure-dns.com."
+        "ns3-03.azure-dns.org.",
+        "ns4-03.azure-dns.info."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 37186\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 37186\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns3-03.azure-dns.org.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns4-03.azure-dns.info.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns2-03.azure-dns.net.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns1-03.azure-dns.com.\n",
-      "timestamp": "2024-07-14T04:14:49.000252583Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "www.psyenfantado.sante.gouv.fr.",
-      "matched-at": "www.psyenfantado.sante.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 51675\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 51675\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t300\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-07-14T04:14:49.154843718Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 10265\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 10265\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns1-03.azure-dns.com.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns2-03.azure-dns.net.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns3-03.azure-dns.org.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns4-03.azure-dns.info.\n",
+      "timestamp": "2024-07-21T04:21:19.699615849Z",
       "matcher-status": true
     },
     {
@@ -109,9 +72,46 @@
       "extracted-results": [
         "psyenfantado.sante.gouv.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 2591\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 2591\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t1800\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-07-14T04:14:49.918438432Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 60598\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 60598\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t1800\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-07-21T04:21:19.704757557Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "www.psyenfantado.sante.gouv.fr.",
+      "matched-at": "www.psyenfantado.sante.gouv.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 59234\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 59234\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t300\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-07-21T04:21:20.464546783Z",
       "matcher-status": true
     }
   ]
