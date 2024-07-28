@@ -38,11 +38,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/2mNLGd6paInzgD4NT9iDZ/_buildManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/xJdl0jTFrW02BdASA2Plx/_buildManifest.js"
     },
     {
       "type": "unknown",
-      "url": "https://mano.sesan.fr/_next/static/2mNLGd6paInzgD4NT9iDZ/_ssgManifest.js"
+      "url": "https://mano.sesan.fr/_next/static/xJdl0jTFrW02BdASA2Plx/_ssgManifest.js"
     },
     {
       "type": "unknown",
@@ -59,10 +59,6 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/mano-secu.svg"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -95,6 +91,10 @@
     {
       "type": "unknown",
       "url": "https://mano.sesan.fr/sesan.png"
+    },
+    {
+      "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/fr/map/villes-utilisatrices-de-mano_1053916?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=none&captionBar=false&captionMenus=false&locateControl=false&measureControl=false&editinosmControl=false&starControl=false"
     },
     {
       "type": "unknown",
@@ -390,6 +390,10 @@
     },
     {
       "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/font/FiraSans-Light.af42317212d4.woff2"
+    },
+    {
+      "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/js/components/base.ba9eb538b25a.js"
     },
     {
@@ -402,7 +406,7 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/font/FiraSans-Light.af42317212d4.woff2"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/i18n.dc00453d015b.js"
     },
     {
       "type": "unknown",
@@ -486,11 +490,11 @@
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/i18n.dc00453d015b.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/sync/updaters.7b580d10dd18.js"
     },
     {
       "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/contextmenu.5a9cfbc5ac24.js"
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/sync/websocket.892c1f48b140.js"
     },
     {
       "type": "unknown",
@@ -498,15 +502,11 @@
     },
     {
       "type": "unknown",
+      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/ui/contextmenu.5a9cfbc5ac24.js"
+    },
+    {
+      "type": "unknown",
       "url": "https://umap.openstreetmap.fr/static/umap/vendors/dompurify/purify.es.320dcf5291b8.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/sync/updaters.7b580d10dd18.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://umap.openstreetmap.fr/static/umap/js/modules/sync/websocket.892c1f48b140.js"
     },
     {
       "type": "unknown",
@@ -597,8 +597,8 @@
     "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 21 Jul 2024 04:38:38 GMT",
-    "etag": "\"uvsihzep4bnfy\"",
+    "date": "Sun, 28 Jul 2024 04:38:26 GMT",
+    "etag": "\"f3aufam9uznfy\"",
     "server": "nginx/1.25.3",
     "set-cookie": "BIGipServersesmanoweb001-80-POOL=1510327306.20480.0000; path=/; Httponly; Secure",
     "transfer-encoding": "chunked",
@@ -667,12 +667,16 @@
       "ip": "194.56.95.20",
       "geoip": {
         "city": {
-          "geoname_id": 2968705,
+          "geoname_id": 2988507,
           "names": {
-            "en": "Villejuif",
-            "ja": "ヴィルジュイフ",
-            "ru": "Вильжюиф",
-            "zh-CN": "犹太城"
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
           }
         },
         "continent": {
@@ -706,12 +710,12 @@
         },
         "location": {
           "accuracy_radius": 20,
-          "latitude": 48.7913,
-          "longitude": 2.3632,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "94800"
+          "code": "75016"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -744,17 +748,13 @@
             }
           },
           {
-            "geoname_id": 2971090,
-            "iso_code": "94",
+            "geoname_id": 2968815,
+            "iso_code": "75",
             "names": {
-              "de": "Val-de-Marne",
-              "en": "Val-de-Marne",
-              "es": "Valle de Marne",
-              "fr": "Val-de-Marne",
-              "ja": "ヴァル＝ド＝マルヌ県",
-              "pt-BR": "Val-de-Marne",
-              "ru": "Валь-де-Марн",
-              "zh-CN": "马恩河谷省"
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
             }
           }
         ]
