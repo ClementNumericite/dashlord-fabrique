@@ -269,7 +269,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "BD6ACE84C595989152CD9B3649DE841F"
+              "finding"      : "F8B78D5F378140C836EC860394893141"
           }
 ,         {
               "id"           : "cert_serialNumberLen <hostCert#1>",
@@ -283,21 +283,21 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "8BB09E3CCDA9369ABF99A2D561F878BF81B24D2E"
+              "finding"      : "CB006AD4414C3DCB5BDF5182CAF563C03FAACBD3"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256 <hostCert#1>",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "31E60550EBBDA698F89A5DDB10D3A56B16CEA0BAB3C4CF97B6B6811441D8C64E"
+              "finding"      : "DAA07C596C7861D5FB6BCCA92BE1A45B4E03AF92CAAC4D2CC22574580937A911"
           }
 ,         {
               "id"           : "cert <hostCert#1>",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIRAL1qzoTFlZiRUs2bNknehB8wDQYJKoZIhvcNAQELBQAwSzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJuZXRlcyBJbmdyZXNzIENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTAeFw0yNDA3MjEwMDU5MjhaFw0yNTA3MjEwMDU5MjhaMEsxEDAOBgNVBAoTB0FjbWUgQ28xNzA1BgNVBAMTLkt1YmVybmV0ZXMgSW5ncmVzcyBDb250cm9sbGVyIEZha2UgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDNumiCmwlhMWSd9L1Pi5ndEXuDpjnVvoKknWw9mSNstLOHZfdyMysOaVYxBvO7fTkYPx5/aGJtoFy0nYKj6t0VI8uW7I3sK6hbiODzRuRbOhffPJm7MrvBpVIN9G0DUSrQZ+75ZeNS2JGAb/7gV8kqxnlZU5Yd2uaDEw8HkhTtHxRWSDLczHlldwa/+w9hAWovxVMt5q0D4ynxRxRXG/eFhw4R0xDdFNl+QoMsWr5rp7YfaoD4Ml/lzyEyvQgk284Eph8VbnOv5MiD4+D8ZNmu5ttJVf3d/qXUZUpVSTZjmsMFbQg2MOgqUtIlA+uK7b2dXaavzCa9w/jb64M2dy/zAgMBAAGjTzBNMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMBgGA1UdEQQRMA+CDWluZ3Jlc3MubG9jYWwwDQYJKoZIhvcNAQELBQADggEBAL0sN6Y+YAOadpmARwlCObrlg3VTdks0suoiWgs5P73RYESo0CUAeF9BFroSzy81TMZ4r4Aq2U4TOJh12Si73mJCJxmvFuLJZCVotGuRGPgSevY/bdeS0M//BsnktWvoyvtuqWhfl1vs7gCFvOFVjg/RknyknQfGXCCbYT3bBNqWL/R4TlHC/55NcYvX1erOZQYoLVCXpiet91UG9RvgzE1OHKtWOYFgIf/q1IbN2i6CbslZlzcenFHSI6JICISImMzTBsaxafRHZ5+QuWdAR3gm1MEmeiWoKyav1TtY9PQMoyCwfpl3PDwaInF65h0CQ0RRTfBafPkdgZOKzVSa/5c=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIRAPi3jV83gUDINuyGA5SJMUEwDQYJKoZIhvcNAQELBQAwSzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJuZXRlcyBJbmdyZXNzIENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTAeFw0yNDA4MDIxNjI0MjZaFw0yNTA4MDIxNjI0MjZaMEsxEDAOBgNVBAoTB0FjbWUgQ28xNzA1BgNVBAMTLkt1YmVybmV0ZXMgSW5ncmVzcyBDb250cm9sbGVyIEZha2UgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0qkjvPyyV/6kvZi0kenKhCHldmAC8qGNJaVXvnCEwK30FQIodFX0GwSIEsMQws0NTW12i9F/f5B4ESNaoZIFK1gHZQrSXTFIROJ8EfNE0pZDbaBdap+xMLukojiKXaPRgxD2Kjn6+CZkEYFSHgrOan428mU1ZZ6zySXzBJ+lPOoIbrH9tVzPQTZa9yrmEwWjuTE3qvJ1bIfS0Mk7BV0a5J3htdnIXbwcqVDt14XYHR+fjuo+WVETzpVsdm1qtBxiTSQhNeR65mVkoKGWBBuwffAV1uU23Ucu8v8O7a/g0aIj6r9Nm8UM0tS9kDwWDPss+hGSaukZIrfDAGDMUtpglAgMBAAGjTzBNMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMBgGA1UdEQQRMA+CDWluZ3Jlc3MubG9jYWwwDQYJKoZIhvcNAQELBQADggEBAI2HYvzy7OOhd6JpPuEkp/IyoAyfkR9CkPjvENo9AXjGyfU6HHIk5LtjHXyjDvZm/XDIV814fxD/lj6HfEmK8G92LxOdM/VoouW3kHQBA2vV7Rf+ZlqO7yERZ+rNe7RMTZ+5ydJ3eiTmI4Y/wmDzy/G5CToSLc28LzQqjiCG8txqYnaURVe7Gn2K+rBUGARwEr1kl9Tmeg79DV0Nt0fmrSXShqaQgLv4sKzGUglogFnEkQZT6UXHB48HZ51tQ4xvMNW463VPJrUwxtNKN0qeFrRELQVBdPDWVTWn5wyUzIcQAUUdR93RiUUaQX8r75YlbrckiCYhKNY8MpBUbZjwy9o=\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName <hostCert#1>",
@@ -346,21 +346,21 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "357 >= 60 days"
+              "finding"      : "363 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#1>",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-07-21 00:59"
+              "finding"      : "2024-08-02 16:24"
           }
 ,         {
               "id"           : "cert_notAfter <hostCert#1>",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2025-07-21 00:59"
+              "finding"      : "2025-08-02 16:24"
           }
 ,         {
               "id"           : "cert_extlifeSpan <hostCert#1>",
@@ -563,7 +563,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "364 >= 60 days"
+              "finding"      : "357 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore <hostCert#2>",
@@ -689,7 +689,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1722133108"
+              "finding"      : "1722738308"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -897,7 +897,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=31E60550EBBDA698F89A5DDB10D3A56B16CEA0BAB3C4CF97B6B6811441D8C64E"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=DAA07C596C7861D5FB6BCCA92BE1A45B4E03AF92CAAC4D2CC22574580937A911"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1287,6 +1287,6 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "51"
+              "finding"      : "70"
           }
 ]
