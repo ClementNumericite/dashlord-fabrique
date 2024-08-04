@@ -16,26 +16,7 @@
         "href": "https://mano-app.fabrique.social.gouv.fr/"
       },
       "link": "https://mano-app.fabrique.social.gouv.fr/",
-      "line": "--2024-07-28 04:34:25--  https://mano-app.fabrique.social.gouv.fr/",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "mano.sesan.fr",
-        "port": null,
-        "hostname": "mano.sesan.fr",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/",
-        "path": "/",
-        "href": "https://mano.sesan.fr/"
-      },
-      "link": "https://mano.sesan.fr/",
-      "line": "--2024-07-28 04:34:25--  https://mano.sesan.fr/",
+      "line": "--2024-08-04 04:16:06--  https://mano-app.fabrique.social.gouv.fr/",
       "broken": false
     }
   ],
