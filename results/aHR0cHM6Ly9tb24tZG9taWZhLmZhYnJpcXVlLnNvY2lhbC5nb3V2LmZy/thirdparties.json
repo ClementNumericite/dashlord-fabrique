@@ -8,10 +8,10 @@
   "cookies": [
     {
       "name": "mtm_consent_removed",
-      "value": "1722145005486",
+      "value": "1722748633834",
       "domain": "mon-domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 2668225005,
+      "expires": 2668828633,
       "size": 32,
       "httpOnly": false,
       "secure": false,
@@ -27,7 +27,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 28 Jul 2024 05:36:43 GMT",
+    "date": "Sun, 04 Aug 2024 05:17:12 GMT",
     "etag": "W/\"66a12e0b-87c\"",
     "last-modified": "Wed, 24 Jul 2024 16:38:35 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
