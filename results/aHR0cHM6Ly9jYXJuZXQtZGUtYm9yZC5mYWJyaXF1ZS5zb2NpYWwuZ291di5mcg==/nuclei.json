@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "carnet-de-bord.fabrique.social.gouv.fr.",
       "matched-at": "carnet-de-bord.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 9208\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 9208\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\ncdb-app-production.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2344697733 10000 2400 604800 1800\n",
-      "timestamp": "2024-08-04T03:39:24.956654837Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 1287\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 1287\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\ncdb-app-production.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2344697733 10000 2400 604800 1800\n",
+      "timestamp": "2024-08-11T03:37:33.778458683Z",
       "matcher-status": true
     },
     {
@@ -69,9 +69,9 @@
       "extracted-results": [
         "cdb-app-production.osc-secnum-fr1.scalingo.io."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 52761\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 52761\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\n",
-      "timestamp": "2024-08-04T03:39:26.089370448Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 18010\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 18010\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\n",
+      "timestamp": "2024-08-11T03:37:34.693380595Z",
       "matcher-status": true
     },
     {
@@ -101,7 +101,7 @@
         "Let's Encrypt"
       ],
       "ip": "185.21.194.105",
-      "timestamp": "2024-08-04T03:46:15.11513756Z",
+      "timestamp": "2024-08-11T03:44:26.691844656Z",
       "matcher-status": true
     },
     {
@@ -131,7 +131,7 @@
         "carnet-de-bord.fabrique.social.gouv.fr"
       ],
       "ip": "185.21.194.105",
-      "timestamp": "2024-08-04T03:46:15.11525514Z",
+      "timestamp": "2024-08-11T03:44:26.691961555Z",
       "matcher-status": true
     },
     {
@@ -162,7 +162,7 @@
         "tls12"
       ],
       "ip": "185.21.194.105",
-      "timestamp": "2024-08-04T03:46:20.009483896Z",
+      "timestamp": "2024-08-11T03:44:28.218347424Z",
       "matcher-status": true
     },
     {
@@ -193,7 +193,7 @@
         "tls13"
       ],
       "ip": "185.21.194.105",
-      "timestamp": "2024-08-04T03:46:20.203361793Z",
+      "timestamp": "2024-08-11T03:44:28.415909886Z",
       "matcher-status": true
     }
   ]
