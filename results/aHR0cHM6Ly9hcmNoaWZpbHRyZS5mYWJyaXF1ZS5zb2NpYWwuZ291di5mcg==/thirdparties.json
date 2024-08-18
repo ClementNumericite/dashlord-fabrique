@@ -182,7 +182,31 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-6b2f4c83ada8a478.js"
+      "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
+    },
+    {
+      "type": "unknown",
+      "url": "https://api.pirsch.io/hit?nc=1723942517360&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre-backoffice.prismic.io/prismic-toolbar/4.1.1/iframe.html"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-284a1b40f60a8498.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-03c2e3bc4203e271.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-d0b3c11450cb2ee3.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-7b87e7e0a5c028e5.js"
     },
     {
       "type": "unknown",
@@ -198,34 +222,6 @@
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-60bb0cc029308a51.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/telechargements-284a1b40f60a8498.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/qui-sommes-nous-03c2e3bc4203e271.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://api.pirsch.io/hit?nc=1723337772890&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fr%2F&t=Suite%20Archifiltre&ref=&w=800&h=600"
-    },
-    {
-      "type": "unknown",
-      "url": "https://static.cdn.prismic.io/prismic.js?repo=archifiltre-backoffice&new=true"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre-backoffice.prismic.io/prismic-toolbar/4.1.1/iframe.html"
-    },
-    {
-      "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/303-73bd1f1e592955bd.js"
     },
     {
@@ -234,15 +230,19 @@
     },
     {
       "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/faq-6b2f4c83ada8a478.js"
+    },
+    {
+      "type": "unknown",
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/stats-7f3500109c4cbd77.js"
+    },
+    {
+      "type": "unknown",
       "url": "https://archifiltre.fr/_next/static/chunks/pages/mentions-legales-347e78ae193fc419.js"
     },
     {
       "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/co-creation-d0b3c11450cb2ee3.js"
-    },
-    {
-      "type": "unknown",
-      "url": "https://archifiltre.fr/_next/static/chunks/pages/politiques-de-confidentialite-7b87e7e0a5c028e5.js"
+      "url": "https://archifiltre.fr/_next/static/chunks/pages/docs-60bb0cc029308a51.js"
     }
   ],
   "cookies": [],
@@ -250,7 +250,7 @@
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 11 Aug 2024 00:56:11 GMT",
+    "date": "Sun, 18 Aug 2024 00:55:15 GMT",
     "etag": "\"bg5bi3ypkz9l7\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -417,13 +417,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 200,
-          "latitude": 49.4423,
-          "longitude": 11.0191,
+          "accuracy_radius": 20,
+          "latitude": 49.4527,
+          "longitude": 11.0783,
           "time_zone": "Europe/Berlin"
         },
         "postal": {
-          "code": "90431"
+          "code": "90403"
         },
         "registered_country": {
           "geoname_id": 2921044,
@@ -460,7 +460,7 @@
     },
     {
       "hostname": "static.cdn.prismic.io",
-      "ip": "13.32.164.96",
+      "ip": "99.84.191.5",
       "geoip": {
         "continent": {
           "code": "NA",
