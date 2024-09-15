@@ -7,10 +7,6 @@
         "id": "hotjar",
         "message": "Dont use HotJar"
       }
-    },
-    {
-      "type": "unknown",
-      "url": "https://metrics.hotjar.io/?v=6&site_id=3733360"
     }
   ],
   "cookies": [
@@ -19,7 +15,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1725767484,
+      "expires": 1726371353,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -31,10 +27,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "f494f9ea71e9ea77.1725765685.",
+      "value": "dea794110fdbd141.1726369553.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1759720885,
+      "expires": 1760324753,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -49,7 +45,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' data:; connect-src 'self' https://*.gouv.fr https://metrics.articulate.com; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 08 Sep 2024 03:21:23 GMT",
+    "date": "Sun, 15 Sep 2024 03:05:52 GMT",
     "etag": "W/\"66d8c8fe-4921\"",
     "last-modified": "Wed, 04 Sep 2024 20:54:22 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -167,89 +163,6 @@
             "zh-CN": "美国"
           }
         }
-      }
-    },
-    {
-      "hostname": "metrics.hotjar.io",
-      "ip": "52.209.121.68",
-      "geoip": {
-        "city": {
-          "geoname_id": 2964574,
-          "names": {
-            "de": "Dublin",
-            "en": "Dublin",
-            "es": "Dublín",
-            "fr": "Dublin",
-            "ja": "ダブリン",
-            "pt-BR": "Dublin",
-            "ru": "Дублин",
-            "zh-CN": "都柏林"
-          }
-        },
-        "continent": {
-          "code": "EU",
-          "geoname_id": 6255148,
-          "names": {
-            "de": "Europa",
-            "en": "Europe",
-            "es": "Europa",
-            "fr": "Europe",
-            "ja": "ヨーロッパ",
-            "pt-BR": "Europa",
-            "ru": "Европа",
-            "zh-CN": "欧洲"
-          }
-        },
-        "country": {
-          "geoname_id": 2963597,
-          "is_in_european_union": true,
-          "iso_code": "IE",
-          "names": {
-            "de": "Irland",
-            "en": "Ireland",
-            "es": "Irlanda",
-            "fr": "Irlande",
-            "ja": "アイルランド",
-            "pt-BR": "Irlanda",
-            "ru": "Ирландия",
-            "zh-CN": "爱尔兰"
-          }
-        },
-        "location": {
-          "accuracy_radius": 200,
-          "latitude": 53.3379,
-          "longitude": -6.2591,
-          "time_zone": "Europe/Dublin"
-        },
-        "postal": {
-          "code": "D02"
-        },
-        "registered_country": {
-          "geoname_id": 6252001,
-          "iso_code": "US",
-          "names": {
-            "de": "USA",
-            "en": "United States",
-            "es": "Estados Unidos",
-            "fr": "États Unis",
-            "ja": "アメリカ",
-            "pt-BR": "EUA",
-            "ru": "США",
-            "zh-CN": "美国"
-          }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 7521314,
-            "iso_code": "L",
-            "names": {
-              "en": "Leinster",
-              "fr": "Leinster",
-              "ja": "レンスター",
-              "ru": "Ленстер"
-            }
-          }
-        ]
       }
     }
   ]
