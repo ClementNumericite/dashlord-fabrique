@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1726364913,
+      "expires": 1726969899,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.17.b1ca",
-      "value": "37a7c9e275509f2c.1726363113.",
+      "value": "05eb852dcbfc13a0.1726968099.",
       "domain": "domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1760318313,
+      "expires": 1760923299,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -37,7 +37,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Sep 2024 01:18:31 GMT",
+    "date": "Sun, 22 Sep 2024 01:21:37 GMT",
     "etag": "W/\"66cf67ce-98d\"",
     "last-modified": "Wed, 28 Aug 2024 18:09:18 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -81,7 +81,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
