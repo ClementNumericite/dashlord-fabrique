@@ -1,43 +1,12 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.8.66b2",
-      "value": "1",
-      "domain": "fce.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1726374063,
-      "size": 15,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.8.66b2",
-      "value": "d0f0842d44c28cc5.1726372264.",
-      "domain": "fce.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1760327464,
-      "size": 41,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 15 Sep 2024 03:51:02 GMT",
-    "etag": "W/\"66c5e28d-231\"",
-    "last-modified": "Wed, 21 Aug 2024 12:50:21 GMT",
+    "date": "Sun, 22 Sep 2024 04:09:08 GMT",
+    "etag": "W/\"66ebf6ef-231\"",
+    "last-modified": "Thu, 19 Sep 2024 10:03:27 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -79,7 +48,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
