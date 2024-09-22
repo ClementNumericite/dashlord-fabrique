@@ -9,7 +9,7 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Sep 2024 02:39:49 GMT",
+    "date": "Sun, 22 Sep 2024 02:57:35 GMT",
     "etag": "\"29x2qc6omyr7x\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -50,7 +50,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
