@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "jardinmental.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1726368016,
+      "expires": 1726973557,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.33.5031",
-      "value": "2104612c6fc72922.1726366216.",
+      "value": "eb3a5bbf01311e9c.1726971757.",
       "domain": "jardinmental.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1760321416,
+      "expires": 1760926957,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -36,7 +36,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; connect-src 'self' https://*.gouv.fr; font-src 'self'; media-src 'self' https://*.gouv.fr; img-src 'self' https://*.gouv.fr https://a.tile.openstreetmap.org https://b.tile.openstreetmap.org https://c.tile.openstreetmap.org; prefetch-src 'self' https://*.gouv.fr; script-src 'self' https://*.gouv.fr; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Sep 2024 02:10:15 GMT",
+    "date": "Sun, 22 Sep 2024 02:22:35 GMT",
     "etag": "\"ri10q2iubxdgi\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
@@ -80,7 +80,7 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
+          "accuracy_radius": 1000,
           "latitude": 48.8582,
           "longitude": 2.3387,
           "time_zone": "Europe/Paris"
