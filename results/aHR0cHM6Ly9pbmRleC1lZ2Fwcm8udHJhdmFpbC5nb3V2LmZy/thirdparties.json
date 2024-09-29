@@ -1,52 +1,6 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "mtm_consent_removed",
-      "value": "1726966931198",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 2673046931,
-      "size": 32,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "__Secure-next-auth.callback-url",
-      "value": "https%3A%2F%2Fegapro.travail.gouv.fr",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 67,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "__Host-next-auth.csrf-token",
-      "value": "d57ce703e12ce2f379e21b585ad4d876aa6f2ef2d52b6ae8e2c52320e0541508%7C783dfb107f35341325d16fc52c7faefd5a9bfa038e45eae478ec9207b60cfb43",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 158,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
@@ -55,7 +9,7 @@
     "cross-origin-embedder-policy": "credentialless",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "cross-origin",
-    "date": "Sun, 22 Sep 2024 01:02:09 GMT",
+    "date": "Sun, 29 Sep 2024 01:01:52 GMT",
     "etag": "\"4ea5frdeyp3zug\"",
     "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
     "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
@@ -72,6 +26,19 @@
       "hostname": "index-egapro.travail.gouv.fr",
       "ip": "57.128.91.43",
       "geoip": {
+        "city": {
+          "geoname_id": 2988507,
+          "names": {
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -102,10 +69,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "accuracy_radius": 50,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "75017"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -121,7 +91,33 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 3012874,
+            "iso_code": "IDF",
+            "names": {
+              "de": "Île-de-France",
+              "en": "Île-de-France",
+              "es": "Isla de Francia",
+              "fr": "Île-de-France",
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
+              "zh-CN": "法兰西岛"
+            }
+          },
+          {
+            "geoname_id": 2968815,
+            "iso_code": "75",
+            "names": {
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
+            }
+          }
+        ]
       }
     }
   ]
