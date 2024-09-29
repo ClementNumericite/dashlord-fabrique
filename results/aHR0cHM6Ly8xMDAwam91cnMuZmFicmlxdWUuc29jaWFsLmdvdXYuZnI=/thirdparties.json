@@ -15,7 +15,7 @@
       "value": "1",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1726977212,
+      "expires": 1727582926,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -27,10 +27,10 @@
     },
     {
       "name": "_pk_id.38.ac6f",
-      "value": "3beaad9e1bbb65a6.1726975413.",
+      "value": "3d30f35b5739e328.1727581126.",
       "domain": "1000jours.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1760930613,
+      "expires": 1761536326,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -45,7 +45,7 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self' data:; connect-src 'self' https://*.gouv.fr https://metrics.articulate.com; font-src 'self' data:; img-src 'self'; script-src 'self' https://*.gouv.fr 'unsafe-inline' 'unsafe-eval'; frame-src 'self' https://*.gouv.fr; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 22 Sep 2024 03:23:31 GMT",
+    "date": "Sun, 29 Sep 2024 03:38:45 GMT",
     "etag": "W/\"66d8c8fe-4921\"",
     "last-modified": "Wed, 04 Sep 2024 20:54:22 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -59,6 +59,19 @@
       "hostname": "1000jours.fabrique.social.gouv.fr",
       "ip": "57.128.91.43",
       "geoip": {
+        "city": {
+          "geoname_id": 2988507,
+          "names": {
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -89,10 +102,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "accuracy_radius": 50,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "75017"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -108,7 +124,33 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 3012874,
+            "iso_code": "IDF",
+            "names": {
+              "de": "Île-de-France",
+              "en": "Île-de-France",
+              "es": "Isla de Francia",
+              "fr": "Île-de-France",
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
+              "zh-CN": "法兰西岛"
+            }
+          },
+          {
+            "geoname_id": 2968815,
+            "iso_code": "75",
+            "names": {
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
+            }
+          }
+        ]
       }
     },
     {
