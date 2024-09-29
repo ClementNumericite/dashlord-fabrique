@@ -26,7 +26,19 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/EGbODne6buzpTnWrrBprcfAY/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/xds0rzGrktR88uEZ2JUvdgOY/recaptcha__en.js",
+      "details": {
+        "id": "google",
+        "message": "Use hosted Matomo instance"
+      }
+    },
+    {
+      "type": "unknown",
+      "url": "https://api.pirsch.io/hit?nc=1727571861379&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fabrique.social.gouv.fr%2F&t=Archifiltre%20%7C%20Reprenez%20le%20contr%C3%B4le%20de%20vos%20stockages%20num%C3%A9riques&ref=&w=800&h=600"
+    },
+    {
+      "type": "google",
+      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc7uEYqAAAAAMqDo-cYZ0m2kKjjhgPMyXom0yUu&co=aHR0cHM6Ly9hcmNoaWZpbHRyZS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjo0NDM.&hl=en&v=xds0rzGrktR88uEZ2JUvdgOY&size=normal&cb=x24vui9sm02s",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -34,7 +46,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc7uEYqAAAAAMqDo-cYZ0m2kKjjhgPMyXom0yUu&co=aHR0cHM6Ly9hcmNoaWZpbHRyZS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjo0NDM.&hl=en&v=EGbODne6buzpTnWrrBprcfAY&size=normal&cb=dp2nga2nuq3",
+      "url": "https://www.gstatic.com/recaptcha/releases/xds0rzGrktR88uEZ2JUvdgOY/styles__ltr.css",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -42,15 +54,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/EGbODne6buzpTnWrrBprcfAY/styles__ltr.css",
-      "details": {
-        "id": "google",
-        "message": "Use hosted Matomo instance"
-      }
-    },
-    {
-      "type": "google",
-      "url": "https://www.gstatic.com/recaptcha/releases/EGbODne6buzpTnWrrBprcfAY/recaptcha__en.js",
+      "url": "https://www.gstatic.com/recaptcha/releases/xds0rzGrktR88uEZ2JUvdgOY/recaptcha__en.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -74,7 +78,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/js/bg/w8jilI7vDbJvAiJQQk88k7rduamqHzPsdFolUJZhiKw.js",
+      "url": "https://www.google.com/js/bg/SzbTPrPj0RZMh3sKke7Dm2R1EAOQaD1lrFJKAhnJ0tE.js",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -82,7 +86,7 @@
     },
     {
       "type": "google",
-      "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=EGbODne6buzpTnWrrBprcfAY",
+      "url": "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=xds0rzGrktR88uEZ2JUvdgOY",
       "details": {
         "id": "google",
         "message": "Use hosted Matomo instance"
@@ -95,17 +99,13 @@
         "id": "google fonts",
         "message": "Host the font locally with https://github.com/neverpanic/google-font-download or https://google-webfonts-helper.herokuapp.com/"
       }
-    },
-    {
-      "type": "unknown",
-      "url": "https://api.pirsch.io/hit?nc=1726966975216&code=uJCmStS991SMh0AyfYDKm8Fxx7gXFu6I&url=https%3A%2F%2Farchifiltre.fabrique.social.gouv.fr%2F&t=Archifiltre%20%7C%20Reprenez%20le%20contr%C3%B4le%20de%20vos%20stockages%20num%C3%A9riques&ref=&w=800&h=600"
     }
   ],
   "cookies": [],
   "headers": {
     "content-security-policy": "*",
     "content-type": "text/html; charset=UTF-8",
-    "date": "Sun, 22 Sep 2024 01:02:53 GMT",
+    "date": "Sun, 29 Sep 2024 01:04:19 GMT",
     "link": "<https://archifiltre.fabrique.social.gouv.fr/wp-json/>; rel=\"https://api.w.org/\"\n<https://archifiltre.fabrique.social.gouv.fr/wp-json/wp/v2/pages/131456>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\"\n<https://archifiltre.fabrique.social.gouv.fr/>; rel=shortlink",
     "server": "nginx",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -213,7 +213,7 @@
     },
     {
       "hostname": "fonts.googleapis.com",
-      "ip": "142.250.189.170",
+      "ip": "142.250.176.10",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -375,7 +375,7 @@
     },
     {
       "hostname": "www.google.com",
-      "ip": "142.251.46.196",
+      "ip": "142.250.176.4",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -429,7 +429,7 @@
     },
     {
       "hostname": "www.gstatic.com",
-      "ip": "142.250.191.35",
+      "ip": "142.251.40.35",
       "geoip": {
         "continent": {
           "code": "NA",
@@ -483,7 +483,7 @@
     },
     {
       "hostname": "fonts.gstatic.com",
-      "ip": "142.251.46.227",
+      "ip": "142.250.217.131",
       "geoip": {
         "continent": {
           "code": "NA",
