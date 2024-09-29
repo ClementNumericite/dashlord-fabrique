@@ -5,7 +5,7 @@
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 22 Sep 2024 02:37:17 GMT",
+    "date": "Sun, 29 Sep 2024 02:55:36 GMT",
     "etag": "\"bm8kocrlwy15x8\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
@@ -17,6 +17,19 @@
       "hostname": "ozensemble.fabrique.social.gouv.fr",
       "ip": "57.128.91.43",
       "geoip": {
+        "city": {
+          "geoname_id": 2988507,
+          "names": {
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -47,10 +60,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "accuracy_radius": 50,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "75017"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -66,7 +82,33 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 3012874,
+            "iso_code": "IDF",
+            "names": {
+              "de": "Île-de-France",
+              "en": "Île-de-France",
+              "es": "Isla de Francia",
+              "fr": "Île-de-France",
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
+              "zh-CN": "法兰西岛"
+            }
+          },
+          {
+            "geoname_id": 2968815,
+            "iso_code": "75",
+            "names": {
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
+            }
+          }
+        ]
       }
     }
   ]
