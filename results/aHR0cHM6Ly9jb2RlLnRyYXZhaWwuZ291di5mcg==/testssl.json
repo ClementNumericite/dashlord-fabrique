@@ -63,13 +63,6 @@
               "finding"      : "h2"
           }
 ,         {
-              "id"           : "ALPN",
-              "ip"           : "code.travail.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "http/1.1"
-          }
-,         {
               "id"           : "cipherlist_NULL",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
@@ -346,7 +339,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "89 >= 30 days"
+              "finding"      : "82 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,14 +493,14 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1726970291"
+              "finding"      : "1727575022"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -577,7 +570,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr; script-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so false; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com https://tally.so; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr https://tally.so; worker-src 'self' blob:;"
+              "finding"      : "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr; script-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr https://tally.so ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com https://tally.so; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr https://tally.so; worker-src 'self' blob:;"
           }
 ,         {
               "id"           : "Cache-Control",
@@ -1091,6 +1084,6 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "51"
+              "finding"      : "142"
           }
 ]
