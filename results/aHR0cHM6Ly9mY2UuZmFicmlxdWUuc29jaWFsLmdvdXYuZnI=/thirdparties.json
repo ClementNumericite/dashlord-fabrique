@@ -4,9 +4,9 @@
   "headers": {
     "content-encoding": "gzip",
     "content-type": "text/html",
-    "date": "Sun, 22 Sep 2024 04:09:08 GMT",
-    "etag": "W/\"66ebf6ef-231\"",
-    "last-modified": "Thu, 19 Sep 2024 10:03:27 GMT",
+    "date": "Sun, 29 Sep 2024 04:27:39 GMT",
+    "etag": "W/\"66f40fc0-231\"",
+    "last-modified": "Wed, 25 Sep 2024 13:27:28 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -18,6 +18,19 @@
       "hostname": "fce.fabrique.social.gouv.fr",
       "ip": "57.128.91.43",
       "geoip": {
+        "city": {
+          "geoname_id": 2988507,
+          "names": {
+            "de": "Paris",
+            "en": "Paris",
+            "es": "París",
+            "fr": "Paris",
+            "ja": "パリ",
+            "pt-BR": "Paris",
+            "ru": "Париж",
+            "zh-CN": "巴黎"
+          }
+        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -48,10 +61,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 48.8582,
-          "longitude": 2.3387,
+          "accuracy_radius": 50,
+          "latitude": 48.8323,
+          "longitude": 2.4075,
           "time_zone": "Europe/Paris"
+        },
+        "postal": {
+          "code": "75017"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -67,7 +83,33 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        }
+        },
+        "subdivisions": [
+          {
+            "geoname_id": 3012874,
+            "iso_code": "IDF",
+            "names": {
+              "de": "Île-de-France",
+              "en": "Île-de-France",
+              "es": "Isla de Francia",
+              "fr": "Île-de-France",
+              "ja": "イル・ド・フランス",
+              "pt-BR": "Ilha de França",
+              "ru": "Иль-де-Франс",
+              "zh-CN": "法兰西岛"
+            }
+          },
+          {
+            "geoname_id": 2968815,
+            "iso_code": "75",
+            "names": {
+              "de": "Paris",
+              "en": "Paris",
+              "es": "Paris",
+              "fr": "Paris"
+            }
+          }
+        ]
       }
     }
   ]
