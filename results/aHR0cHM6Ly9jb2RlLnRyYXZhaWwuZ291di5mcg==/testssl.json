@@ -63,6 +63,13 @@
               "finding"      : "h2"
           }
 ,         {
+              "id"           : "ALPN",
+              "ip"           : "code.travail.gouv.fr/57.128.91.43",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "http/1.1"
+          }
+,         {
               "id"           : "cipherlist_NULL",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
@@ -339,7 +346,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "82 >= 30 days"
+              "finding"      : "75 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,7 +507,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1727575022"
+              "finding"      : "1728180615"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1084,6 +1091,6 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "142"
+              "finding"      : "101"
           }
 ]
