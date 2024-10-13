@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "monpsy.sante.gouv.fr.",
       "matched-at": "monpsy.sante.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 17839\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 17839\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmonpsy.sante.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-10-06T05:01:22.80717103Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 19662\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 19662\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmonpsy.sante.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-10-13T04:55:15.76524377Z",
       "matcher-status": true
     },
     {
@@ -67,14 +67,14 @@
       "host": "monpsy.sante.gouv.fr.",
       "matched-at": "monpsy.sante.gouv.fr",
       "extracted-results": [
-        "ns2-04.azure-dns.net.",
         "ns4-04.azure-dns.info.",
-        "ns3-04.azure-dns.org.",
-        "ns1-04.azure-dns.com."
+        "ns1-04.azure-dns.com.",
+        "ns2-04.azure-dns.net.",
+        "ns3-04.azure-dns.org."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 37089\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 37089\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns2-04.azure-dns.net.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns4-04.azure-dns.info.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns3-04.azure-dns.org.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns1-04.azure-dns.com.\n",
-      "timestamp": "2024-10-06T05:01:23.81190768Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 4818\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 4818\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
+      "timestamp": "2024-10-13T04:55:16.766448741Z",
       "matcher-status": true
     }
   ]
