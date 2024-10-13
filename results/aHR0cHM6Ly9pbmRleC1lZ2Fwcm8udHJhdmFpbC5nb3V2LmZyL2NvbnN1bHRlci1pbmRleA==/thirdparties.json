@@ -9,7 +9,7 @@
     "cross-origin-embedder-policy": "credentialless",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "cross-origin",
-    "date": "Sun, 06 Oct 2024 01:02:17 GMT",
+    "date": "Sun, 13 Oct 2024 01:01:55 GMT",
     "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
     "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
@@ -67,13 +67,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 50,
+          "accuracy_radius": 500,
           "latitude": 48.8323,
           "longitude": 2.4075,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "75017"
+          "code": "75001"
         },
         "registered_country": {
           "geoname_id": 3017382,
