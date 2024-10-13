@@ -206,7 +206,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -269,7 +269,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0375CF066F98A19A1343AB0821A87CA47F03"
+              "finding"      : "042265A61E39275CF6DBA79EBF68AE923B68"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "D33A561DF5A2A98AEE0D53E439E71954AD800FF5"
+              "finding"      : "B64F5E15970D4B27157A443DFC65EDA2DDBD63AE"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0A966F9A6962A5818B7E9067D8C6447874DBF1513F39BB6F369A6704F7721564"
+              "finding"      : "FE1CED4732A33D62EC912AFE839BBB3238AD0DCD540945C2AA60849E32167D0F"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFEDCCA/igAwIBAgISA3XPBm+YoZoTQ6sIIah8pH8DMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQwODExMTUwMTE0WhcNMjQxMTA5MTUwMTEzWjArMSkwJwYDVQQDEyB0dW1lcGxheS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKgfMEOIEGvVcboMK7PjhW+Tb14rkZrjmhonrv42WhyYmfHyODuEOPa4Tka/yZrBX/q2TdEbfKiDko87z6IFy+XB4CnB7vEj56jZ/s2jRYoc/k48t9c9HwCi3xZoA+hRRE6282eHwVbGJshqbX7rL8+DnDWmqFFqKQztyMHF0LSh/ykZoFUI1b+Bf6063Q30NTZRCnJvQ26X+QQzWS6dnqI22aDPOnXDhvXSvpOoO/AWVuu/li21y9aGf+G8gpgMJYFVfjKffLjcfMuYHJ8ECpSnMCJBRpXRi6Xj+CsXcJm5xSljb2ijwkDU18Ro6vXTnmUYp3e59RhAbvv0xYvXG3MCAwEAAaOCAiQwggIgMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUAn2d77rA4yDAAQUVKfHBJqD1WPYwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiB0dW1lcGxheS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB1AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdMWjp0AAABkUIqxUYAAAQDAEYwRAIgYxq6xwn7xwG0UtB+7NfdYW35Bngk305wVv8I2aH1BdECICLg/ZJ1Bqjabl1K3RaT+R2Y244toWmAo6Il0zIt2omtAHcASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGRQirE8QAABAMASDBGAiEAuoZPhx2LxeTQ/5chROrCLUzHo9fCa147rcTKxrjyXbkCIQD/7+BoD9ODSXwEZt/UARoi667JBVjjKfw6h08kUIXYWjANBgkqhkiG9w0BAQsFAAOCAQEAPwBdnOkKqTj3cJMWTVpePnQ20XiRW41WH9U10XPmmxjhSexpz5FHdpqkfiuu9yrlZnYO3EkSvmXFqo0ns9JIPIo1CiXpeLzQ0Rk4LCaOaqaoUiXnRps0SOKq3Zfo9ZvNfTvA1qz8KZL99ipYV+rkYKA3KrSMPp1LpRd1NYrL2d4ZdgHn7vco90F3X1F+BqUFahnHATL9PsTx2GyFWr5u93rkdD/jKbkeIZ8kxdklkNaM7LshMXgjWXFXsdEbzzyFU6ZViMlxBJcIO2+zhs8ue4q2YSAu65F6psSKhOfXUgVIp/73HQUjjLqHEB4dmdU+e5LsBhvlyvzsV9IihqQbeg==\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFDzCCA/egAwIBAgISBCJlph45J1z226eev2iukjtoMA0GCSqGSIb3DQEBCwUAMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNSMTEwHhcNMjQxMDEwMTQwMzE1WhcNMjUwMTA4MTQwMzE0WjArMSkwJwYDVQQDEyB0dW1lcGxheS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKgfMEOIEGvVcboMK7PjhW+Tb14rkZrjmhonrv42WhyYmfHyODuEOPa4Tka/yZrBX/q2TdEbfKiDko87z6IFy+XB4CnB7vEj56jZ/s2jRYoc/k48t9c9HwCi3xZoA+hRRE6282eHwVbGJshqbX7rL8+DnDWmqFFqKQztyMHF0LSh/ykZoFUI1b+Bf6063Q30NTZRCnJvQ26X+QQzWS6dnqI22aDPOnXDhvXSvpOoO/AWVuu/li21y9aGf+G8gpgMJYFVfjKffLjcfMuYHJ8ECpSnMCJBRpXRi6Xj+CsXcJm5xSljb2ijwkDU18Ro6vXTnmUYp3e59RhAbvv0xYvXG3MCAwEAAaOCAiMwggIfMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUAn2d77rA4yDAAQUVKfHBJqD1WPYwHwYDVR0jBBgwFoAUxc9GpOr0w8B6bJXELbBeki8m47kwVwYIKwYBBQUHAQEESzBJMCIGCCsGAQUFBzABhhZodHRwOi8vcjExLm8ubGVuY3Iub3JnMCMGCCsGAQUFBzAChhdodHRwOi8vcjExLmkubGVuY3Iub3JnLzArBgNVHREEJDAigiB0dW1lcGxheS5mYWJyaXF1ZS5zb2NpYWwuZ291di5mcjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB2AKLjCuRF772tm3447Udnd1PXgluElNcrXhssxLlQpEfnAAABknbzPkcAAAQDAEcwRQIgAVv8B12acl2E1x+a1ZO8ARlV8L5IjANdp+RKUqh3c/ACIQCcJpfbs59UXejy4ISr/mUS/NTIJd/ljh+89SX6zwbGgwB1AObSMWNAd4zBEEEG13G5zsHSQPaWhIb7uocyHf0eN45QAAABknbzPpcAAAQDAEYwRAIgauXKpzgQP2O4M9smPOUuiw8tRAiW2I4sQMX/VsZ0I7gCIFEzEP0wusA0Q61JLJifmBXSv0LSZCnU3ip4CLjpTME5MA0GCSqGSIb3DQEBCwUAA4IBAQBlnAlG6z/DRu4rJKK8bo/HwX9KzDpVXJNhmiHx/ZroIjeZV5CCqIcXCGKTiFamo+lySq3mqtFGmKo8rshE+kucMXm7Vge+jp2Cgd+qfNey+XE/DNPztk+eh8ryujS5pf0YagXQgiaGBLH1LpgR6D9zJdGvR82RKAp2YjlGDEXvcyfp79FA4kBUWSvlvDBnE0x7wcrAy1D923wqB/4TAxi9goTqQxyc651gF/f3/ms2BbODGqR2ZRVNIhjsD4TMGos8FsyPMFi9Nu+B0ZbQM1lhdn9yttEcTAqFsoXwargwQRc3SMNFSU08hTbQn5Y/FZ9ISq1YQWkLLGpzTgvAQt10\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -346,21 +346,21 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "34 >= 30 days"
+              "finding"      : "87 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-08-11 15:01"
+              "finding"      : "2024-10-10 14:03"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2024-11-09 15:01"
+              "finding"      : "2025-01-08 14:03"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -507,7 +507,7 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1728184174"
+              "finding"      : "1728788638"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -694,7 +694,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=0A966F9A6962A5818B7E9067D8C6447874DBF1513F39BB6F369A6704F7721564"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=FE1CED4732A33D62EC912AFE839BBB3238AD0DCD540945C2AA60849E32167D0F"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1070,6 +1070,6 @@
               "ip"           : "tumeplay.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "66"
+              "finding"      : "97"
           }
 ]
