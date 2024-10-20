@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "emjpm.fabrique.social.gouv.fr.",
       "matched-at": "emjpm.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 47586\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;emjpm.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 47586\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;emjpm.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-10-13T02:40:54.474003826Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 39165\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;emjpm.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 39165\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;emjpm.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-10-20T02:42:45.093533732Z",
       "matcher-status": true
     }
   ]
