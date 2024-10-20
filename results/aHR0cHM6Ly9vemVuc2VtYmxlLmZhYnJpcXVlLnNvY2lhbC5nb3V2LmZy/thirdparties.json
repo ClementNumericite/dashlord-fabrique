@@ -1,43 +1,12 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "_pk_ses.34.d3dd",
-      "value": "1",
-      "domain": "ozensemble.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1728789094,
-      "size": 16,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "_pk_id.34.d3dd",
-      "value": "cbc44035ffbca9b2.1728787295.",
-      "domain": "ozensemble.fabrique.social.gouv.fr",
-      "path": "/",
-      "expires": 1762742495,
-      "size": 42,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 13 Oct 2024 02:41:33 GMT",
-    "etag": "\"bm8kocrlwy15x8\"",
+    "date": "Sun, 20 Oct 2024 02:45:02 GMT",
+    "etag": "\"6p6y8fdpgo15x8\"",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
     "x-nextjs-cache": "HIT",
