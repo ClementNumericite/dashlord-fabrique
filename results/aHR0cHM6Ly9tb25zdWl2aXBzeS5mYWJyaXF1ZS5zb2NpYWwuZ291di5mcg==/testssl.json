@@ -206,7 +206,7 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -234,437 +234,220 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2"
+              "finding"      : "1"
           }
 ,         {
-              "id"           : "cert_signatureAlgorithm <hostCert#1>",
+              "id"           : "cert_signatureAlgorithm",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "SHA256 with RSA"
           }
 ,         {
-              "id"           : "cert_keySize <hostCert#1>",
+              "id"           : "cert_keySize",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "RSA 2048 bits (exponent is 65537)"
           }
 ,         {
-              "id"           : "cert_keyUsage <hostCert#1>",
+              "id"           : "cert_keyUsage",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Digital Signature, Key Encipherment"
           }
 ,         {
-              "id"           : "cert_extKeyUsage <hostCert#1>",
+              "id"           : "cert_extKeyUsage",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "TLS Web Server Authentication"
           }
 ,         {
-              "id"           : "cert_serialNumber <hostCert#1>",
+              "id"           : "cert_serialNumber",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ADD6EEB48FD6FFCA5F044B117653CF09"
+              "finding"      : "5707619A74DAC390BA35FA0BC98F278E"
           }
 ,         {
-              "id"           : "cert_serialNumberLen <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "16"
-          }
-,         {
-              "id"           : "cert_fingerprintSHA1 <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "86B91DB72163F7A49349A500A349B0DC5D8FA0AD"
-          }
-,         {
-              "id"           : "cert_fingerprintSHA256 <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "2EBC64A2466B173B37187CEBAA3D8BC0CD60F95F4472C2CE2B90B405B9EF2FE1"
-          }
-,         {
-              "id"           : "cert <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIRAK3W7rSP1v/KXwRLEXZTzwkwDQYJKoZIhvcNAQELBQAwSzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJuZXRlcyBJbmdyZXNzIENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTAeFw0yNDA5MjQxMDM0NDZaFw0yNTA5MjQxMDM0NDZaMEsxEDAOBgNVBAoTB0FjbWUgQ28xNzA1BgNVBAMTLkt1YmVybmV0ZXMgSW5ncmVzcyBDb250cm9sbGVyIEZha2UgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDeDk5tw7MvUObGoTjHMRDpeUal223DutaCXCeOPyy3Q/gclv46HA30vXY+tDteH/VVxYPzqiMN1yA/mhy67oyyDgXo0EHyTNgW7v+eOzwhLPmhfJrX6RZ91xPAGxDrKyFHEmZJ2DLOSxJwq3VvHQ6/smDvio9LXqDu/KyZb3gOHAf8idcFxErB75ci+21XIj4XhpPzTzA+9Wndzq38N92yCW6g9TJQAxYNdFBDi3R37XF9HK4+2UPi4sOV+SP8Li0XM5VZxjX/cbZpc8J+32kaSZh2SPEfzvLQTAesUk84C6f+ldJmZUL6e+OXSCNmS9T2Xptpylnx3oNAmsCLRJCdAgMBAAGjTzBNMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMBgGA1UdEQQRMA+CDWluZ3Jlc3MubG9jYWwwDQYJKoZIhvcNAQELBQADggEBADKEad97WfSlVVUy1FzIqxbyy4+hYAZj5caHPWkE+soKngrUja3Oy61YR5Qt3ewLlK+Hkr551CaCc6mKmsyWSTQa5p5Hz6uUzs6z2/1zeSpPn1AYfVFGg9rd7WJD+H0X0/qQhHMHhDix/wfBY7FyI1nxQWli6JxPqwDDh194LOGSMe+c7dYWB0/wHrBEyxD9LoyQ25i1rQia5jdkgeeGDZxndFWwlG5oHocSYc7wJsnK4f7D8yUmMfpXS5KustA66j/517FPYQo+XWm3KwHi0vLGSDVk76e0sCXfwywgz8Hyk2cWsXuef7rpobf4pooHpWCOmufRJXdvYum6Aewc7Aw=\n-----END CERTIFICATE-----"
-          }
-,         {
-              "id"           : "cert_commonName <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "Kubernetes Ingress Controller Fake Certificate"
-          }
-,         {
-              "id"           : "cert_commonName_wo_SNI <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Kubernetes Ingress Controller Fake Certificate"
-          }
-,         {
-              "id"           : "cert_subjectAltName <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "ingress.local"
-          }
-,         {
-              "id"           : "cert_trust <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "certificate does not match supplied URI (same w/o SNI)"
-          }
-,         {
-              "id"           : "cert_chain_of_trust <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "CRITICAL",
-              "finding"      : "failed (chain incomplete)."
-          }
-,         {
-              "id"           : "cert_certificatePolicies_EV <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "no"
-          }
-,         {
-              "id"           : "cert_expirationStatus <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "346 >= 60 days"
-          }
-,         {
-              "id"           : "cert_notBefore <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "2024-09-24 10:34"
-          }
-,         {
-              "id"           : "cert_notAfter <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "2025-09-24 10:34"
-          }
-,         {
-              "id"           : "cert_extlifeSpan <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "certificate has no extended life time according to browser forum"
-          }
-,         {
-              "id"           : "cert_eTLS <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "not present"
-          }
-,         {
-              "id"           : "cert_crlDistributionPoints <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "--"
-          }
-,         {
-              "id"           : "cert_ocspURL <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "--"
-          }
-,         {
-              "id"           : "cert_revocation <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "Neither CRL nor OCSP URI provided"
-          }
-,         {
-              "id"           : "OCSP_stapling <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "not offered"
-          }
-,         {
-              "id"           : "cert_mustStapleExtension <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "--"
-          }
-,         {
-              "id"           : "DNS_CAArecord <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "--"
-          }
-,         {
-              "id"           : "certificate_transparency <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "--"
-          }
-,         {
-              "id"           : "certs_countServer <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "1"
-          }
-,         {
-              "id"           : "certs_list_ordering_problem <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "no"
-          }
-,         {
-              "id"           : "cert_caIssuers <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Kubernetes Ingress Controller Fake Certificate (Acme Co)"
-          }
-,         {
-              "id"           : "intermediate_cert_badOCSP <hostCert#1>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "intermediate certificate(s) is/are ok"
-          }
-,         {
-              "id"           : "cert_signatureAlgorithm <hostCert#2>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "SHA256 with RSA"
-          }
-,         {
-              "id"           : "cert_keySize <hostCert#2>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "RSA 2048 bits (exponent is 65537)"
-          }
-,         {
-              "id"           : "cert_keyUsage <hostCert#2>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Digital Signature, Key Encipherment"
-          }
-,         {
-              "id"           : "cert_extKeyUsage <hostCert#2>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "TLS Web Server Authentication"
-          }
-,         {
-              "id"           : "cert_serialNumber <hostCert#2>",
-              "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "846F669286A03BE3338A7081C10C8750"
-          }
-,         {
-              "id"           : "cert_serialNumberLen <hostCert#2>",
+              "id"           : "cert_serialNumberLen",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "16"
           }
 ,         {
-              "id"           : "cert_fingerprintSHA1 <hostCert#2>",
+              "id"           : "cert_fingerprintSHA1",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "665D4B8F5969666398AEA6CBAE4002FE39B5920A"
+              "finding"      : "605302D451BB41A31F6DD58A22B5184EC35F6274"
           }
 ,         {
-              "id"           : "cert_fingerprintSHA256 <hostCert#2>",
+              "id"           : "cert_fingerprintSHA256",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "44A00B03CCEED647046C284939019EF85D17EE7759686290A67447A85407DE03"
+              "finding"      : "3CC509A79EE2433CD48166F45D561E07498EE52595372924B8DC29D997C309A9"
           }
 ,         {
-              "id"           : "cert <hostCert#2>",
+              "id"           : "cert",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIRAIRvZpKGoDvjM4pwgcEMh1AwDQYJKoZIhvcNAQELBQAwSzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJuZXRlcyBJbmdyZXNzIENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTAeFw0yNDA5MTkxOTE3MjVaFw0yNTA5MTkxOTE3MjVaMEsxEDAOBgNVBAoTB0FjbWUgQ28xNzA1BgNVBAMTLkt1YmVybmV0ZXMgSW5ncmVzcyBDb250cm9sbGVyIEZha2UgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDBTgG/6HFOmryjbvFLlVXl4TFd2wh33oi8TaNE5fBDiZk4k505q84SkakVzR7F5isWpRs+QbATC5utdEzJIeUonT9ke7qfm6CTQnWDAqaHMPwRYwY2eoD6ieaUxT51P5MzxMTfcd+hzdOgWRpKEAsBXmBqXgX/+hGZrDatR4tIDeo6ByO/AmL8Lt5/lkFa4K3kKGwRsizWfWuKjiW1/IleB2b9o/HDCsdHHE8PO5L+QzFUS6vvZh5cKyuieWlvM9QjVweB92mmMNgN0U2QB/BScmmMcEim+jW/gKhNPgMn92U8K+0VgQdYj5l6aUZ3jRu9Hn4bhwllLM54PEF7AjFTAgMBAAGjTzBNMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8EAjAAMBgGA1UdEQQRMA+CDWluZ3Jlc3MubG9jYWwwDQYJKoZIhvcNAQELBQADggEBALNmJbYGDBDLU/ROuXZu8M/gOg0jEWeaqruGkQl4rIjYI5pr65H8V+rqyZa3VmMMHbdolPOMPbwgcIUHdzEY2IbZj7QFhUyGTIoRTn5PDpBjC7sggTPTNd6SqaIVOH7MllWgQpHc45L4NZaq7s9db5+6EiLeVYWekMg6Pd1UtH6msVHfUep0ZRr7UBYzHBdEsvjm648I8mZYvXURQz9/8M2r3XpxBKyJdruggQaC9iJbSq7C9QgHFKOYIWRY8ckPTArdtyPYBqZr8x9K3Zm6hPEVfLVOqwfCQObLashvTc5fFduyCHfKIkJFSfwxzEgvhKHkCeYhOUEPEFT8e/E0plg=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIDbzCCAlegAwIBAgIQVwdhmnTaw5C6NfoLyY8njjANBgkqhkiG9w0BAQsFADBLMRAwDgYDVQQKEwdBY21lIENvMTcwNQYDVQQDEy5LdWJlcm5ldGVzIEluZ3Jlc3MgQ29udHJvbGxlciBGYWtlIENlcnRpZmljYXRlMB4XDTI0MDkyOTAxMDU1M1oXDTI1MDkyOTAxMDU1M1owSzEQMA4GA1UEChMHQWNtZSBDbzE3MDUGA1UEAxMuS3ViZXJuZXRlcyBJbmdyZXNzIENvbnRyb2xsZXIgRmFrZSBDZXJ0aWZpY2F0ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMiAlpF9RaSjWGvhO03LW1/wvNuj2wollJh4+tB5nJ/0J5XFdWk8UTF+DR+WYlkzGQ7PsnPa+YlLmgdA4c04gNX7vdZYIKDzmKW15rWUX+sYL5/E5ns4+H7dd7ywmHzgg49ORqwnRWZSwl34CU7gMf9gifJbOWvMXAvzTk/P+nnOqDoZNntl3g/5RjIOPLMHxabKDZwlmIqfnbmaI6rwfYJ+ghIeo5bvBl+Td86WKPwdId/SkS1F/s9pLe4gnvyZzikeodqUceVd3aj0ruHKYY/echYCVdiWdMhQFgFTKxuBvzTnEDTvTGIRtvL4fdmERU6Z7zWXt4vzc9Q/MlIoZx8CAwEAAaNPME0wDgYDVR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwGAYDVR0RBBEwD4INaW5ncmVzcy5sb2NhbDANBgkqhkiG9w0BAQsFAAOCAQEAlOjKLgeN/CuK/+q92hMhq7DPIIakqJLoCm0icUAM0Xzh+ee/PUiXtU2i+mapIH/bUBauj8DlJaV5pUohyMQOB1rDZaOjUOFOn+sqUH2vZnKO/JY8ZC3PIx9niLX5U0LVP4dREVpkI4rEU9TaxSIAqdF9y35ujxCH3hIBjuCw5t/VmuBWiy290eSbdTt40Vs5sjIcLcGTJZSuFMIrE2QA0A4hhkzTQAZN3tXyyr5C+7Xm+JuXaO1Qfk2KVbaXh3r3sSp7j1tWSgzQ0rUMZZUorVb8Xcck8/pAgcvlZQwQUmTCsdK0HmEMnw41D76x3liYUJ8fAY1WNrUMmkuM/+QPCg==\n-----END CERTIFICATE-----"
           }
 ,         {
-              "id"           : "cert_commonName <hostCert#2>",
+              "id"           : "cert_commonName",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "Kubernetes Ingress Controller Fake Certificate"
           }
 ,         {
-              "id"           : "cert_commonName_wo_SNI <hostCert#2>",
+              "id"           : "cert_commonName_wo_SNI",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Kubernetes Ingress Controller Fake Certificate"
           }
 ,         {
-              "id"           : "cert_subjectAltName <hostCert#2>",
+              "id"           : "cert_subjectAltName",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "ingress.local"
           }
 ,         {
-              "id"           : "cert_trust <hostCert#2>",
+              "id"           : "cert_trust",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "HIGH",
               "finding"      : "certificate does not match supplied URI (same w/o SNI)"
           }
 ,         {
-              "id"           : "cert_chain_of_trust <hostCert#2>",
+              "id"           : "cert_chain_of_trust",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "CRITICAL",
               "finding"      : "failed (chain incomplete)."
           }
 ,         {
-              "id"           : "cert_certificatePolicies_EV <hostCert#2>",
+              "id"           : "cert_certificatePolicies_EV",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no"
           }
 ,         {
-              "id"           : "cert_expirationStatus <hostCert#2>",
+              "id"           : "cert_expirationStatus",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "341 >= 60 days"
+              "finding"      : "343 >= 60 days"
           }
 ,         {
-              "id"           : "cert_notBefore <hostCert#2>",
+              "id"           : "cert_notBefore",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-09-19 19:17"
+              "finding"      : "2024-09-29 01:05"
           }
 ,         {
-              "id"           : "cert_notAfter <hostCert#2>",
+              "id"           : "cert_notAfter",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2025-09-19 19:17"
+              "finding"      : "2025-09-29 01:05"
           }
 ,         {
-              "id"           : "cert_extlifeSpan <hostCert#2>",
+              "id"           : "cert_extlifeSpan",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
               "finding"      : "certificate has no extended life time according to browser forum"
           }
 ,         {
-              "id"           : "cert_eTLS <hostCert#2>",
+              "id"           : "cert_eTLS",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not present"
           }
 ,         {
-              "id"           : "cert_crlDistributionPoints <hostCert#2>",
+              "id"           : "cert_crlDistributionPoints",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
-              "id"           : "cert_ocspURL <hostCert#2>",
+              "id"           : "cert_ocspURL",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
-              "id"           : "cert_revocation <hostCert#2>",
+              "id"           : "cert_revocation",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "HIGH",
               "finding"      : "Neither CRL nor OCSP URI provided"
           }
 ,         {
-              "id"           : "OCSP_stapling <hostCert#2>",
+              "id"           : "OCSP_stapling",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cert_mustStapleExtension <hostCert#2>",
+              "id"           : "cert_mustStapleExtension",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
-              "id"           : "DNS_CAArecord <hostCert#2>",
+              "id"           : "DNS_CAArecord",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "LOW",
               "finding"      : "--"
           }
 ,         {
-              "id"           : "certificate_transparency <hostCert#2>",
+              "id"           : "certificate_transparency",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "--"
           }
 ,         {
-              "id"           : "certs_countServer <hostCert#2>",
+              "id"           : "certs_countServer",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "1"
           }
 ,         {
-              "id"           : "certs_list_ordering_problem <hostCert#2>",
+              "id"           : "certs_list_ordering_problem",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "no"
           }
 ,         {
-              "id"           : "cert_caIssuers <hostCert#2>",
+              "id"           : "cert_caIssuers",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "Kubernetes Ingress Controller Fake Certificate (Acme Co)"
           }
 ,         {
-              "id"           : "intermediate_cert_badOCSP <hostCert#2>",
+              "id"           : "intermediate_cert_badOCSP",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
@@ -682,14 +465,14 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1728786828"
+              "finding"      : "1729391439"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -897,7 +680,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=2EBC64A2466B173B37187CEBAA3D8BC0CD60F95F4472C2CE2B90B405B9EF2FE1"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=3CC509A79EE2433CD48166F45D561E07498EE52595372924B8DC29D997C309A9"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1287,6 +1070,6 @@
               "ip"           : "monsuivipsy.fabrique.social.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50"
+              "finding"      : "92"
           }
 ]
