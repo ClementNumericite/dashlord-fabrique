@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1729389167,
+      "expires": 1729993711,
       "size": 16,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.17.b1ca",
-      "value": "cb465a3d80dee423.1729387368.",
+      "value": "9bebefe930d8afe6.1729991912.",
       "domain": "domifa.fabrique.social.gouv.fr",
       "path": "/",
-      "expires": 1763342568,
+      "expires": 1763947112,
       "size": 42,
       "httpOnly": false,
       "secure": false,
@@ -37,9 +37,9 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'none'; manifest-src 'self' https://*.gouv.fr; connect-src 'self' https://*.gouv.fr ; media-src 'self' https://domifaprod2.blob.core.windows.net/ https://tally.so/; font-src 'self'; img-src 'self' https://tally.so/ data:; script-src 'self' 'unsafe-inline' https://*.gouv.fr https://tally.so/ https://tally.so/widgets/embed.js ; frame-src 'self' https://*.gouv.fr  https://tally.so/ ; style-src 'self' 'unsafe-inline'",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 20 Oct 2024 01:22:46 GMT",
-    "etag": "W/\"66fd5cef-95a\"",
-    "last-modified": "Wed, 02 Oct 2024 14:47:11 GMT",
+    "date": "Sun, 27 Oct 2024 01:18:30 GMT",
+    "etag": "W/\"6717e9b9-95a\"",
+    "last-modified": "Tue, 22 Oct 2024 18:06:49 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
@@ -52,16 +52,11 @@
       "ip": "57.128.91.43",
       "geoip": {
         "city": {
-          "geoname_id": 2988507,
+          "geoname_id": 3031898,
           "names": {
-            "de": "Paris",
-            "en": "Paris",
-            "es": "París",
-            "fr": "Paris",
-            "ja": "パリ",
-            "pt-BR": "Paris",
-            "ru": "Париж",
-            "zh-CN": "巴黎"
+            "de": "Boissy-Saint-Léger",
+            "en": "Boissy-Saint-Léger",
+            "fr": "Boissy-Saint-Léger"
           }
         },
         "continent": {
@@ -94,13 +89,13 @@
           }
         },
         "location": {
-          "accuracy_radius": 500,
-          "latitude": 48.8323,
-          "longitude": 2.4075,
+          "accuracy_radius": 1000,
+          "latitude": 48.7519,
+          "longitude": 2.5136,
           "time_zone": "Europe/Paris"
         },
         "postal": {
-          "code": "75001"
+          "code": "94470"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -133,13 +128,17 @@
             }
           },
           {
-            "geoname_id": 2968815,
-            "iso_code": "75",
+            "geoname_id": 2971090,
+            "iso_code": "94",
             "names": {
-              "de": "Paris",
-              "en": "Paris",
-              "es": "Paris",
-              "fr": "Paris"
+              "de": "Val-de-Marne",
+              "en": "Val-de-Marne",
+              "es": "Valle de Marne",
+              "fr": "Val-de-Marne",
+              "ja": "ヴァル＝ド＝マルヌ県",
+              "pt-BR": "Val-de-Marne",
+              "ru": "Валь-де-Марн",
+              "zh-CN": "马恩河谷省"
             }
           }
         ]
