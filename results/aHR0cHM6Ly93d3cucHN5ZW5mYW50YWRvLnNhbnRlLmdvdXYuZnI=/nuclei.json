@@ -32,9 +32,9 @@
       "extracted-results": [
         "psyenfantado.sante.gouv.fr."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 42354\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 42354\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t1800\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-10-20T04:19:24.049762249Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 48324\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 48324\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t1800\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-10-27T04:19:00.632105661Z",
       "matcher-status": true
     },
     {
@@ -67,14 +67,14 @@
       "host": "www.psyenfantado.sante.gouv.fr.",
       "matched-at": "www.psyenfantado.sante.gouv.fr",
       "extracted-results": [
-        "ns1-03.azure-dns.com.",
         "ns2-03.azure-dns.net.",
         "ns3-03.azure-dns.org.",
+        "ns1-03.azure-dns.com.",
         "ns4-03.azure-dns.info."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 65480\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 65480\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns1-03.azure-dns.com.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns2-03.azure-dns.net.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns3-03.azure-dns.org.\npsyenfantado.sante.gouv.fr.\t172800\tIN\tNS\tns4-03.azure-dns.info.\n",
-      "timestamp": "2024-10-20T04:19:24.050324234Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 11050\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 11050\n;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns3-03.azure-dns.org.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns1-03.azure-dns.com.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns4-03.azure-dns.info.\npsyenfantado.sante.gouv.fr.\t21600\tIN\tNS\tns2-03.azure-dns.net.\n",
+      "timestamp": "2024-10-27T04:19:00.654478554Z",
       "matcher-status": true
     },
     {
@@ -109,9 +109,9 @@
       "type": "dns",
       "host": "www.psyenfantado.sante.gouv.fr.",
       "matched-at": "www.psyenfantado.sante.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 43191\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 43191\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t300\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-10-20T04:19:24.051703939Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 24166\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 24166\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;www.psyenfantado.sante.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\nwww.psyenfantado.sante.gouv.fr.\t3600\tIN\tCNAME\tpsyenfantado.sante.gouv.fr.\n\n;; AUTHORITY SECTION:\npsyenfantado.sante.gouv.fr.\t300\tIN\tSOA\tns1-03.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-10-27T04:19:00.689555994Z",
       "matcher-status": true
     }
   ]
