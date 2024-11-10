@@ -1,47 +1,6 @@
 [
   [
     {
-      "template": "dns/mx-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
-      "template-id": "mx-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
-      "info": {
-        "name": "MX Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "mx"
-        ],
-        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
-        "reference": [
-          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
-          "https://mxtoolbox.com/"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "fce.fabrique.social.gouv.fr.",
-      "matched-at": "fce.fabrique.social.gouv.fr",
-      "extracted-results": [
-        "10 mx.customizedurl.com."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 48463\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t MX\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 48463\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nfce.fabrique.social.gouv.fr.\t3600\tIN\tMX\t10 mx.customizedurl.com.\n",
-      "timestamp": "2024-11-03T04:04:02.246228766Z",
-      "matcher-status": true
-    },
-    {
       "template": "dns/spf-record-detect.yaml",
       "template-url": "https://templates.nuclei.sh/public/spf-record-detect",
       "template-id": "spf-record-detect",
@@ -70,9 +29,9 @@
       "extracted-results": [
         "v=spf1 include:spf.tipimail.com -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 9525\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 9525\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nfce.fabrique.social.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:spf.tipimail.com -all\"\n",
-      "timestamp": "2024-11-03T04:04:02.256385199Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 61283\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 61283\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nfce.fabrique.social.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:spf.tipimail.com -all\"\n",
+      "timestamp": "2024-11-10T04:25:16.456042261Z",
       "matcher-status": true
     },
     {
@@ -110,46 +69,9 @@
       "extracted-results": [
         "\"v=spf1 include:spf.tipimail.com -all\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 9525\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 9525\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nfce.fabrique.social.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:spf.tipimail.com -all\"\n",
-      "timestamp": "2024-11-03T04:04:02.256451363Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/caa-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
-      "template-id": "caa-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
-      "info": {
-        "name": "CAA Record",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "caa"
-        ],
-        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
-        "reference": [
-          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "fce.fabrique.social.gouv.fr.",
-      "matched-at": "fce.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 45181\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 45181\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-11-03T04:04:02.275041464Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 61283\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 61283\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\nfce.fabrique.social.gouv.fr.\t3600\tIN\tTXT\t\"v=spf1 include:spf.tipimail.com -all\"\n",
+      "timestamp": "2024-11-10T04:25:16.456183174Z",
       "matcher-status": true
     },
     {
@@ -189,9 +111,87 @@
       "extracted-results": [
         "\"v=DMARC1; p=quarantine;\""
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 12446\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;_dmarc.fce.fabrique.social.gouv.fr.\tIN\t TXT\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 12446\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;_dmarc.fce.fabrique.social.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\n_dmarc.fce.fabrique.social.gouv.fr.\t3600\tIN\tTXT\t\"v=DMARC1; p=quarantine;\"\n",
-      "timestamp": "2024-11-03T04:04:02.45232105Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 55310\n;; flags: rd ad; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;_dmarc.fce.fabrique.social.gouv.fr.\tIN\t TXT\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 55310\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;_dmarc.fce.fabrique.social.gouv.fr.\tIN\t TXT\n\n;; ANSWER SECTION:\n_dmarc.fce.fabrique.social.gouv.fr.\t3600\tIN\tTXT\t\"v=DMARC1; p=quarantine;\"\n",
+      "timestamp": "2024-11-10T04:25:16.567776266Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/mx-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/mx-fingerprint",
+      "template-id": "mx-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/mx-fingerprint.yaml",
+      "info": {
+        "name": "MX Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "mx"
+        ],
+        "description": "An MX record was detected. MX records direct emails to a mail exchange server.",
+        "reference": [
+          "https://www.cloudflare.com/learning/dns/dns-records/dns-mx-record/",
+          "https://mxtoolbox.com/"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "fce.fabrique.social.gouv.fr.",
+      "matched-at": "fce.fabrique.social.gouv.fr",
+      "extracted-results": [
+        "10 mx.customizedurl.com."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 39735\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t MX\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 39735\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t MX\n\n;; ANSWER SECTION:\nfce.fabrique.social.gouv.fr.\t3600\tIN\tMX\t10 mx.customizedurl.com.\n",
+      "timestamp": "2024-11-10T04:25:17.442892191Z",
+      "matcher-status": true
+    },
+    {
+      "template": "dns/caa-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
+      "template-id": "caa-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/caa-fingerprint.yaml",
+      "info": {
+        "name": "CAA Record",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "caa"
+        ],
+        "description": "A CAA record was discovered. A CAA record is used to specify which certificate authorities (CAs) are allowed to issue certificates for a domain.",
+        "reference": [
+          "https://support.dnsimple.com/articles/caa-record/#whats-a-caa-record"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "fce.fabrique.social.gouv.fr.",
+      "matched-at": "fce.fabrique.social.gouv.fr",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 58447\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 58447\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;fce.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-11-10T04:25:17.443512659Z",
       "matcher-status": true
     },
     {
@@ -231,49 +231,9 @@
         "1; mode=block"
       ],
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:04:14 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:25:27 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:04:14.335112343Z",
-      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/http-missing-security-headers.yaml",
-      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
-      "template-id": "http-missing-security-headers",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
-      "info": {
-        "name": "HTTP Missing Security Headers",
-        "author": [
-          "socketz",
-          "geeknik",
-          "g4l1t0",
-          "convisoappsec",
-          "kurohost",
-          "dawid-czarnecki",
-          "forgedhallpass",
-          "jub0bs",
-          "userdehghani"
-        ],
-        "tags": [
-          "misconfig",
-          "headers",
-          "generic"
-        ],
-        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        }
-      },
-      "matcher-name": "referrer-policy",
-      "type": "http",
-      "host": "https://fce.fabrique.social.gouv.fr",
-      "matched-at": "https://fce.fabrique.social.gouv.fr",
-      "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551184749Z",
+      "timestamp": "2024-11-10T04:25:27.595187952Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -311,9 +271,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551239923Z",
+      "timestamp": "2024-11-10T04:26:07.359643054Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -351,9 +311,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551257826Z",
+      "timestamp": "2024-11-10T04:26:07.359691885Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -391,9 +351,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551279146Z",
+      "timestamp": "2024-11-10T04:26:07.359706222Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -431,9 +391,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551299053Z",
+      "timestamp": "2024-11-10T04:26:07.359720599Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -471,9 +431,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551317217Z",
+      "timestamp": "2024-11-10T04:26:07.359833099Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -511,9 +471,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551336253Z",
+      "timestamp": "2024-11-10T04:26:07.359853307Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
       "matcher-status": true
     },
@@ -551,10 +511,86 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr",
       "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:00 GMT\r\nEtag: W/\"67112e4d-231\"\r\nLast-Modified: Thu, 17 Oct 2024 15:33:33 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.ef26700d.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:00.551353255Z",
+      "timestamp": "2024-11-10T04:26:07.359869197Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/http-missing-security-headers.yaml",
+      "template-url": "https://templates.nuclei.sh/public/http-missing-security-headers",
+      "template-id": "http-missing-security-headers",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/http-missing-security-headers.yaml",
+      "info": {
+        "name": "HTTP Missing Security Headers",
+        "author": [
+          "socketz",
+          "geeknik",
+          "g4l1t0",
+          "convisoappsec",
+          "kurohost",
+          "dawid-czarnecki",
+          "forgedhallpass",
+          "jub0bs",
+          "userdehghani"
+        ],
+        "tags": [
+          "misconfig",
+          "headers",
+          "generic"
+        ],
+        "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        }
+      },
+      "matcher-name": "referrer-policy",
+      "type": "http",
+      "host": "https://fce.fabrique.social.gouv.fr",
+      "matched-at": "https://fce.fabrique.social.gouv.fr",
+      "request": "GET / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:07 GMT\r\nEtag: W/\"672cf07c-231\"\r\nLast-Modified: Thu, 07 Nov 2024 16:53:16 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nVary: Accept-Encoding\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: deny\r\nX-Xss-Protection: 1; mode=block\r\n\r\n<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,minimum-scale=1,shrink-to-fit=no\"><meta name=\"theme-color\" content=\"#000000\"><link rel=\"manifest\" href=\"/manifest.json\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><title>FCE</title><script defer=\"defer\" src=\"/static/js/main.6fff00c6.js\"></script><link href=\"/static/css/main.34445895.css\" rel=\"stylesheet\"></head><body><noscript>Merci d'activer Javascript pour accéder à l'application.</noscript><div id=\"root\"></div></body></html>",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-11-10T04:26:07.359884355Z",
+      "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr'",
+      "matcher-status": true
+    },
+    {
+      "template": "http/misconfiguration/graphql/graphql-field-suggestion.yaml",
+      "template-url": "https://templates.nuclei.sh/public/graphql-field-suggestion",
+      "template-id": "graphql-field-suggestion",
+      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/graphql/graphql-field-suggestion.yaml",
+      "info": {
+        "name": "GraphQL Field Suggestion Information Disclosure",
+        "author": [
+          "dolev farhi"
+        ],
+        "tags": [
+          "graphql",
+          "misconfig"
+        ],
+        "description": "If introspection is disabled on your target, Field Suggestion can allow users to still earn information on the GraphQL schema.\nBy default, GraphQL backends have a feature for fields and operations suggestions.\nIf you try to query a field but you have made a typo, GraphQL will attempt to suggest fields that are similar to the initial attempt.\n",
+        "reference": [
+          "https://github.com/webonyx/graphql-php/issues/454",
+          "https://github.com/dolevf/damn-vulnerable-graphql-application",
+          "https://cheatsheetseries.owasp.org/cheatsheets/graphql_cheat_sheet.html",
+          "https://graphql.security"
+        ],
+        "severity": "info",
+        "metadata": {
+          "max-request": 2
+        }
+      },
+      "type": "http",
+      "host": "https://fce.fabrique.social.gouv.fr",
+      "matched-at": "https://fce.fabrique.social.gouv.fr/api/graphql",
+      "request": "POST /api/graphql HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 69\r\nContent-Type: application/json\r\nAccept-Encoding: gzip\r\n\r\n{\"query\":\"query {\\n  __schema {\\n directive\\n }\\n}\",\"variables\":null}",
+      "response": "HTTP/1.1 400 Bad Request\r\nConnection: close\r\nContent-Length: 1036\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 10 Nov 2024 04:26:22 GMT\r\nEtag: W/\"40c-fZJtRFarbp7KiMK2AJ6GZ32qvTM\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"errors\":[{\"message\":\"Cannot query field \\\"directive\\\" on type \\\"__Schema\\\". Did you mean \\\"directives\\\"?\",\"extensions\":{\"code\":\"GRAPHQL_VALIDATION_FAILED\",\"exception\":{\"stacktrace\":[\"GraphQLError: Cannot query field \\\"directive\\\" on type \\\"__Schema\\\". Did you mean \\\"directives\\\"?\",\"    at Object.Field (/app/server/node_modules/graphql/validation/rules/FieldsOnCorrectTypeRule.js:51:13)\",\"    at Object.enter (/app/server/node_modules/graphql/language/visitor.js:301:32)\",\"    at Object.enter (/app/server/node_modules/graphql/utilities/TypeInfo.js:391:27)\",\"    at visit (/app/server/node_modules/graphql/language/visitor.js:197:21)\",\"    at validate (/app/server/node_modules/graphql/validation/validate.js:91:24)\",\"    at validate (/app/server/node_modules/apollo-server-core/dist/requestPipeline.js:186:39)\",\"    at processGraphQLRequest (/app/server/node_modules/apollo-server-core/dist/requestPipeline.js:98:34)\",\"    at async processHTTPRequest (/app/server/node_modules/apollo-server-core/dist/runHttpQuery.js:186:30)\"]}}}]}\n",
+      "ip": "57.128.91.43",
+      "timestamp": "2024-11-10T04:26:22.087544872Z",
+      "curl-command": "curl -X 'POST' -d '{\"query\":\"query {\\n  __schema {\\n directive\\n }\\n}\",\"variables\":null}' -H 'Content-Type: application/json' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/api/graphql'",
       "matcher-status": true
     },
     {
@@ -594,47 +630,11 @@
       "type": "http",
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr/api/graphql",
-      "request": "POST /api/graphql HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 149\r\nContent-Type: application/json\r\nAccept-Encoding: gzip\r\n\r\n{\"query\":\"query {\\n nktap1:__typename \\n nktap2:__typename \\n nktap3:__typename \\n nktap4:__typename \\n nktap5:__typename \\n nktap6:__typename \\n }\"}",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 113\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 03 Nov 2024 04:05:18 GMT\r\nEtag: W/\"71-f1HxswjptzbvWZkiyGw6MUjGXMo\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"data\":{\"nktap1\":\"Query\",\"nktap2\":\"Query\",\"nktap3\":\"Query\",\"nktap4\":\"Query\",\"nktap5\":\"Query\",\"nktap6\":\"Query\"}}\n",
+      "request": "POST /api/graphql HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 149\r\nContent-Type: application/json\r\nAccept-Encoding: gzip\r\n\r\n{\"query\":\"query {\\n shjdw1:__typename \\n shjdw2:__typename \\n shjdw3:__typename \\n shjdw4:__typename \\n shjdw5:__typename \\n shjdw6:__typename \\n }\"}",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 113\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 10 Nov 2024 04:26:22 GMT\r\nEtag: W/\"71-+qz0jtPAD2jhwjwulCBPX9puxck\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"data\":{\"shjdw1\":\"Query\",\"shjdw2\":\"Query\",\"shjdw3\":\"Query\",\"shjdw4\":\"Query\",\"shjdw5\":\"Query\",\"shjdw6\":\"Query\"}}\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:18.215670496Z",
-      "curl-command": "curl -X 'POST' -d '{\"query\":\"query {\\n nktap1:__typename \\n nktap2:__typename \\n nktap3:__typename \\n nktap4:__typename \\n nktap5:__typename \\n nktap6:__typename \\n }\"}' -H 'Content-Type: application/json' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/api/graphql'",
-      "matcher-status": true
-    },
-    {
-      "template": "http/misconfiguration/graphql/graphql-field-suggestion.yaml",
-      "template-url": "https://templates.nuclei.sh/public/graphql-field-suggestion",
-      "template-id": "graphql-field-suggestion",
-      "template-path": "/home/runner/nuclei-templates/http/misconfiguration/graphql/graphql-field-suggestion.yaml",
-      "info": {
-        "name": "GraphQL Field Suggestion Information Disclosure",
-        "author": [
-          "dolev farhi"
-        ],
-        "tags": [
-          "graphql",
-          "misconfig"
-        ],
-        "description": "If introspection is disabled on your target, Field Suggestion can allow users to still earn information on the GraphQL schema.\nBy default, GraphQL backends have a feature for fields and operations suggestions.\nIf you try to query a field but you have made a typo, GraphQL will attempt to suggest fields that are similar to the initial attempt.\n",
-        "reference": [
-          "https://github.com/webonyx/graphql-php/issues/454",
-          "https://github.com/dolevf/damn-vulnerable-graphql-application",
-          "https://cheatsheetseries.owasp.org/cheatsheets/graphql_cheat_sheet.html",
-          "https://graphql.security"
-        ],
-        "severity": "info",
-        "metadata": {
-          "max-request": 2
-        }
-      },
-      "type": "http",
-      "host": "https://fce.fabrique.social.gouv.fr",
-      "matched-at": "https://fce.fabrique.social.gouv.fr/api/graphql",
-      "request": "POST /api/graphql HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 69\r\nContent-Type: application/json\r\nAccept-Encoding: gzip\r\n\r\n{\"query\":\"query {\\n  __schema {\\n directive\\n }\\n}\",\"variables\":null}",
-      "response": "HTTP/1.1 400 Bad Request\r\nConnection: close\r\nContent-Length: 1036\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 03 Nov 2024 04:05:18 GMT\r\nEtag: W/\"40c-fZJtRFarbp7KiMK2AJ6GZ32qvTM\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"errors\":[{\"message\":\"Cannot query field \\\"directive\\\" on type \\\"__Schema\\\". Did you mean \\\"directives\\\"?\",\"extensions\":{\"code\":\"GRAPHQL_VALIDATION_FAILED\",\"exception\":{\"stacktrace\":[\"GraphQLError: Cannot query field \\\"directive\\\" on type \\\"__Schema\\\". Did you mean \\\"directives\\\"?\",\"    at Object.Field (/app/server/node_modules/graphql/validation/rules/FieldsOnCorrectTypeRule.js:51:13)\",\"    at Object.enter (/app/server/node_modules/graphql/language/visitor.js:301:32)\",\"    at Object.enter (/app/server/node_modules/graphql/utilities/TypeInfo.js:391:27)\",\"    at visit (/app/server/node_modules/graphql/language/visitor.js:197:21)\",\"    at validate (/app/server/node_modules/graphql/validation/validate.js:91:24)\",\"    at validate (/app/server/node_modules/apollo-server-core/dist/requestPipeline.js:186:39)\",\"    at processGraphQLRequest (/app/server/node_modules/apollo-server-core/dist/requestPipeline.js:98:34)\",\"    at async processHTTPRequest (/app/server/node_modules/apollo-server-core/dist/runHttpQuery.js:186:30)\"]}}}]}\n",
-      "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:18.23448331Z",
-      "curl-command": "curl -X 'POST' -d '{\"query\":\"query {\\n  __schema {\\n directive\\n }\\n}\",\"variables\":null}' -H 'Content-Type: application/json' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/api/graphql'",
+      "timestamp": "2024-11-10T04:26:22.093405385Z",
+      "curl-command": "curl -X 'POST' -d '{\"query\":\"query {\\n shjdw1:__typename \\n shjdw2:__typename \\n shjdw3:__typename \\n shjdw4:__typename \\n shjdw5:__typename \\n shjdw6:__typename \\n }\"}' -H 'Content-Type: application/json' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/api/graphql'",
       "matcher-status": true
     },
     {
@@ -667,9 +667,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr/api/graphql?query={__typename}",
       "request": "GET /api/graphql?query={__typename} HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 32\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 03 Nov 2024 04:05:18 GMT\r\nEtag: W/\"20-/8NdYwgmGsmmlrq5Nh8mH1T+tAs\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"data\":{\"__typename\":\"Query\"}}\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 32\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 10 Nov 2024 04:26:22 GMT\r\nEtag: W/\"20-/8NdYwgmGsmmlrq5Nh8mH1T+tAs\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"data\":{\"__typename\":\"Query\"}}\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:18.270639027Z",
+      "timestamp": "2024-11-10T04:26:22.845305981Z",
       "curl-command": "curl -X 'GET' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/api/graphql?query={__typename}'",
       "matcher-status": true
     },
@@ -699,12 +699,12 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr/api/graphql",
       "request": "POST /api/graphql HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 67\r\nAccept: */*\r\nAccept-Language: en\r\nContent-Type: application/json\r\nAccept-Encoding: gzip\r\n\r\n{\"query\":\"query IntrospectionQuery{__schema {queryType { name }}}\"}",
-      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 53\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 03 Nov 2024 04:05:28 GMT\r\nEtag: W/\"35-JB5+8RfqjQXUu2SN0MW5BgcE+BU\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"data\":{\"__schema\":{\"queryType\":{\"name\":\"Query\"}}}}\n",
+      "response": "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Length: 53\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json; charset=utf-8\r\nDate: Sun, 10 Nov 2024 04:26:30 GMT\r\nEtag: W/\"35-JB5+8RfqjQXUu2SN0MW5BgcE+BU\"\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\nX-Powered-By: Express\r\n\r\n{\"data\":{\"__schema\":{\"queryType\":{\"name\":\"Query\"}}}}\n",
       "meta": {
         "paths": "/api/graphql"
       },
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:28.715921238Z",
+      "timestamp": "2024-11-10T04:26:31.000939074Z",
       "curl-command": "curl -X 'POST' -d '{\"query\":\"query IntrospectionQuery{__schema {queryType { name }}}\"}' -H 'Accept: */*' -H 'Accept-Language: en' -H 'Content-Type: application/json' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/api/graphql'",
       "matcher-status": true
     },
@@ -744,9 +744,9 @@
       "host": "https://fce.fabrique.social.gouv.fr",
       "matched-at": "https://fce.fabrique.social.gouv.fr/",
       "request": "POST / HTTP/1.1\r\nHost: fce.fabrique.social.gouv.fr\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nContent-Length: 27\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept-Encoding: gzip\r\n\r\n_=<script>alert(1)</script>",
-      "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 173\r\nContent-Type: text/html\r\nDate: Sun, 03 Nov 2024 04:05:30 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.12.2</center>\r\n</body>\r\n</html>\r\n",
+      "response": "HTTP/1.1 405 Not Allowed\r\nConnection: close\r\nContent-Length: 173\r\nContent-Type: text/html\r\nDate: Sun, 10 Nov 2024 04:26:32 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubDomains\r\n\r\n<html>\r\n<head><title>405 Not Allowed</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>405 Not Allowed</h1></center>\r\n<hr><center>nginx/1.12.2</center>\r\n</body>\r\n</html>\r\n",
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:30.308142762Z",
+      "timestamp": "2024-11-10T04:26:32.351257294Z",
       "curl-command": "curl -X 'POST' -d '_=<script>alert(1)</script>' -H 'Content-Type: application/x-www-form-urlencoded' -H 'Host: fce.fabrique.social.gouv.fr' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://fce.fabrique.social.gouv.fr/'",
       "matcher-status": true
     },
@@ -777,7 +777,7 @@
         "Let's Encrypt"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:56.821053224Z",
+      "timestamp": "2024-11-10T04:26:54.648843379Z",
       "matcher-status": true
     },
     {
@@ -807,7 +807,7 @@
         "fce.fabrique.social.gouv.fr"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:56.821165714Z",
+      "timestamp": "2024-11-10T04:26:54.64896155Z",
       "matcher-status": true
     },
     {
@@ -838,7 +838,7 @@
         "tls12"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:58.55719429Z",
+      "timestamp": "2024-11-10T04:26:56.037898365Z",
       "matcher-status": true
     },
     {
@@ -869,7 +869,7 @@
         "tls13"
       ],
       "ip": "57.128.91.43",
-      "timestamp": "2024-11-03T04:05:58.81765573Z",
+      "timestamp": "2024-11-10T04:26:56.224981305Z",
       "matcher-status": true
     }
   ]
