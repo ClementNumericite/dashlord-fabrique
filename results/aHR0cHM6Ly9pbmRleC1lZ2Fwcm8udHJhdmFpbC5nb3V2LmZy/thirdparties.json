@@ -1,52 +1,6 @@
 {
   "trackers": [],
-  "cookies": [
-    {
-      "name": "mtm_consent_removed",
-      "value": "1730595715555",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": 2676675715,
-      "size": 32,
-      "httpOnly": false,
-      "secure": false,
-      "session": false,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "__Secure-next-auth.callback-url",
-      "value": "https%3A%2F%2Fegapro.travail.gouv.fr",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 67,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    },
-    {
-      "name": "__Host-next-auth.csrf-token",
-      "value": "7d04906b6cd4264befba3fc1115e1f2a3d10046a5c0af5cf390e94173a736d80%7C735ce92dfd4375a9685cfa7cc8382274ddad0bfff3cbe684078cd8a64215dd3f",
-      "domain": "egapro.travail.gouv.fr",
-      "path": "/",
-      "expires": -1,
-      "size": 158,
-      "httpOnly": true,
-      "secure": true,
-      "session": true,
-      "sameSite": "Lax",
-      "sameParty": false,
-      "sourceScheme": "Secure",
-      "sourcePort": 443
-    }
-  ],
+  "cookies": [],
   "headers": {
     "cache-control": "s-maxage=31536000, stale-while-revalidate",
     "content-encoding": "gzip",
@@ -55,7 +9,7 @@
     "cross-origin-embedder-policy": "credentialless",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "cross-origin",
-    "date": "Sun, 03 Nov 2024 01:01:54 GMT",
+    "date": "Sun, 10 Nov 2024 01:00:13 GMT",
     "etag": "\"64nixpjvwk3yrl\"",
     "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
     "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
@@ -72,14 +26,6 @@
       "hostname": "index-egapro.travail.gouv.fr",
       "ip": "57.128.91.43",
       "geoip": {
-        "city": {
-          "geoname_id": 3031898,
-          "names": {
-            "de": "Boissy-Saint-Léger",
-            "en": "Boissy-Saint-Léger",
-            "fr": "Boissy-Saint-Léger"
-          }
-        },
         "continent": {
           "code": "EU",
           "geoname_id": 6255148,
@@ -110,13 +56,10 @@
           }
         },
         "location": {
-          "accuracy_radius": 1000,
-          "latitude": 48.7519,
-          "longitude": 2.5136,
+          "accuracy_radius": 500,
+          "latitude": 48.8582,
+          "longitude": 2.3387,
           "time_zone": "Europe/Paris"
-        },
-        "postal": {
-          "code": "94470"
         },
         "registered_country": {
           "geoname_id": 3017382,
@@ -132,37 +75,7 @@
             "ru": "Франция",
             "zh-CN": "法国"
           }
-        },
-        "subdivisions": [
-          {
-            "geoname_id": 3012874,
-            "iso_code": "IDF",
-            "names": {
-              "de": "Île-de-France",
-              "en": "Île-de-France",
-              "es": "Isla de Francia",
-              "fr": "Île-de-France",
-              "ja": "イル・ド・フランス",
-              "pt-BR": "Ilha de França",
-              "ru": "Иль-де-Франс",
-              "zh-CN": "法兰西岛"
-            }
-          },
-          {
-            "geoname_id": 2971090,
-            "iso_code": "94",
-            "names": {
-              "de": "Val-de-Marne",
-              "en": "Val-de-Marne",
-              "es": "Valle de Marne",
-              "fr": "Val-de-Marne",
-              "ja": "ヴァル＝ド＝マルヌ県",
-              "pt-BR": "Val-de-Marne",
-              "ru": "Валь-де-Марн",
-              "zh-CN": "马恩河谷省"
-            }
-          }
-        ]
+        }
       }
     }
   ]
