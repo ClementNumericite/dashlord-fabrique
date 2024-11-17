@@ -3,7 +3,7 @@
   "cookies": [
     {
       "name": "BIGipServerpool-mandoline-core-production.cegedim.cloud-TCP80",
-      "value": "!fqbbQ2e48YQ+t+pWDPlD0yXzT0UGhpDqSdZQcNpS5UAbW3f9+75U71D1E3b3P/BSlXS+UaLg0hlcPD/D6mUElTEzY0mp",
+      "value": "!dUZdHY1A/4tNsHVWDPlD0yXzT0UGhpi63Hj4mZaX3v6iJ9dPTBStxqy9wYYwkA6YSfemkWRNe+LChwM1cPIGD80deFgr",
       "domain": "pjm.social.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -22,7 +22,7 @@
     "content-encoding": "gzip",
     "content-length": "2090",
     "content-type": "text/html",
-    "date": "Sun, 10 Nov 2024 02:48:23 GMT",
+    "date": "Sun, 17 Nov 2024 02:53:32 GMT",
     "keep-alive": "timeout=5, max=99",
     "last-modified": "Mon, 15 Apr 2024 13:46:42 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
