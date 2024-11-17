@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1731206538,
+      "expires": 1731811669,
       "size": 15,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.4.ef54",
-      "value": "ae9ec4d00e85e4c6.1731204738.",
+      "value": "f4b598ae5413a818.1731809869.",
       "domain": "code.travail.gouv.fr",
       "path": "/",
-      "expires": 1765159938,
+      "expires": 1765765069,
       "size": 41,
       "httpOnly": false,
       "secure": false,
@@ -33,17 +33,14 @@
     }
   ],
   "headers": {
-    "cache-control": "s-maxage=1800, stale-while-revalidate",
     "content-encoding": "gzip",
-    "content-security-policy": "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr data:; script-src 'self' 'nonce-NDhkZDAxMzktOGQ0Yy00ZmQyLTgzYmUtOWJlMmVhYzUxMzFm' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr; worker-src 'self' blob:;",
+    "content-security-policy": "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr data:; script-src 'self' 'nonce-ZTQyNGIxNDItYzFiNS00NDdjLWI5NzgtNDk1NzU2MGM5MTI2' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr; worker-src 'self' blob:;",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 10 Nov 2024 02:12:16 GMT",
-    "etag": "\"duj5juhuu05gbc\"",
+    "date": "Sun, 17 Nov 2024 02:17:47 GMT",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
-    "vary": "Accept-Encoding",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
-    "x-nextjs-cache": "HIT",
     "x-robots-tag": "all"
   },
   "endpoints": [
