@@ -16,26 +16,7 @@
         "href": "https://tumeplay.fabrique.social.gouv.fr/"
       },
       "link": "https://tumeplay.fabrique.social.gouv.fr/",
-      "line": "--2024-11-24 03:09:59--  https://tumeplay.fabrique.social.gouv.fr/",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "tumeplay.fabrique.social.gouv.fr",
-        "port": null,
-        "hostname": "tumeplay.fabrique.social.gouv.fr",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/robots.txt",
-        "path": "/robots.txt",
-        "href": "https://tumeplay.fabrique.social.gouv.fr/robots.txt"
-      },
-      "link": "https://tumeplay.fabrique.social.gouv.fr/robots.txt",
-      "line": "--2024-11-24 03:10:00--  https://tumeplay.fabrique.social.gouv.fr/robots.txt",
+      "line": "--2024-12-01 03:02:02--  https://tumeplay.fabrique.social.gouv.fr/",
       "broken": false
     }
   ],
