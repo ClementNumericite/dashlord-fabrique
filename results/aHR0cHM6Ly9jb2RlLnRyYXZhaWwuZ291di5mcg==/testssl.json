@@ -346,7 +346,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "79 >= 30 days"
+              "finding"      : "72 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,14 +500,14 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1733018930"
+              "finding"      : "1733624044"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -577,7 +577,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr data:; script-src 'self' 'nonce-MTVlNjU0YjQtZjJjZC00MGQ2LTk0ODYtNzk0NTI3YmU5ZmVm' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr; worker-src 'self' blob:;"
+              "finding"      : "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr data:; script-src 'self' 'nonce-YWRmMDc0ZDMtNzdjMC00NzIyLWJjNGYtM2I4NThlZjQ2YTlj' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr; worker-src 'self' blob:;"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -965,28 +965,28 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_102e",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_110l",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-openssl_111d",
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.3 TLS_AES_256_GCM_SHA384"
           }
 ,         {
               "id"           : "clientsimulation-openssl_303",
@@ -1000,7 +1000,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "No connection"
+              "finding"      : "TLSv1.2 ECDHE-RSA-AES128-GCM-SHA256"
           }
 ,         {
               "id"           : "clientsimulation-thunderbird_91_9",
@@ -1084,6 +1084,6 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "100"
+              "finding"      : "102"
           }
 ]
