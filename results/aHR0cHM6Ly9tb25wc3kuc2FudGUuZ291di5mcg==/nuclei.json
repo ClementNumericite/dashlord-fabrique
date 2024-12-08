@@ -1,6 +1,46 @@
 [
   [
     {
+      "template": "dns/nameserver-fingerprint.yaml",
+      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
+      "template-id": "nameserver-fingerprint",
+      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
+      "info": {
+        "name": "NS Record Detection",
+        "author": [
+          "pdteam"
+        ],
+        "tags": [
+          "dns",
+          "ns"
+        ],
+        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
+        "severity": "info",
+        "metadata": {
+          "max-request": 1
+        },
+        "classification": {
+          "cve-id": null,
+          "cwe-id": [
+            "cwe-200"
+          ]
+        }
+      },
+      "type": "dns",
+      "host": "monpsy.sante.gouv.fr.",
+      "matched-at": "monpsy.sante.gouv.fr",
+      "extracted-results": [
+        "ns4-04.azure-dns.info.",
+        "ns3-04.azure-dns.org.",
+        "ns1-04.azure-dns.com.",
+        "ns2-04.azure-dns.net."
+      ],
+      "request": ";; opcode: QUERY, status: NOERROR, id: 34556\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 34556\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns4-04.azure-dns.info.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns3-04.azure-dns.org.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns1-04.azure-dns.com.\nmonpsy.sante.gouv.fr.\t21600\tIN\tNS\tns2-04.azure-dns.net.\n",
+      "timestamp": "2024-12-08T05:02:43.65267247Z",
+      "matcher-status": true
+    },
+    {
       "template": "dns/caa-fingerprint.yaml",
       "template-url": "https://templates.nuclei.sh/public/caa-fingerprint",
       "template-id": "caa-fingerprint",
@@ -32,49 +72,9 @@
       "type": "dns",
       "host": "monpsy.sante.gouv.fr.",
       "matched-at": "monpsy.sante.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 61344\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 61344\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmonpsy.sante.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-12-01T05:10:05.662043075Z",
-      "matcher-status": true
-    },
-    {
-      "template": "dns/nameserver-fingerprint.yaml",
-      "template-url": "https://templates.nuclei.sh/public/nameserver-fingerprint",
-      "template-id": "nameserver-fingerprint",
-      "template-path": "/home/runner/nuclei-templates/dns/nameserver-fingerprint.yaml",
-      "info": {
-        "name": "NS Record Detection",
-        "author": [
-          "pdteam"
-        ],
-        "tags": [
-          "dns",
-          "ns"
-        ],
-        "description": "An NS record was detected. An NS record delegates a subdomain to a set of name servers.",
-        "severity": "info",
-        "metadata": {
-          "max-request": 1
-        },
-        "classification": {
-          "cve-id": null,
-          "cwe-id": [
-            "cwe-200"
-          ]
-        }
-      },
-      "type": "dns",
-      "host": "monpsy.sante.gouv.fr.",
-      "matched-at": "monpsy.sante.gouv.fr",
-      "extracted-results": [
-        "ns2-04.azure-dns.net.",
-        "ns3-04.azure-dns.org.",
-        "ns4-04.azure-dns.info.",
-        "ns1-04.azure-dns.com."
-      ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 31591\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 31591\n;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t NS\n\n;; ANSWER SECTION:\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns1-04.azure-dns.com.\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns2-04.azure-dns.net.\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns3-04.azure-dns.org.\nmonpsy.sante.gouv.fr.\t172800\tIN\tNS\tns4-04.azure-dns.info.\n",
-      "timestamp": "2024-12-01T05:10:06.948035451Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 22160\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 22160\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;monpsy.sante.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nmonpsy.sante.gouv.fr.\t300\tIN\tSOA\tns1-04.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2024-12-08T05:02:43.765224896Z",
       "matcher-status": true
     }
   ]
