@@ -32,9 +32,9 @@
       "type": "dns",
       "host": "transitions-collectives.fabrique.social.gouv.fr.",
       "matched-at": "transitions-collectives.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 4240\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;transitions-collectives.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NXDOMAIN, id: 4240\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;transitions-collectives.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
-      "timestamp": "2024-12-29T05:31:07.305535859Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 29171\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;transitions-collectives.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NXDOMAIN, id: 29171\n;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;transitions-collectives.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; AUTHORITY SECTION:\nfabrique.social.gouv.fr.\t300\tIN\tSOA\tns1-06.azure-dns.com. azuredns-hostmaster.microsoft.com. 1 3600 300 2419200 300\n",
+      "timestamp": "2025-01-05T05:29:03.925197377Z",
       "matcher-status": true
     }
   ]
