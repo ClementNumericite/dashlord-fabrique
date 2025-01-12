@@ -3,10 +3,10 @@
   "cookies": [
     {
       "name": "mtm_consent_removed",
-      "value": "1736038996554",
+      "value": "1736643844614",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
-      "expires": 2682118996,
+      "expires": 2682723844,
       "size": 32,
       "httpOnly": false,
       "secure": false,
@@ -33,7 +33,7 @@
     },
     {
       "name": "__Host-next-auth.csrf-token",
-      "value": "9266757efb50cfb706b502b133efd02cbb62c32710b4b4b11a9b2556a8ab399e%7C81fb92b6f9fd15a821e7ad2a913338b9334a7a96f8ab29e72bb1cce5365673a2",
+      "value": "cf094f8c9dfba9317f5eb6fbed136656df4cebdbefc18d3d51c4882411b9453d%7C499fd85a1741573c73c7fa316b54c28b7eed10fb35e74c607a008195dbb74c9e",
       "domain": "egapro.travail.gouv.fr",
       "path": "/",
       "expires": -1,
@@ -55,7 +55,7 @@
     "cross-origin-embedder-policy": "credentialless",
     "cross-origin-opener-policy": "same-origin",
     "cross-origin-resource-policy": "cross-origin",
-    "date": "Sun, 05 Jan 2025 01:03:14 GMT",
+    "date": "Sun, 12 Jan 2025 01:04:03 GMT",
     "permissions-policy": "fullscreen=(), display-capture=(), camera=(), microphone=(), web-share=(), geolocation=()",
     "referrer-policy": "no-referrer, strict-origin-when-cross-origin",
     "strict-transport-security": "max-age=31536000; includeSubDomains",
