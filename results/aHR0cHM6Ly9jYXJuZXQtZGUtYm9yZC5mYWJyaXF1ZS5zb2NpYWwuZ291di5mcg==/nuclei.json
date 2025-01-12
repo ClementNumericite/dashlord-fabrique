@@ -32,9 +32,9 @@
       "extracted-results": [
         "cdb-app-production.osc-secnum-fr1.scalingo.io."
       ],
-      "request": ";; opcode: QUERY, status: NOERROR, id: 1115\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 1115\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\n",
-      "timestamp": "2025-01-05T03:54:14.680054067Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 15415\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 15415\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CNAME\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\n",
+      "timestamp": "2025-01-12T03:45:21.55477763Z",
       "matcher-status": true
     },
     {
@@ -69,9 +69,9 @@
       "type": "dns",
       "host": "carnet-de-bord.fabrique.social.gouv.fr.",
       "matched-at": "carnet-de-bord.fabrique.social.gouv.fr",
-      "request": ";; opcode: QUERY, status: NOERROR, id: 56994\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n",
-      "response": ";; opcode: QUERY, status: NOERROR, id: 56994\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 1232\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\ncdb-app-production.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2360935707 10000 2400 604800 1800\n",
-      "timestamp": "2025-01-05T03:54:14.923255667Z",
+      "request": ";; opcode: QUERY, status: NOERROR, id: 5536\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 4096\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n",
+      "response": ";; opcode: QUERY, status: NOERROR, id: 5536\n;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags:; udp: 512\n\n;; QUESTION SECTION:\n;carnet-de-bord.fabrique.social.gouv.fr.\tIN\t CAA\n\n;; ANSWER SECTION:\ncarnet-de-bord.fabrique.social.gouv.fr.\t1\tIN\tCNAME\tcdb-app-production.osc-secnum-fr1.scalingo.io.\ncdb-app-production.osc-secnum-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-secnum-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t1800\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2361696494 10000 2400 604800 1800\n",
+      "timestamp": "2025-01-12T03:45:22.400621083Z",
       "matcher-status": true
     },
     {
@@ -100,8 +100,8 @@
       "extracted-results": [
         "Let's Encrypt"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2025-01-05T04:01:02.154931741Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2025-01-12T03:52:21.057299915Z",
       "matcher-status": true
     },
     {
@@ -130,8 +130,8 @@
       "extracted-results": [
         "carnet-de-bord.fabrique.social.gouv.fr"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2025-01-05T04:01:02.155062846Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2025-01-12T03:52:21.057429346Z",
       "matcher-status": true
     },
     {
@@ -161,8 +161,8 @@
       "extracted-results": [
         "tls12"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2025-01-05T04:01:10.457702209Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2025-01-12T03:52:22.431863101Z",
       "matcher-status": true
     },
     {
@@ -192,8 +192,8 @@
       "extracted-results": [
         "tls13"
       ],
-      "ip": "148.253.96.193",
-      "timestamp": "2025-01-05T04:01:10.642481191Z",
+      "ip": "80.247.13.145",
+      "timestamp": "2025-01-12T03:52:22.613980835Z",
       "matcher-status": true
     }
   ]
