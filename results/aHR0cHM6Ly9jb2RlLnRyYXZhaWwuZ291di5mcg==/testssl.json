@@ -206,7 +206,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -346,7 +346,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "83 >= 30 days"
+              "finding"      : "76 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -507,7 +507,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1737856482"
+              "finding"      : "1738460664"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -577,7 +577,7 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr data:; script-src 'self' 'nonce-MGJjYzU3ZDYtY2FhMS00NmRjLTg2NGQtYjk1MjUxMTdhMTg1' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr; worker-src 'self' blob:;"
+              "finding"      : "img-src 'self' https://travail-emploi.gouv.fr https://www.service-public.fr https://cdtn-prod-public.s3.gra.io.cloud.ovh.net https://matomo.fabrique.social.gouv.fr data:; script-src 'self' 'nonce-YTM3YzIwZjQtZjllZC00YzhiLTlhMTAtZDUyZGNhN2M0OGZm' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr ; frame-src 'self' https://mon-entreprise.urssaf.fr https://matomo.fabrique.social.gouv.fr *.dailymotion.com; connect-src 'self' https://geo.api.gouv.fr https://sentry.fabrique.social.gouv.fr https://matomo.fabrique.social.gouv.fr; worker-src 'self' blob:;"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -1084,6 +1084,6 @@
               "ip"           : "code.travail.gouv.fr/57.128.91.43",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "99"
+              "finding"      : "55"
           }
 ]
