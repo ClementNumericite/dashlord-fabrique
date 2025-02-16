@@ -339,7 +339,7 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "106 >= 60 days"
+              "finding"      : "99 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -507,7 +507,7 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1739067560"
+              "finding"      : "1739672959"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -556,7 +556,7 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1 at '/' (30x detected, better try target URL of 30x)"
+              "finding"      : "1 at '/' (maybe missed the application)"
           }
 ,         {
               "id"           : "cookie_secure",
@@ -570,7 +570,7 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "All (1) at '/' marked as HttpOnly (30x detected, better try target URL of 30x)"
+              "finding"      : "All (1) at '/' marked as HttpOnly (maybe missed the application)"
           }
 ,         {
               "id"           : "security_headers",
@@ -1084,6 +1084,6 @@
               "ip"           : "pjm.social.gouv.fr/185.194.82.86",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "50"
+              "finding"      : "88"
           }
 ]
