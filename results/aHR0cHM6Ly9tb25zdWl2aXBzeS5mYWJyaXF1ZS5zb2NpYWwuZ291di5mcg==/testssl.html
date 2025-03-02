@@ -20,9 +20,9 @@
 #####################################################################</span>
 
   Using <i>OpenSSL 1.0.2-bad </i>  [~183 ciphers]
-  on fv-az1695-415:/home/testssl/bin/openssl.Linux.x86_64
+  on fv-az1118-98:/home/testssl/bin/openssl.Linux.x86_64
 
-<span style="color:white;background-color:black;"> Start 2025-02-23 02:10:26                --&gt;&gt; 57.128.91.43:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2025-03-02 02:19:12                --&gt;&gt; 57.128.91.43:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
  rDNS (57.128.91.43):    --
  Service detected:       HTTP
@@ -35,7 +35,7 @@
 <span style="font-weight:bold;"> TLS 1.1    </span>not offered
 <span style="font-weight:bold;"> TLS 1.2    </span><span style="color:#008817;font-weight:bold;">offered (OK)</span>
 <span style="font-weight:bold;"> TLS 1.3    </span><span style="color:#008817;font-weight:bold;">offered (OK)</span>: final
-<span style="font-weight:bold;"> ALPN/HTTP2 </span>http/1.1 (offered)
+<span style="font-weight:bold;"> ALPN/HTTP2 </span><span style="color:#008817;">h2</span>, http/1.1 (offered)
 
 <span style="text-decoration:underline;font-weight:bold;"> Testing cipher categories </span>
 
@@ -95,15 +95,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
   <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
   <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
   <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-  <span style="font-weight:bold;"> Serial                       </span>0162813CE28B0FF281248A647244CDA9 (OK: length 16)
-  <span style="font-weight:bold;"> Fingerprints                 </span>SHA1 AA5496D97689CB3BE7103D3B3EE421F93E63DBE3
-                                SHA256 40D983C70CD9043806608DE4148328EEE3EB9E2C93D70A1CAA44AE2DD8F28486
+  <span style="font-weight:bold;"> Serial                       </span>7C9B5CC3D4AE495F5DA6915A44F26315 (OK: length 16)
+  <span style="font-weight:bold;"> Fingerprints                 </span>SHA1 A8F46BA5EA5CF90D620ADAD5DDC9762E404E9C52
+                                SHA256 302F8AE8063D79D63C446426DCBD659AE341B145013CBC1D1B2892B4E7363F0A
   <span style="font-weight:bold;"> Common Name (CN)             </span><i>Kubernetes Ingress Controller Fake Certificate </i>
   <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>ingress.local </i>
   <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#e52207;">certificate does not match supplied URI</span> (same w/o SNI)
   <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#e52207;font-weight:bold;">NOT ok</span> (chain incomplete)
   <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-  <span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">272 &gt;= 60 days</span> (2024-11-22 10:56 --&gt; 2025-11-22 10:56)
+  <span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">265 &gt;= 60 days</span> (2024-11-22 10:56 --&gt; 2025-11-22 10:56)
   <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
   <span style="font-weight:bold;"> Certificate Revocation List  </span>--
   <span style="font-weight:bold;"> OCSP URI                     </span>--
@@ -121,15 +121,15 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
   <span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
   <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
   <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-  <span style="font-weight:bold;"> Serial                       </span>7C9B5CC3D4AE495F5DA6915A44F26315 (OK: length 16)
-  <span style="font-weight:bold;"> Fingerprints                 </span>SHA1 A8F46BA5EA5CF90D620ADAD5DDC9762E404E9C52
-                                SHA256 302F8AE8063D79D63C446426DCBD659AE341B145013CBC1D1B2892B4E7363F0A
+  <span style="font-weight:bold;"> Serial                       </span>0162813CE28B0FF281248A647244CDA9 (OK: length 16)
+  <span style="font-weight:bold;"> Fingerprints                 </span>SHA1 AA5496D97689CB3BE7103D3B3EE421F93E63DBE3
+                                SHA256 40D983C70CD9043806608DE4148328EEE3EB9E2C93D70A1CAA44AE2DD8F28486
   <span style="font-weight:bold;"> Common Name (CN)             </span><i>Kubernetes Ingress Controller Fake Certificate </i>
   <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>ingress.local </i>
   <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#e52207;">certificate does not match supplied URI</span> (same w/o SNI)
   <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#e52207;font-weight:bold;">NOT ok</span> (chain incomplete)
   <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-  <span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">272 &gt;= 60 days</span> (2024-11-22 10:56 --&gt; 2025-11-22 10:56)
+  <span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">265 &gt;= 60 days</span> (2024-11-22 10:56 --&gt; 2025-11-22 10:56)
   <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
   <span style="font-weight:bold;"> Certificate Revocation List  </span>--
   <span style="font-weight:bold;"> OCSP URI                     </span>--
@@ -185,7 +185,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=40D983C70CD9043806608DE4148328EEE3EB9E2C93D70A1CAA44AE2DD8F28486" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=40D983C70CD9043806608DE4148328EEE3EB9E2C93D70A1CAA44AE2DD8F28486</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=302F8AE8063D79D63C446426DCBD659AE341B145013CBC1D1B2892B4E7363F0A" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=302F8AE8063D79D63C446426DCBD659AE341B145013CBC1D1B2892B4E7363F0A</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -248,7 +248,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
                               Grade capped to
                                 M. Domain name mismatch
 
-<span style="color:white;background-color:black;"> Done 2025-02-23 02:14:11 [ 229s] --&gt;&gt; 57.128.91.43:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2025-03-02 02:20:01 [  52s] --&gt;&gt; 57.128.91.43:443 (monsuivipsy.fabrique.social.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
